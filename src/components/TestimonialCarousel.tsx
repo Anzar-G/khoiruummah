@@ -34,7 +34,7 @@ const TestimonialCarousel = React.forwardRef<
         const [exitX, setExitX] = React.useState<number>(0)
 
         const handleDragEnd = (
-            event: MouseEvent | TouchEvent | PointerEvent,
+            _: MouseEvent | TouchEvent | PointerEvent,
             info: PanInfo,
         ) => {
             if (Math.abs(info.offset.x) > 100) {
