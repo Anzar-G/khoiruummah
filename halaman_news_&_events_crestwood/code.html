@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html class="light" lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Halaman Berita &amp; Acara Crestwood</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": {
+                DEFAULT: "#56357F",
+              },
+              "accent": "#A8CF45",
+              "background-light": "#FFFFFF",
+              "background-dark": "#1a1a1a","light-gray-1": "#F8F9FA",
+              "light-gray-2": "#F1F5F9",
+              "dark-gray": "#334155",
+              "medium-gray": "#64748B",
+              "border-gray": "#E2E8F0",
+            },
+            fontFamily: {
+              "display": ["Lexend", "sans-serif"]
+            },
+            borderRadius: {
+              "DEFAULT": "0.5rem",
+              "lg": "0.75rem",
+              "xl": "1rem",
+              "full": "9999px"
+            },
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-dark-gray leading-relaxed">
+<div class="relative flex min-h-screen w-full">
+<aside class="fixed top-0 left-0 flex h-full w-[280px] flex-col justify-between border-r border-border-gray bg-white p-4 dark:border-gray-700 dark:bg-gray-800">
+<div class="flex flex-col gap-6">
+<div class="flex items-center gap-3 px-2">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" data-alt="Crestwood International School logo" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAvNHD1oVgahHkt9dyMBxgS7P5Mhrq6m3ZekVrgnoQYkgImrxcu_AzL9sPJOtYHRkv164T8z4sJ7uyDdxx4WBBvW6guPotvRfb6Blzuh4TbVdH6QoJ0MUIgYmM4oKiQQE0DWMKCsbx1U4IBsDtzfS8_RyOtAe1iRDBGPGhqtlpmT_5z76fdjNCoK8LV8oq5mzpL681HQ7ycs2sSgR5HiM6b2_zhFfULMOUDcQsdjY3EXlmHIab4ULCp01LkcqEWvlC-3EKsX7vk1jy5");'></div>
+<div class="flex flex-col">
+<h1 class="text-dark-gray text-base font-semibold leading-normal">Crestwood</h1>
+<p class="text-medium-gray text-sm font-normal leading-normal">International School</p>
+</div>
+</div>
+<div class="relative px-2">
+<input class="w-full rounded-full border-border-gray bg-light-gray-1 py-2 pl-4 pr-10 text-sm focus:border-accent focus:ring-accent" placeholder="Cari..." type="text"/>
+<span class="material-symbols-outlined absolute right-4 top-1/2 -translate-y-1/2 text-accent">search</span>
+</div>
+<div class="flex justify-center p-1 rounded-full bg-light-gray-1">
+<button class="px-6 py-1 text-sm font-medium rounded-full text-medium-gray">EN</button>
+<button class="px-6 py-1 text-sm font-medium text-white bg-primary rounded-full">ID</button>
+</div>
+<nav class="flex flex-col gap-1">
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-dark-gray hover:bg-light-gray-2" href="#">
+<span class="material-symbols-outlined">home</span>
+<p class="text-sm font-medium leading-normal">Beranda</p>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-dark-gray hover:bg-light-gray-2" href="#">
+<span class="material-symbols-outlined">info</span>
+<p class="text-sm font-medium leading-normal">Tentang Kami</p>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-dark-gray hover:bg-light-gray-2" href="#">
+<span class="material-symbols-outlined">school</span>
+<p class="text-sm font-medium leading-normal">Penerimaan</p>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-dark-gray hover:bg-light-gray-2" href="#">
+<span class="material-symbols-outlined">book</span>
+<p class="text-sm font-medium leading-normal">Akademik</p>
+</a>
+<a class="relative flex items-center gap-3 px-3 py-2 rounded-lg bg-primary/10 text-primary" href="#">
+<div class="absolute left-0 top-0 h-full w-1 rounded-r-full bg-accent"></div>
+<span class="material-symbols-outlined">newspaper</span>
+<p class="text-sm font-bold leading-normal">Berita &amp; Acara</p>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-dark-gray hover:bg-light-gray-2" href="#">
+<span class="material-symbols-outlined">contact_mail</span>
+<p class="text-sm font-medium leading-normal">Kontak</p>
+</a>
+</nav>
+</div>
+<div class="flex flex-col gap-1">
+<p class="px-3 py-2 text-xs font-semibold uppercase text-medium-gray">Tautan Cepat</p>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-dark-gray hover:bg-light-gray-2" href="#">
+<span class="material-symbols-outlined">person</span>
+<p class="text-sm font-medium leading-normal">Portal Orang Tua</p>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-dark-gray hover:bg-light-gray-2" href="#">
+<span class="material-symbols-outlined">group</span>
+<p class="text-sm font-medium leading-normal">Direktori Staf</p>
+</a>
+</div>
+</aside>
+<main class="w-full pl-[280px]">
+<section class="relative flex flex-col justify-center min-h-[400px] bg-cover bg-center text-white" style='background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.1) 60%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuCUVItFycre05007okGK5rZDMO9Txgohq9qQKrWJhHkHWAQB4Z9i42ot6AP5X-q3jVRanmF4yOWvt1EXUfo98LlprHZWvgJ6Mz4E7x4fuDJlF4_iUTo_yP2CThic5xq_dNlIow3K_eAq8BPhV28q5jytnavoPEUnQ5E8Lnyy73vh2pZYqaps1LFvrR1Tp6yuf6APFx0L3kTDzj_udmBXlQYNiYlfxJnvmpLNodn4hzVPPcBvLe2KuayEngNMIdEJ5FsCWBHV7-i7m0y");'>
+<div class="absolute top-0 left-0 w-full p-8">
+<div class="flex items-center gap-2 text-sm text-gray-300">
+<a class="hover:underline" href="#">Beranda</a>
+<span class="text-accent">/</span>
+<span class="font-semibold text-white">Berita &amp; Acara</span>
+</div>
+</div>
+<div class="z-10 px-8">
+<h1 class="text-5xl font-bold">Berita &amp; Acara</h1>
+<p class="mt-2 text-xl text-gray-200">Tetap terinformasi tentang kejadian terbaru di Crestwood</p>
+</div>
+</section>
+<div class="sticky top-0 z-30 bg-white shadow-sm">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-center items-center py-4 space-x-2">
+<button class="px-5 py-2 text-sm font-medium rounded-full text-medium-gray hover:bg-light-gray-2 transition-colors">Semua</button>
+<button class="px-5 py-2 text-sm font-medium text-white bg-primary rounded-full transition-colors">Berita &amp; Pengumuman</button>
+<button class="px-5 py-2 text-sm font-medium rounded-full text-medium-gray hover:bg-light-gray-2 transition-colors">Acara Mendatang</button>
+<button class="px-5 py-2 text-sm font-medium rounded-full text-medium-gray hover:bg-light-gray-2 transition-colors">Acara Terdahulu</button>
+</div>
+</div>
+</div>
+<section class="bg-white py-16 lg:py-24">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<h2 class="text-3xl font-bold text-center text-primary mb-12">Berita &amp; Pengumuman Terbaru</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+<div class="flex flex-col overflow-hidden bg-white border rounded-lg border-border-gray group transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5">
+<div class="relative overflow-hidden aspect-video">
+<img class="object-cover w-full h-full transition-transform duration-300 group-hover:scale-105" data-alt="Siswa merayakan kemenangan kejuaraan dalam kompetisi robotik" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAm0hirVpsTpsaYpEyJ2PTe4znAHQp0eqxhiPxmdHa_R8ycinEV4wbvjIoesyI-sFpHPneoKZcglbsWTFVZIpyVL__e4rXyCVq0dicwWqqUGfxXvFQ1PEh7U4QuNdFV-_B2riM0Fb-qfhKKcpF6Xu4kwYnGADsk7t3OKbn-G3PrGNeaab2o3DHArKx0yYTWUMBusSi-w8DulXXmBZmBWSY-gLjHem6buZXcKLTwP4Uiu7ZOkxk_7-L1z0SOCIT-4UMSQijYNjibL0v6"/>
+<span class="absolute top-3 left-3 px-2 py-0.5 text-xs font-medium rounded-full" style="background-color: rgba(168, 207, 69, 0.1); color: rgba(168, 207, 69, 0.9);">Akademik</span>
+</div>
+<div class="flex flex-col flex-grow p-6">
+<p class="text-sm text-medium-gray mb-3">26 Oktober 2023</p>
+<h3 class="text-xl font-bold text-primary mb-3 flex-grow leading-snug">Tim Robotik Crestwood Memenangkan Kejuaraan Nasional</h3>
+<p class="text-sm text-dark-gray mb-4 line-clamp-3" style="line-height: 1.6;">Tim robotik kami yang berbakat, 'Circuit Breakers,' membawa pulang piala juara pertama dari Kompetisi Robotik Nasional. Desain inovatif dan eksekusi sempurna mereka mengesankan para juri dan memastikan kemenangan telak melawan tim dari lebih dari 50 sekolah di seluruh negeri, menandai tonggak baru bagi program STEM kami.</p>
+<div class="mt-auto border-t border-border-gray pt-4">
+<p class="text-xs text-medium-gray">Oleh Jane Doe - 4 menit baca</p>
+</div>
+</div>
+</div>
+<div class="flex flex-col overflow-hidden bg-white border rounded-lg border-border-gray group transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5">
+<div class="relative overflow-hidden aspect-video">
+<img class="object-cover w-full h-full transition-transform duration-300 group-hover:scale-105" data-alt="Fasilitas sekolah modern untuk mata pelajaran STEAM" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgVpfT0QrCN6Aw_OVFNgxD2YwET2pig6b1UehEQwDQfa1oI8Mbp500CtUXXtP5m5LymZHuxOcoxlAVWkbCY0VtyiAmRNtgP_sgDKBUX4H-96OEPySw9aRefL3s6jhHm-VCTQuGcvqT4gTAc2NtzhnKHdEF35VNVG4GNoHHIiNgV3ENLcnmDuhguZzoEN1mxrsSWEufAqihJ7qgN_QRAt92gwr_-iAZacDYGwaoS4-H4jZLU5nETDbXoBMz2apdKfpPpeuTinFkC5Vx"/>
+<span class="absolute top-3 left-3 px-2 py-0.5 text-xs font-medium rounded-full" style="background-color: rgba(86, 53, 127, 0.1); color: #56357F;">Pengumuman</span>
+</div>
+<div class="flex flex-col flex-grow p-6">
+<p class="text-sm text-medium-gray mb-3">24 Oktober 2023</p>
+<h3 class="text-xl font-bold text-primary mb-3 flex-grow leading-snug">Upacara Peresmian Fasilitas STEAM Baru</h3>
+<p class="text-sm text-dark-gray mb-4 line-clamp-3" style="line-height: 1.6;">Bergabunglah dengan kami untuk peresmian fasilitas Sains, Teknologi, Teknik, Seni, dan Matematika (STEAM) kami yang canggih. Acara ini akan menampilkan upacara pemotongan pita, tur berpemandu ke laboratorium dan ruang kreatif, serta demonstrasi oleh siswa kami yang memamerkan teknologi baru yang tersedia bagi mereka.</p>
+<div class="mt-auto border-t border-border-gray pt-4">
+<p class="text-xs text-medium-gray">Oleh John Smith - 2 menit baca</p>
+</div>
+</div>
+</div>
+<div class="flex flex-col overflow-hidden bg-white border rounded-lg border-border-gray group transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5">
+<div class="relative overflow-hidden aspect-video">
+<img class="object-cover w-full h-full transition-transform duration-300 group-hover:scale-105" data-alt="Kelompok siswa yang beragam merayakan hari internasional" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCoWHd3WxcdwWFA7vVRoGNgaEClUHtoFae45wwGHXdtAqrAVGYKOFCaEFBbHz5Ez1_XqVewmLZVvmDLBNlNB0GV44nQT0LfyQE6E6DeAzsrVpkRmuUPwhvyVtR0vuU7qsArUiLY0xZgGr1J1FNdCtaGs_jrYpBh-zAML7j73oTSgIjCatR5iAlJl2QgBJrA_-MIG0MsDNXTkovDvDFoCdlaOXrkDK1qxFYxFrcpY7tmq9YPH5QWdA3YR-RwKY7zn0EOP18luaBW6oc"/>
+<span class="absolute top-3 left-3 px-2 py-0.5 text-xs font-medium rounded-full" style="background-color: rgba(168, 207, 69, 0.1); color: rgba(168, 207, 69, 0.9);">Kehidupan Siswa</span>
+</div>
+<div class="flex flex-col flex-grow p-6">
+<p class="text-sm text-medium-gray mb-3">22 Oktober 2023</p>
+<h3 class="text-xl font-bold text-primary mb-3 flex-grow leading-snug">Hari Internasional Tahunan: Perayaan Budaya</h3>
+<p class="text-sm text-dark-gray mb-4 line-clamp-3" style="line-height: 1.6;">Saksikan pertunjukan tradisi, makanan, dan penampilan yang semarak dari seluruh dunia, yang dipersembahkan oleh komunitas siswa kami yang beragam. Acara tahun ini menampilkan lebih dari 30 stan negara, parade bangsa-bangsa, dan pertunjukan bakat yang spektakuler, menumbuhkan kewarganegaraan global dan pemahaman lintas budaya di antara komunitas kami.</p>
+<div class="mt-auto border-t border-border-gray pt-4">
+<p class="text-xs text-medium-gray">Oleh Komunikasi Crestwood - 5 menit baca</p>
+</div>
+</div>
+</div>
+<div class="flex flex-col overflow-hidden bg-white border rounded-lg border-border-gray group transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5">
+<div class="relative overflow-hidden aspect-video">
+<img class="object-cover w-full h-full transition-transform duration-300 group-hover:scale-105" data-alt="Orkestra siswa tampil di atas panggung" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDO7gUCWAey7Jyt8hUzvZBy9CdA5sUbzU_PnVbnQ8rTjk9bgyanVV0j9UkNztkFV-lqRDEtsSYGqfmDI5rlUyFAi3XTXQ5AZlv3xe3u8Iibgua5eJeSOHs6QGS2pbr3eNVY_FoXLHDRsp0oNZL5BX4ccK1YIdiMZKncF0O1UOGdu831a3y3mnhx-yNoTUDJCxPiP8TCCUIHZH4o3DStu4hBKzgP5X9jryBjJSLoEfnvvo7AW8Ine9Vn9p8j1iTnRKQ19cEvwr6D6EC-"/>
+<span class="absolute top-3 left-3 px-2 py-0.5 text-xs font-medium rounded-full" style="background-color: rgba(168, 207, 69, 0.1); color: rgba(168, 207, 69, 0.9);">Seni &amp; Budaya</span>
+</div>
+<div class="flex flex-col flex-grow p-6">
+<p class="text-sm text-medium-gray mb-3">18 Oktober 2023</p>
+<h3 class="text-xl font-bold text-primary mb-3 flex-grow leading-snug">Konser Musim Gugur Tahunan Crestwood Sukses Besar</h3>
+<p class="text-sm text-dark-gray mb-4 line-clamp-3" style="line-height: 1.6;">Para musisi siswa kami memberikan penampilan yang memukau di Konser Musim Gugur tahunan. Malam itu menampilkan program yang beragam dari mahakarya klasik hingga aransemen kontemporer, memamerkan bakat dan dedikasi luar biasa dari orkestra, paduan suara, dan ansambel jazz kami. Auditorium dipenuhi oleh orang tua dan anggota komunitas yang bangga.</p>
+<div class="mt-auto border-t border-border-gray pt-4">
+<p class="text-xs text-medium-gray">Oleh Emily White - 3 menit baca</p>
+</div>
+</div>
+</div>
+<div class="flex flex-col overflow-hidden bg-white border rounded-lg border-border-gray group transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5">
+<div class="relative overflow-hidden aspect-video">
+<img class="object-cover w-full h-full transition-transform duration-300 group-hover:scale-105" data-alt="Siswa berpartisipasi dalam acara olahraga" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1ZZc1fJ4p51pcqiokvvHf_ZEcJ6heM7zXONZSROHVvEpWPUgeBVq1fm_o7aDNPqs-15OoBJGl9QWe-tJKHlpo4xlrpA5_3dQjtjKFG7IyELbsEefQ4zwiVrgamSwz-iLe4Ozj-ZUiaPmJxSMEsi7ExeKB09zJ56XfdtAl3SP8RCmGEw81UdVp_qPVJExnCGrm9vAGjHsBVKQtl71xisb-29CWICXs7dZpHkqElHddkfT3QIEIf6gE7572if_z29mnez-DvRLud6zu"/>
+<span class="absolute top-3 left-3 px-2 py-0.5 text-xs font-medium rounded-full" style="background-color: rgba(168, 207, 69, 0.1); color: rgba(168, 207, 69, 0.9);">Atletik</span>
+</div>
+<div class="flex flex-col flex-grow p-6">
+<p class="text-sm text-medium-gray mb-3">15 Oktober 2023</p>
+<h3 class="text-xl font-bold text-primary mb-3 flex-grow leading-snug">Tim Sepak Bola Varsity Meraih Gelar Regional</h3>
+<p class="text-sm text-dark-gray mb-4 line-clamp-3" style="line-height: 1.6;">Crestwood Eagles berhasil lagi! Tim sepak bola varsity kami meraih kejuaraan regional dalam pertandingan final yang mendebarkan hingga perpanjangan waktu. Kerja keras, sportivitas, dan permainan strategis tim ditampilkan sepenuhnya sepanjang turnamen, membuat seluruh komunitas sekolah kami sangat bangga dengan pencapaian mereka.</p>
+<div class="mt-auto border-t border-border-gray pt-4">
+<p class="text-xs text-medium-gray">Oleh Mark Davis - 3 menit baca</p>
+</div>
+</div>
+</div>
+<div class="flex flex-col overflow-hidden bg-white border rounded-lg border-border-gray group transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5">
+<div class="relative overflow-hidden aspect-video">
+<img class="object-cover w-full h-full transition-transform duration-300 group-hover:scale-105" data-alt="Siswa menjadi sukarelawan di komunitas lokal" src="https://lh3.googleusercontent.com/aida-public/AB6AXuATHB3IBiMhPAnWgprPNGCE1YNt5HzGIwWbSy2OJ3Aef706PONQb2rCkb1j85FiyFc-_7M34JF1E6p-AJB3tMNKzJx4v8f8y88FTJ3d0A5U-A7UnNZ7TsxvZIKU7U2-1vG3dJNJtLm9dA7enKX8yYALduAA_hyEQesn_u0gwsN9i3vs-XoO9e9LD5uMXn_DLncuzopgGq0zY269vHKhekUTI58WdbclxwWYVEEqMptttLmYF6HX8JYailKOtGG7pzQOiXjE6baCF4p8"/>
+<span class="absolute top-3 left-3 px-2 py-0.5 text-xs font-medium rounded-full" style="background-color: rgba(86, 53, 127, 0.1); color: #56357F;">Komunitas</span>
+</div>
+<div class="flex flex-col flex-grow p-6">
+<p class="text-sm text-medium-gray mb-3">12 Oktober 2023</p>
+<h3 class="text-xl font-bold text-primary mb-3 flex-grow leading-snug">Siswa Memimpin Penggalangan Makanan Komunitas yang Sukses</h3>
+<p class="text-sm text-dark-gray mb-4 line-clamp-3" style="line-height: 1.6;">OSIS kami menyelenggarakan penggalangan makanan yang sangat sukses, mengumpulkan lebih dari 1.000 item makanan non-perishable untuk bank makanan lokal. Inisiatif ini menunjukkan komitmen siswa kami terhadap tanggung jawab sosial dan memberikan dampak positif di luar tembok kelas. Terima kasih kepada semua yang berkontribusi untuk tujuan penting ini.</p>
+<div class="mt-auto border-t border-border-gray pt-4">
+<p class="text-xs text-medium-gray">Oleh OSIS - 2 menit baca</p>
+</div>
+</div>
+</div>
+</div>
+<div class="flex justify-center mt-16">
+<nav class="flex items-center space-x-2">
+<a class="px-4 py-2 text-sm font-medium text-white rounded-lg bg-primary" href="#">1</a>
+<a class="px-4 py-2 text-sm font-medium text-medium-gray hover:text-primary rounded-lg hover:bg-light-gray-2" href="#">2</a>
+<a class="px-4 py-2 text-sm font-medium text-medium-gray hover:text-primary rounded-lg hover:bg-light-gray-2" href="#">3</a>
+<a class="px-4 py-2 text-sm font-medium text-medium-gray hover:text-primary rounded-lg hover:bg-light-gray-2" href="#">Selanjutnya</a>
+</nav>
+</div>
+</div>
+</section>
+<section class="bg-light-gray-1 py-16 lg:py-24">
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+<h2 class="text-3xl font-bold text-center text-primary">Acara Mendatang</h2>
+<p class="mt-2 text-center text-medium-gray">Tandai kalender Anda untuk acara-acara menarik ini!</p>
+<div class="relative mt-16 space-y-12">
+<div class="absolute left-0 top-4 h-full w-0.5 bg-border-gray md:left-1/2 md:-translate-x-1/2"></div>
+<div class="relative pl-8 md:pl-0">
+<div class="md:grid md:grid-cols-2 md:gap-8">
+<div class="flex justify-start md:justify-end md:text-right">
+<div class="inline-block bg-primary text-white p-4 rounded-lg text-center w-28 shadow-sm">
+<span class="block text-sm font-semibold uppercase">NOV</span>
+<span class="block text-4xl font-bold leading-none">15</span>
+<span class="block text-xs mt-1">2023</span>
+</div>
+</div>
+<div class="mt-4 md:mt-0">
+<span class="absolute -left-1.5 top-5 w-3 h-3 rounded-full bg-accent border-2 border-light-gray-1 md:left-1/2 md:-translate-x-1/2"></span>
+<div class="bg-white p-6 rounded-lg border border-border-gray shadow-sm">
+<div class="flex items-center gap-2 text-sm text-accent font-semibold mb-2">
+<span class="material-symbols-outlined">schedule</span>
+<span>09:00 - 11:00</span>
+</div>
+<h3 class="text-xl font-bold text-primary">Konferensi Orang Tua-Guru</h3>
+<div class="flex items-center gap-2 text-sm text-medium-gray mt-2 mb-3">
+<span class="material-symbols-outlined">location_on</span>
+<span>Auditorium Utama Sekolah</span>
+</div>
+<p class="text-sm text-dark-gray mb-4">Kesempatan untuk mendiskusikan kemajuan anak Anda dengan guru mereka. Silakan pesan slot Anda secara online.</p>
+<button class="inline-flex items-center px-4 py-2 text-sm font-medium text-primary border border-border-gray rounded-full hover:bg-primary/5 transition-colors">Tambahkan ke Kalender</button>
+</div>
+</div>
+</div>
+</div>
+<div class="relative pl-8 md:pl-0">
+<div class="md:grid md:grid-cols-2 md:gap-8">
+<div class="flex justify-start md:justify-end md:text-right">
+<div class="inline-block bg-accent text-white p-4 rounded-lg text-center w-28 shadow-sm">
+<span class="block text-sm font-semibold uppercase">DES</span>
+<span class="block text-4xl font-bold leading-none">05</span>
+<span class="block text-xs mt-1">2023</span>
+</div>
+</div>
+<div class="mt-4 md:mt-0">
+<span class="absolute -left-1.5 top-5 w-3 h-3 rounded-full bg-accent border-2 border-light-gray-1 md:left-1/2 md:-translate-x-1/2"></span>
+<div class="bg-white p-6 rounded-lg border border-border-gray shadow-sm">
+<div class="flex items-center gap-2 text-sm text-accent font-semibold mb-2">
+<span class="material-symbols-outlined">schedule</span>
+<span>18:00 dan seterusnya</span>
+</div>
+<h3 class="text-xl font-bold text-primary">Gala Musim Dingin &amp; Penggalangan Dana Tahunan</h3>
+<div class="flex items-center gap-2 text-sm text-medium-gray mt-2 mb-3">
+<span class="material-symbols-outlined">location_on</span>
+<span>The Grand Ballroom</span>
+</div>
+<p class="text-sm text-dark-gray mb-4">Malam ajaib penuh musik, makan malam, dan kebersamaan untuk mendukung dana pengembangan sekolah kita.</p>
+<a class="inline-flex items-center px-5 py-2 text-sm font-medium text-white bg-primary rounded-full hover:bg-primary/90 transition-colors" href="#">RSVP Sekarang</a>
+</div>
+</div>
+</div>
+</div>
+<div class="relative pl-8 md:pl-0">
+<div class="md:grid md:grid-cols-2 md:gap-8">
+<div class="flex justify-start md:justify-end md:text-right">
+<div class="inline-block bg-primary text-white p-4 rounded-lg text-center w-28 shadow-sm">
+<span class="block text-sm font-semibold uppercase">DES</span>
+<span class="block text-4xl font-bold leading-none">18</span>
+<span class="block text-xs mt-1">2023</span>
+</div>
+</div>
+<div class="mt-4 md:mt-0">
+<span class="absolute -left-1.5 top-5 w-3 h-3 rounded-full bg-accent border-2 border-light-gray-1 md:left-1/2 md:-translate-x-1/2"></span>
+<div class="bg-white p-6 rounded-lg border border-border-gray shadow-sm">
+<div class="flex items-center gap-2 text-sm text-accent font-semibold mb-2">
+<span class="material-symbols-outlined">schedule</span>
+<span>14:00 - 16:00</span>
+</div>
+<h3 class="text-xl font-bold text-primary">Majelis Akhir Semester Sekolah</h3>
+<div class="flex items-center gap-2 text-sm text-medium-gray mt-2 mb-3">
+<span class="material-symbols-outlined">location_on</span>
+<span>Aula Olahraga</span>
+</div>
+<p class="text-sm text-dark-gray mb-4">Bergabunglah dengan kami saat kami merayakan prestasi siswa dari semester lalu dan menyambut liburan.</p>
+<button class="inline-flex items-center px-4 py-2 text-sm font-medium text-primary border border-border-gray rounded-full hover:bg-primary/5 transition-colors">Tambahkan ke Kalender</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="bg-white py-16 lg:py-20">
+<div class="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+<h2 class="text-3xl font-bold text-primary">Jangan Lewatkan Acara Apapun</h2>
+<p class="mt-2 text-medium-gray">Berlangganan kalender kami dan tetap terbarui dengan semua kegiatan sekolah.</p>
+<div class="mt-8 flex flex-wrap justify-center gap-4">
+<button class="inline-flex items-center justify-center px-5 py-3 text-sm font-medium text-white rounded-full bg-primary hover:bg-primary/90 transition-colors">
+<span class="material-symbols-outlined mr-2">download</span>
+                           Unduh Kalender (PDF)
+                        </button>
+<button class="inline-flex items-center justify-center px-5 py-3 text-sm font-medium border rounded-full text-dark-gray border-border-gray hover:bg-light-gray-2 transition-colors">
+<span class="material-symbols-outlined mr-2 text-accent">calendar_add_on</span>
+                           Tambahkan ke Google Kalender
+                        </button>
+</div>
+</div>
+</section>
+<section class="bg-light-gray-1 py-16 lg:py-24">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div>
+<h3 class="text-2xl font-bold text-primary">Arsip Berita</h3>
+<p class="text-medium-gray mt-2">Jelajahi berita dan pengumuman terdahulu.</p>
+<div class="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
+<select class="rounded-lg border-border-gray focus:border-accent focus:ring-accent">
+<option>Berdasarkan Tahun</option>
+<option>2023</option>
+<option>2022</option>
+<option>2021</option>
+</select>
+<select class="rounded-lg border-border-gray focus:border-accent focus:ring-accent">
+<option>Berdasarkan Bulan</option>
+<option>Oktober</option>
+<option>September</option>
+<option>Agustus</option>
+</select>
+</div>
+<a class="inline-flex items-center mt-6 text-sm font-semibold text-accent hover:underline" href="#">
+                                Lihat Semua Arsip <span class="material-symbols-outlined text-base ml-1">arrow_forward</span>
+</a>
+</div>
+<div class="bg-white p-8 rounded-lg border border-border-gray shadow-sm">
+<h3 class="text-2xl font-bold text-primary">Berlangganan Buletin Kami</h3>
+<p class="text-medium-gray mt-2">Dapatkan berita dan pembaruan terbaru yang dikirim ke kotak masuk Anda.</p>
+<div class="mt-6 flex flex-col sm:flex-row gap-2">
+<input class="w-full rounded-full border-border-gray bg-white px-4 py-2.5 text-sm focus:border-accent focus:ring-accent" placeholder="Masukkan alamat email Anda" type="email"/>
+<button class="flex-shrink-0 px-6 py-2.5 text-sm font-medium text-white rounded-full bg-accent hover:bg-primary transition-colors">Berlangganan</button>
+</div>
+<p class="text-xs text-medium-gray mt-3">Kami menghargai privasi Anda. Berhenti berlangganan kapan saja.</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+</div>
+<div class="fixed bottom-8 right-8 z-50">
+<button class="flex cursor-pointer items-center justify-center overflow-hidden rounded-full h-14 px-6 gap-3 bg-accent text-white text-base font-bold leading-normal tracking-[0.015em] shadow-lg transition-colors hover:bg-primary">
+<span class="material-symbols-outlined">edit_document</span>
+<span class="truncate">Daftar Sekarang</span>
+</button>
+</div>
+
+</body></html>

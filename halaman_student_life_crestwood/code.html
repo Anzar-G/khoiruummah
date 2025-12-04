@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html class="light" lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Kehidupan Siswa - Crestwood International School</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+        darkMode: "class",
+        theme: {
+            extend: {
+                colors: {
+                    "primary": "#56357e",
+                    "background-light": "#f7f6f7",
+                    "background-dark": "#19151d",
+                    "brand-purple": "#56357F",
+                    "brand-green": "#A8CF45",
+                    "brand-light-gray-1": "#f8fafc",
+                    "brand-light-gray-2": "#f1f5f9",
+                    "brand-dark-gray": "#334155",
+                    "brand-medium-gray": "#64748b"
+                },
+                fontFamily: {
+                    "display": ["Lexend", "sans-serif"]
+                },
+                borderRadius: {
+                    "DEFAULT": "0.5rem",
+                    "lg": "1rem",
+                    "xl": "1.5rem",
+                    "full": "9999px"
+                },
+            },
+        },
+    }
+    </script>
+<style>
+    .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+    .group:hover .group-hover-zoom {
+        transform: scale(1.05);
+    }
+    </style>
+</head>
+<body class="bg-brand-light-gray-1 dark:bg-background-dark font-display text-brand-dark-gray">
+<div class="flex">
+<aside class="fixed top-0 left-0 h-screen w-[280px] bg-white dark:bg-background-dark border-r border-brand-light-gray-2 dark:border-gray-700 flex flex-col p-6 font-display">
+<div class="flex items-center gap-3 mb-8">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" data-alt="Crestwood International School logo" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDkYa7cC4chnOMceMag_26LhOhaMPYNbBjQ-w_qLldLpHff4Xf6L1AcwhJ0z6tCzxL5Hf-U-3RWcQuZ7Sat8ZzXxheZM6Es60toVtyIeBAEhQdeP2Pox2Z4O14ALCkW-p42x7Wu1CU_HuDm8rYI4YfMbNJJcbFbbDcL_SXHY8wdCUTXBfbF-KxpiwgSgqs48JufGdvUjV5NT1H9nLSUJQYv8OrPQxHjFqZNUqhabfrjGrlTqWO2Ma_NQjFoQspbWfFCD1bV1obLvV13");'></div>
+<div class="flex flex-col">
+<h1 class="text-brand-dark-gray text-base font-bold leading-normal">Crestwood</h1>
+<p class="text-brand-medium-gray text-sm font-normal leading-normal">International School</p>
+</div>
+</div>
+<div class="relative mb-6">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-brand-green">search</span>
+<input class="w-full h-10 pl-10 pr-4 bg-brand-light-gray-1 border-transparent rounded-lg focus:ring-2 focus:ring-brand-green focus:border-transparent" placeholder="Cari..." type="text"/>
+</div>
+<div class="flex bg-brand-light-gray-1 p-1 rounded-lg mb-6 text-sm">
+<button class="w-1/2 py-1.5 rounded-md">EN</button>
+<button class="w-1/2 py-1.5 rounded-md bg-white shadow-sm font-semibold text-brand-purple">ID</button>
+</div>
+<nav class="flex flex-col gap-2 flex-grow">
+<a class="flex items-center gap-3 px-3 py-2 text-brand-dark-gray hover:bg-brand-light-gray-2 rounded-lg transition-colors" href="#">
+<span class="material-symbols-outlined text-brand-medium-gray text-2xl">home</span>
+<p class="text-sm font-medium leading-normal">Beranda</p>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 text-brand-dark-gray hover:bg-brand-light-gray-2 rounded-lg transition-colors" href="#">
+<span class="material-symbols-outlined text-brand-medium-gray text-2xl">info</span>
+<p class="text-sm font-medium leading-normal">Tentang Kami</p>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 text-brand-dark-gray hover:bg-brand-light-gray-2 rounded-lg transition-colors" href="#">
+<span class="material-symbols-outlined text-brand-medium-gray text-2xl">school</span>
+<p class="text-sm font-medium leading-normal">Akademik</p>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 text-brand-dark-gray hover:bg-brand-light-gray-2 rounded-lg transition-colors" href="#">
+<span class="material-symbols-outlined text-brand-medium-gray text-2xl">verified_user</span>
+<p class="text-sm font-medium leading-normal">Penerimaan</p>
+</a>
+<div class="relative bg-brand-purple/10 rounded-lg">
+<div class="absolute left-0 top-0 h-full w-1 bg-brand-green rounded-l-lg"></div>
+<a class="flex items-center gap-3 pl-6 pr-3 py-2 text-brand-purple" href="#">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">celebration</span>
+<p class="text-sm font-bold leading-normal">Kehidupan Siswa</p>
+</a>
+</div>
+<div class="flex flex-col gap-1 pl-6 border-l-2 border-brand-light-gray-2 ml-4">
+<a class="flex items-center gap-3 px-3 py-1.5 text-brand-dark-gray font-semibold" href="#">
+<span class="w-2 h-2 bg-brand-green rounded-full"></span>
+<p class="text-sm leading-normal">Ikhtisar</p>
+</a>
+<a class="flex items-center gap-3 px-3 py-1.5 text-brand-medium-gray hover:text-brand-dark-gray" href="#">
+<span class="w-2 h-2 bg-transparent rounded-full"></span>
+<p class="text-sm leading-normal">Klub &amp; Kegiatan</p>
+</a>
+<a class="flex items-center gap-3 px-3 py-1.5 text-brand-medium-gray hover:text-brand-dark-gray" href="#">
+<span class="w-2 h-2 bg-transparent rounded-full"></span>
+<p class="text-sm leading-normal">Olahraga &amp; Atletik</p>
+</a>
+<a class="flex items-center gap-3 px-3 py-1.5 text-brand-medium-gray hover:text-brand-dark-gray" href="#">
+<span class="w-2 h-2 bg-transparent rounded-full"></span>
+<p class="text-sm leading-normal">Seni &amp; Budaya</p>
+</a>
+<a class="flex items-center gap-3 px-3 py-1.5 text-brand-medium-gray hover:text-brand-dark-gray" href="#">
+<span class="w-2 h-2 bg-transparent rounded-full"></span>
+<p class="text-sm leading-normal">Pengabdian Masyarakat</p>
+</a>
+<a class="flex items-center gap-3 px-3 py-1.5 text-brand-medium-gray hover:text-brand-dark-gray" href="#">
+<span class="w-2 h-2 bg-transparent rounded-full"></span>
+<p class="text-sm leading-normal">Kepemimpinan Siswa</p>
+</a>
+</div>
+<a class="flex items-center gap-3 px-3 py-2 text-brand-dark-gray hover:bg-brand-light-gray-2 rounded-lg transition-colors" href="#">
+<span class="material-symbols-outlined text-brand-medium-gray text-2xl">mail</span>
+<p class="text-sm font-medium leading-normal">Kontak</p>
+</a>
+</nav>
+<div class="mt-auto flex flex-col gap-2 text-sm">
+<a class="text-brand-medium-gray hover:text-brand-purple" href="#">Portal Orang Tua</a>
+<a class="text-brand-medium-gray hover:text-brand-purple" href="#">Kalender</a>
+<a class="text-brand-medium-gray hover:text-brand-purple" href="#">Berita &amp; Acara</a>
+</div>
+</aside>
+<main class="ml-[280px] w-[calc(100%-280px)]">
+<div class="flex flex-col">
+<section class="relative min-h-[450px] bg-cover bg-center flex flex-col justify-end text-white p-12" data-alt="Siswa yang terlibat dalam berbagai kegiatan - olahraga, seni, komunitas" style='background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 50%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuC4GoTQkQrKFmXaeJoikHYVFPnvEy5KHi4Kw8FYRlD9EUPyvwrGGjekW-QBfBw-8ZnQSPzHQgGiMTLDQRypg24tQT7LJzWZDeAb_OHCz5X_SbN4rUjHI-HrHV-tzhoKZ-D877OQx_7d0dbsuULOCErq7zCoO39uKvFzCuvjDjmJGjTDO1vR8AJeIsdin3LfuXKkepJS84_gfv__hRx3-mVGxNlHeKZCBpIzr_YM_M7v_bfy74YOWDEGuiqLaJNW4swnaFIzWXjnSk-c");'>
+<div class="max-w-7xl mx-auto w-full">
+<div class="flex items-center gap-2 text-base font-medium mb-4">
+<a class="text-gray-300 hover:text-white" href="#">Beranda</a>
+<span class="text-brand-green">/</span>
+<span class="text-white">Kehidupan Siswa</span>
+</div>
+<h1 class="text-5xl font-bold mb-2">Di Luar Ruang Kelas</h1>
+<p class="text-xl text-gray-200">Di mana gairah menyala, persahabatan berkembang, dan kenangan tercipta</p>
+</div>
+</section>
+<section class="relative py-12 lg:py-20 px-6 lg:px-8 z-20">
+<div class="max-w-4xl mx-auto bg-white rounded-xl shadow-lg -mt-32 p-12 lg:p-20 text-center">
+<h2 class="text-3xl font-bold text-brand-purple mb-6">Rasakan Komunitas yang Dinamis</h2>
+<p class="text-base leading-relaxed text-brand-dark-gray mb-4">Di Crestwood, kami percaya bahwa pendidikan melampaui ruang kelas tradisional. Program kehidupan siswa kami yang dinamis menawarkan beragam kesempatan bagi siswa untuk menjelajahi minat mereka, mengembangkan keterampilan baru, dan membangun persahabatan seumur hidup. Kami berkomitmen untuk memupuk lingkungan yang seimbang, inklusif, dan menginspirasi di mana setiap siswa dapat berkembang.</p>
+<p class="text-base leading-relaxed text-brand-dark-gray">Dari kepemimpinan dan kreativitas hingga atletik dan pengabdian masyarakat, siswa kami didorong untuk keluar dari zona nyaman mereka, menghadapi tantangan baru, dan tumbuh menjadi warga dunia yang berwawasan luas. Temukan klub, tim, dan kegiatan yang membuat kehidupan di Crestwood benar-benar luar biasa.</p>
+</div>
+</section>
+<section class="bg-brand-light-gray-1 py-16 lg:py-20 px-6 lg:px-8">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+<div class="bg-white rounded-xl p-8 shadow-md text-center hover:shadow-xl hover:-translate-y-1 transition-all">
+<div class="w-16 h-16 bg-brand-green/20 rounded-full mx-auto flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-brand-purple text-4xl">groups</span>
+</div>
+<p class="text-5xl font-bold text-brand-green">50+</p>
+<p class="text-sm font-bold uppercase tracking-wider text-brand-dark-gray mt-2">Klub &amp; Kegiatan</p>
+</div>
+<div class="bg-white rounded-xl p-8 shadow-md text-center hover:shadow-xl hover:-translate-y-1 transition-all">
+<div class="w-16 h-16 bg-brand-green/20 rounded-full mx-auto flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-brand-purple text-4xl">sports_soccer</span>
+</div>
+<p class="text-5xl font-bold text-brand-green">15+</p>
+<p class="text-sm font-bold uppercase tracking-wider text-brand-dark-gray mt-2">Tim Olahraga</p>
+</div>
+<div class="bg-white rounded-xl p-8 shadow-md text-center hover:shadow-xl hover:-translate-y-1 transition-all">
+<div class="w-16 h-16 bg-brand-green/20 rounded-full mx-auto flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-brand-purple text-4xl">sentiment_satisfied</span>
+</div>
+<p class="text-5xl font-bold text-brand-green">100%</p>
+<p class="text-sm font-bold uppercase tracking-wider text-brand-dark-gray mt-2">Partisipasi Siswa</p>
+</div>
+<div class="bg-white rounded-xl p-8 shadow-md text-center hover:shadow-xl hover:-translate-y-1 transition-all">
+<div class="w-16 h-16 bg-brand-green/20 rounded-full mx-auto flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-brand-purple text-4xl">volunteer_activism</span>
+</div>
+<p class="text-5xl font-bold text-brand-green">500+</p>
+<p class="text-sm font-bold uppercase tracking-wider text-brand-dark-gray mt-2">Jam Pengabdian Masyarakat</p>
+</div>
+</div>
+</div>
+</section>
+<section class="bg-white py-16 lg:py-20 px-6 lg:px-8">
+<div class="max-w-7xl mx-auto text-center">
+<h2 class="text-3xl font-bold text-brand-purple">Klub &amp; Kegiatan</h2>
+<p class="mt-4 max-w-2xl mx-auto text-lg text-brand-medium-gray">Temukan gairah Anda, kembangkan keterampilan baru, dan terhubung dengan teman sebaya.</p>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12 text-left">
+<div class="rounded-xl overflow-hidden group transition-all hover:shadow-xl">
+<div class="relative h-48"><div class="absolute inset-0 bg-cover bg-center bg-gray-200 group-hover-zoom transition-transform duration-300" data-alt="Students working on a robot in the robotics club" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDTJHbqN3xEE3jtyooazpX3sSKeUzIlQCpHN9wcnJQlrZKNy2Tord1WTK_UXf37bEL8RqnvHYh9BM18L-Zt451Aot1QpHUn_H54RhnGtRVu4dtutd8PgQHU2TW0GJ3y1a_Om9or15FiAYt8kgTJNsJqwuOz5nD3JuJmJq5PkcgPGlrLNI3eMPlxu70Wx-v3DWzpvoLU-fAZM0KkD1lPHBOfaGONdJR43RRgDz23Ct-2_1-BigK9Uw_ZOf_ZcnNu7g0nYpJLt7rMuAKk');"></div><div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors"></div><div class="absolute top-4 left-4 w-12 h-12 bg-brand-green rounded-full flex items-center justify-center"><span class="material-symbols-outlined text-white text-3xl">smart_toy</span></div></div><div class="p-6 bg-white border border-t-0 border-gray-200 rounded-b-xl"><div class="flex justify-between items-start"><h3 class="text-xl font-bold text-brand-purple mb-2">Klub Robotika</h3><span class="bg-brand-green text-white text-xs font-bold px-3 py-1 rounded-full whitespace-nowrap">STEM</span></div><p class="text-brand-medium-gray text-sm mb-4 h-10">Rancang, bangun, dan program robot untuk kompetisi regional dan nasional.</p><div class="flex items-center text-sm text-brand-medium-gray"><span class="material-symbols-outlined text-base mr-1">group</span> 25 Anggota </div></div></div>
+<div class="rounded-xl overflow-hidden group transition-all hover:shadow-xl">
+<div class="relative h-48"><div class="absolute inset-0 bg-cover bg-center bg-gray-200 group-hover-zoom transition-transform duration-300" data-alt="Students debating at a Model UN conference" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDt879UKg61vEKrLCxbfjsjdHXRehAvOHweNi95zXDVL8-W0-uxgfBa1XH-BM5dZGoeMrdIFehfy_jMLri0533ihPRLyOMVZ-fcbQkZ1F-4YANPyfASjb-mpCvNm_M8C8W5wv5YQnHlZQ9suZJWu906es8767qMuY_44vmtVZrJFa1efgWBXOfGQwJlhIU6gsPYgZdJ9qBDqNAeI_gc3BBWYH2XRx5sU0A9OPW-J_8X6MTuxs-zK8am8KRzc_UjE3OCE446Xw0rXrqw');"></div><div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors"></div><div class="absolute top-4 left-4 w-12 h-12 bg-brand-green rounded-full flex items-center justify-center"><span class="material-symbols-outlined text-white text-3xl">public</span></div></div><div class="p-6 bg-white border border-t-0 border-gray-200 rounded-b-xl"><div class="flex justify-between items-start"><h3 class="text-xl font-bold text-brand-purple mb-2">Model PBB</h3><span class="bg-brand-green text-white text-xs font-bold px-3 py-1 rounded-full whitespace-nowrap">Akademik</span></div><p class="text-brand-medium-gray text-sm mb-4 h-10">Terlibat dalam diplomasi, debatkan isu-isu global, dan hadiri konferensi.</p><div class="flex items-center text-sm text-brand-medium-gray"><span class="material-symbols-outlined text-base mr-1">group</span> 30 Anggota </div></div></div>
+<div class="rounded-xl overflow-hidden group transition-all hover:shadow-xl">
+<div class="relative h-48"><div class="absolute inset-0 bg-cover bg-center bg-gray-200 group-hover-zoom transition-transform duration-300" data-alt="Students acting on stage in a drama production" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCodTKoxwIcErMWaWoPQPVD9fXAvJff__NDDuHcGDCKZGsHxNjOeqTfhDJcI-mVuE2yKA68SAvDaWNbm4vlBoFABmDHvTO2LtmdWRcmXBhx1iPRCw-BkJRuF8CvzNZ2wB6jr2Z6vSVYd1_YUsZ-irfVeHCkXND1_ZfLdggjBAF7TCT8RaQHtwYBKImj97X5xBb-sU5J7lBq2IhAktwx8ctnsv3dyjdkdr_1sDq8ck1vzgbA5N6rf9NYulkQ9UR5R-hkDfVDapoTo4PL');"></div><div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors"></div><div class="absolute top-4 left-4 w-12 h-12 bg-brand-green rounded-full flex items-center justify-center"><span class="material-symbols-outlined text-white text-3xl">theater_comedy</span></div></div><div class="p-6 bg-white border border-t-0 border-gray-200 rounded-b-xl"><div class="flex justify-between items-start"><h3 class="text-xl font-bold text-brand-purple mb-2">Klub Drama</h3><span class="bg-brand-green text-white text-xs font-bold px-3 py-1 rounded-full whitespace-nowrap">Seni</span></div><p class="text-brand-medium-gray text-sm mb-4 h-10">Jelajahi akting, penyutradaraan, dan tata panggung dalam produksi sekolah kami.</p><div class="flex items-center text-sm text-brand-medium-gray"><span class="material-symbols-outlined text-base mr-1">group</span> 40 Anggota </div></div></div>
+<div class="rounded-xl overflow-hidden group transition-all hover:shadow-xl">
+<div class="relative h-48"><div class="absolute inset-0 bg-cover bg-center bg-gray-200 group-hover-zoom transition-transform duration-300" data-alt="Students coding on laptops"><div class="w-full h-full bg-gray-200 flex items-center justify-center text-gray-500">Image Placeholder</div></div><div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors"></div><div class="absolute top-4 left-4 w-12 h-12 bg-brand-green rounded-full flex items-center justify-center"><span class="material-symbols-outlined text-white text-3xl">code</span></div></div><div class="p-6 bg-white border border-t-0 border-gray-200 rounded-b-xl"><div class="flex justify-between items-start"><h3 class="text-xl font-bold text-brand-purple mb-2">Klub Coding</h3><span class="bg-brand-green text-white text-xs font-bold px-3 py-1 rounded-full whitespace-nowrap">STEM</span></div><p class="text-brand-medium-gray text-sm mb-4 h-10">Pelajari bahasa pemrograman, bangun aplikasi, dan berkompetisi di hackathon.</p><div class="flex items-center text-sm text-brand-medium-gray"><span class="material-symbols-outlined text-base mr-1">group</span> 20 Anggota </div></div></div>
+<div class="rounded-xl overflow-hidden group transition-all hover:shadow-xl">
+<div class="relative h-48"><div class="absolute inset-0 bg-cover bg-center bg-gray-200 group-hover-zoom transition-transform duration-300" data-alt="Students planting trees"><div class="w-full h-full bg-gray-200 flex items-center justify-center text-gray-500">Image Placeholder</div></div><div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors"></div><div class="absolute top-4 left-4 w-12 h-12 bg-brand-green rounded-full flex items-center justify-center"><span class="material-symbols-outlined text-white text-3xl">eco</span></div></div><div class="p-6 bg-white border border-t-0 border-gray-200 rounded-b-xl"><div class="flex justify-between items-start"><h3 class="text-xl font-bold text-brand-purple mb-2">Klub Lingkungan</h3><span class="bg-brand-green text-white text-xs font-bold px-3 py-1 rounded-full whitespace-nowrap">Komunitas</span></div><p class="text-brand-medium-gray text-sm mb-4 h-10">Promosikan keberlanjutan, organisir acara bersih-bersih, dan tingkatkan kesadaran.</p><div class="flex items-center text-sm text-brand-medium-gray"><span class="material-symbols-outlined text-base mr-1">group</span> 35 Anggota </div></div></div>
+<div class="rounded-xl overflow-hidden group transition-all hover:shadow-xl">
+<div class="relative h-48"><div class="absolute inset-0 bg-cover bg-center bg-gray-200 group-hover-zoom transition-transform duration-300" data-alt="Student taking a photo with a DSLR camera"><div class="w-full h-full bg-gray-200 flex items-center justify-center text-gray-500">Image Placeholder</div></div><div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors"></div><div class="absolute top-4 left-4 w-12 h-12 bg-brand-green rounded-full flex items-center justify-center"><span class="material-symbols-outlined text-white text-3xl">photo_camera</span></div></div><div class="p-6 bg-white border border-t-0 border-gray-200 rounded-b-xl"><div class="flex justify-between items-start"><h3 class="text-xl font-bold text-brand-purple mb-2">Klub Fotografi</h3><span class="bg-brand-green text-white text-xs font-bold px-3 py-1 rounded-full whitespace-nowrap">Seni</span></div><p class="text-brand-medium-gray text-sm mb-4 h-10">Kuasai komposisi dan teknik, dan pamerkan karya Anda dalam pameran.</p><div class="flex items-center text-sm text-brand-medium-gray"><span class="material-symbols-outlined text-base mr-1">group</span> 18 Anggota </div></div></div>
+<div class="rounded-xl overflow-hidden group transition-all hover:shadow-xl">
+<div class="relative h-48"><div class="absolute inset-0 bg-cover bg-center bg-gray-200 group-hover-zoom transition-transform duration-300" data-alt="Students debating at a podium"><div class="w-full h-full bg-gray-200 flex items-center justify-center text-gray-500">Image Placeholder</div></div><div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors"></div><div class="absolute top-4 left-4 w-12 h-12 bg-brand-green rounded-full flex items-center justify-center"><span class="material-symbols-outlined text-white text-3xl">campaign</span></div></div><div class="p-6 bg-white border border-t-0 border-gray-200 rounded-b-xl"><div class="flex justify-between items-start"><h3 class="text-xl font-bold text-brand-purple mb-2">Tim Debat</h3><span class="bg-brand-green text-white text-xs font-bold px-3 py-1 rounded-full whitespace-nowrap">Akademik</span></div><p class="text-brand-medium-gray text-sm mb-4 h-10">Asah kemampuan berbicara di depan umum dan berpikir kritis dalam debat kompetitif.</p><div class="flex items-center text-sm text-brand-medium-gray"><span class="material-symbols-outlined text-base mr-1">group</span> 15 Anggota </div></div></div>
+<div class="rounded-xl overflow-hidden group transition-all hover:shadow-xl">
+<div class="relative h-48"><div class="absolute inset-0 bg-cover bg-center bg-gray-200 group-hover-zoom transition-transform duration-300" data-alt="Students with a film camera and clapboard"><div class="w-full h-full bg-gray-200 flex items-center justify-center text-gray-500">Image Placeholder</div></div><div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors"></div><div class="absolute top-4 left-4 w-12 h-12 bg-brand-green rounded-full flex items-center justify-center"><span class="material-symbols-outlined text-white text-3xl">movie</span></div></div><div class="p-6 bg-white border border-t-0 border-gray-200 rounded-b-xl"><div class="flex justify-between items-start"><h3 class="text-xl font-bold text-brand-purple mb-2">Produksi Film</h3><span class="bg-brand-green text-white text-xs font-bold px-3 py-1 rounded-full whitespace-nowrap">Seni</span></div><p class="text-brand-medium-gray text-sm mb-4 h-10">Pelajari penulisan skenario, sinematografi, dan penyuntingan untuk membuat film pendek.</p><div class="flex items-center text-sm text-brand-medium-gray"><span class="material-symbols-outlined text-base mr-1">group</span> 22 Anggota </div></div></div>
+<div class="rounded-xl overflow-hidden group transition-all hover:shadow-xl">
+<div class="relative h-48"><div class="absolute inset-0 bg-cover bg-center bg-gray-200 group-hover-zoom transition-transform duration-300" data-alt="Students presenting a business idea"><div class="w-full h-full bg-gray-200 flex items-center justify-center text-gray-500">Image Placeholder</div></div><div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors"></div><div class="absolute top-4 left-4 w-12 h-12 bg-brand-green rounded-full flex items-center justify-center"><span class="material-symbols-outlined text-white text-3xl">insights</span></div></div><div class="p-6 bg-white border border-t-0 border-gray-200 rounded-b-xl"><div class="flex justify-between items-start"><h3 class="text-xl font-bold text-brand-purple mb-2">Klub Kewirausahaan</h3><span class="bg-brand-green text-white text-xs font-bold px-3 py-1 rounded-full whitespace-nowrap">Kepemimpinan</span></div><p class="text-brand-medium-gray text-sm mb-4 h-10">Kembangkan rencana bisnis, presentasikan ide, dan belajar dari pengusaha lokal.</p><div class="flex items-center text-sm text-brand-medium-gray"><span class="material-symbols-outlined text-base mr-1">group</span> 28 Anggota </div></div></div>
+</div>
+<div class="mt-12">
+<button class="px-8 py-3 border-2 border-brand-green text-brand-green font-bold rounded-full hover:bg-brand-green hover:text-white transition-colors">Lihat Semua Klub</button>
+</div>
+</div>
+</section>
+<section class="bg-brand-light-gray-1 py-16 lg:py-20 px-6 lg:px-8">
+<div class="max-w-7xl mx-auto text-center">
+<h2 class="text-3xl font-bold text-brand-purple">Olahraga &amp; Atletik</h2>
+<p class="mt-4 max-w-2xl mx-auto text-lg text-brand-medium-gray">Bersaing, berkolaborasi, dan berprestasi dalam kegiatan atletik.</p>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+<div class="relative rounded-xl overflow-hidden group h-80"><div class="absolute inset-0 bg-cover bg-center bg-gray-200 group-hover-zoom transition-transform duration-300" data-alt="Soccer players in action" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCHsY7hetpVsvC_9I_C6OqTeXUgugwaumXAwkuM3m_LY5Y_n6dAyfwuYcSOacvo6Cu86Op4XbX_2OZ0qsjN54YF11jIu1qfSJgyelA_VqQb12LVz3KGu2r3ZB9PojAcdrAHDlfL-YX0o4mq9ogeb-Ufh3dGMladfUZcGGpETFFQSSBCEmm6YEBjbg5m53cccL8HySZnVq3QGMC-qxrqCGq-Jnjb_JOsrn9JCSbzSeMJI2iHXa7_ukF5SCKUqtP64fSuZ2uSqOXcrGFT');"></div><div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div><div class="absolute bottom-0 left-0 p-6 text-white"><span class="material-symbols-outlined text-brand-green text-3xl mb-2">sports_soccer</span><h3 class="text-2xl font-bold">Sepak Bola</h3><p class="text-sm">Tim Putra &amp; Putri | Varsity &amp; JV</p></div></div>
+<div class="relative rounded-xl overflow-hidden group h-80"><div class="absolute inset-0 bg-cover bg-center bg-gray-200 group-hover-zoom transition-transform duration-300" data-alt="Basketball player dunking" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCFyFxCCKjyZXzae39_cZOP2gKkd6FZzioLaHROhYpEwfRIVWXyZnUtIo2RdOitXlVQdh9H1QnztTzgLkkW-JMXiUj36D-Pnf8vl1DCHc4WIPvRQrEzqw3Pzphm3j9JSYLpgy35bAL-I49vUAMnzEii31LRalnje2u5kBxI_cB1shGRK5mzhgSUgx4FJtIWxhFaRYKBxz1QBtNjvnRW-Aao0FPFhcON8I0UZUGvEzD85OGNpvcUjeOTGXvBACOe4ewaVOPiZ94yKRr1');"></div><div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div><div class="absolute bottom-0 left-0 p-6 text-white"><span class="material-symbols-outlined text-brand-green text-3xl mb-2">sports_basketball</span><h3 class="text-2xl font-bold">Bola Basket</h3><p class="text-sm">Tim Putra &amp; Putri | Varsity &amp; JV</p></div></div>
+<div class="relative rounded-xl overflow-hidden group h-80"><div class="absolute inset-0 bg-cover bg-center bg-gray-200 group-hover-zoom transition-transform duration-300" data-alt="Swimmer in a pool" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAI7jrVQ9QelF16DQHc4ielwScfz-lWchNNkHRxnTsV5LvoxSLM04dLp0EgH0BQRNjCTwS0NvBXOko2Qr_1HDtOfhfNY0q8ur_IVnLzLbbOOOJ-pUoBZpGveggkXizx6L9toJWgVh_loJLjaSslapNEiWn1nN8Yqzt8-Pm42bNVDq8bPASuDFpQVKXhMwx5Ma53ZXHatB5vWPq-20Frf1sS7Yc6rZlA6NYkM3UJiAwdS-1C5Oh5xxmEeFTQiISgyB_WRy3lSjs4fbs2');"></div><div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div><div class="absolute bottom-0 left-0 p-6 text-white"><span class="material-symbols-outlined text-brand-green text-3xl mb-2">pool</span><h3 class="text-2xl font-bold">Renang</h3><p class="text-sm">Tim Campuran | Semua Level</p></div></div>
+<div class="relative rounded-xl overflow-hidden group h-80"><div class="absolute inset-0 bg-cover bg-center bg-gray-200 group-hover-zoom transition-transform duration-300" data-alt="Volleyball players at the net" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBCdwKyB5HvLkU2sZoNSr4PEFQp1hoaBjKdMZUSLMj6WgoW-zzfZh4Yjg0P_FfEtvfuqOO1YUR6Pw67PuRgbZRtIdVi43cjkec0AqhWEMU8kK-fdQ60fa5xMRcPffDbiGXXtkGczogGVvdvVt8H7VmUI27zggNyUKssPpco1kZwGnButOCXUH_jDtA7-xyS1O7XZ_UHKXugKy1QbGhsa4WyAdW8xR_VEJpXImWzqvhn1u1o5hwhltUV-Ysj4q2AYP7WYKsBqmTkagFL');"></div><div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div><div class="absolute bottom-0 left-0 p-6 text-white"><span class="material-symbols-outlined text-brand-green text-3xl mb-2">sports_volleyball</span><h3 class="text-2xl font-bold">Bola Voli</h3><p class="text-sm">Tim Putri | Varsity &amp; JV</p></div></div>
+<div class="relative rounded-xl overflow-hidden group h-80"><div class="absolute inset-0 bg-cover bg-center bg-gray-200 group-hover-zoom transition-transform duration-300" data-alt="Runners on a track" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDD2So2tMSO4ZoVCNYBZQVlVa7O0IHiimcGzwsRDXQXnOSR-Qgix1M_2CNNTz8daa4juuOnI3qOjzBjehzzfTp_yl_8EXZ5vYOYl5E4tO2ie_Lt_R4DSZSLgBqSHXa0ks8XRgDxKuVKoAwOlfkxQdjg9H3qdzJ6KIHqmL_hsfKyjwHY2MO8zmSLOuhJOYzmW3T52oCLygsrb5VhzXhaFj03XNw9rm75Fc9s7ZYCQgqzhoWZZUI5EMNRzMyJfkhfmTrRkQ9ryYSyQjbd');"></div><div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div><div class="absolute bottom-0 left-0 p-6 text-white"><span class="material-symbols-outlined text-brand-green text-3xl mb-2">sprint</span><h3 class="text-2xl font-bold">Atletik</h3><p class="text-sm">Tim Campuran | Berbagai Nomor</p></div></div>
+<div class="relative rounded-xl overflow-hidden group h-80"><div class="absolute inset-0 bg-cover bg-center bg-gray-200 group-hover-zoom transition-transform duration-300" data-alt="Tennis player serving" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAh67iDwSTktsFiGEr1T1QtjQQudPDd0g3oZuOstar2S4dkXpvzqMQhMQNHCsjXll_v6t5dOghcegdZfoVoGekWhw0NRt52m5GXYHMdm-gjB5MZ3l6An9qDOjCpaZfjKfrkN7mchqdRbb7qBRUps6M4sxZOnAc8Xf807KAqAJ-qdYHDGZ8ffdREw3uDlcCuMbN1QsNT85OI0vbSjgquWliyXxYMkLK4cFCaD9LdP792YvXjoXO2CY65-LYWj8apMlDgiLoShCiw0iKn');"></div><div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div><div class="absolute bottom-0 left-0 p-6 text-white"><span class="material-symbols-outlined text-brand-green text-3xl mb-2">sports_tennis</span><h3 class="text-2xl font-bold">Tenis</h3><p class="text-sm">Tim Putra &amp; Putri | Tunggal &amp; Ganda</p></div></div>
+</div>
+<div class="mt-12 bg-brand-purple/10 rounded-xl border-l-4 border-brand-green p-8 text-left flex items-center gap-6">
+<span class="material-symbols-outlined text-brand-green text-5xl">emoji_events</span>
+<div>
+<h4 class="text-xl font-bold text-brand-purple">Tradisi Keunggulan</h4>
+<p class="text-brand-medium-gray mt-2">Tim Crestwood Eagles kami memiliki sejarah sportivitas dan prestasi yang membanggakan, memenangkan banyak kejuaraan regional. Staf pelatih kami yang berdedikasi memberikan bimbingan ahli untuk membantu atlet siswa mencapai potensi penuh mereka. <a class="font-bold text-brand-green hover:text-brand-purple transition-colors" href="#">Pelajari Tentang Program Atletik Kami →</a></p>
+</div>
+</div>
+</div>
+</section>
+<section class="bg-white py-16 lg:py-20 px-6 lg:px-8">
+<div class="max-w-7xl mx-auto text-center">
+<h2 class="text-3xl font-bold text-brand-purple">Seni &amp; Budaya</h2>
+<p class="mt-4 max-w-2xl mx-auto text-lg text-brand-medium-gray">Ekspresikan diri Anda melalui pengalaman kreatif dan budaya.</p>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12 text-left">
+<div class="md:col-span-1 space-y-8">
+<div class="bg-white p-6 rounded-xl border-t-4 border-brand-green shadow-md hover:shadow-xl hover:-translate-y-1 transition-all"><div class="w-full h-32 bg-gray-200 rounded-lg mb-4" data-alt="Seni Rupa"><div class="w-full h-full bg-gray-200 flex items-center justify-center text-gray-500">Image Placeholder</div></div><h3 class="text-xl font-bold text-brand-purple">Seni Rupa</h3><p class="text-sm text-brand-medium-gray mt-2">Lukisan, patung, dan media digital.</p></div>
+<div class="bg-white p-6 rounded-xl border-t-4 border-brand-green shadow-md hover:shadow-xl hover:-translate-y-1 transition-all"><div class="w-full h-32 bg-gray-200 rounded-lg mb-4" data-alt="Program Musik"><div class="w-full h-full bg-gray-200 flex items-center justify-center text-gray-500">Image Placeholder</div></div><h3 class="text-xl font-bold text-brand-purple">Musik</h3><p class="text-sm text-brand-medium-gray mt-2">Orkestra, paduan suara, dan band modern.</p></div>
+</div>
+<div class="md:col-span-1 space-y-8">
+<div class="bg-white p-6 rounded-xl border-t-4 border-brand-green shadow-md hover:shadow-xl hover:-translate-y-1 transition-all"><div class="w-full h-32 bg-gray-200 rounded-lg mb-4" data-alt="Produksi Teater"><div class="w-full h-full bg-gray-200 flex items-center justify-center text-gray-500">Image Placeholder</div></div><h3 class="text-xl font-bold text-brand-purple">Teater &amp; Drama</h3><p class="text-sm text-brand-medium-gray mt-2">Pementasan musikal dan drama tahunan.</p></div>
+<div class="bg-white p-6 rounded-xl border-t-4 border-brand-green shadow-md hover:shadow-xl hover:-translate-y-1 transition-all"><div class="w-full h-32 bg-gray-200 rounded-lg mb-4" data-alt="Kelas Tari"><div class="w-full h-full bg-gray-200 flex items-center justify-center text-gray-500">Image Placeholder</div></div><h3 class="text-xl font-bold text-brand-purple">Tari</h3><p class="text-sm text-brand-medium-gray mt-2">Dari balet hingga gaya kontemporer.</p></div>
+</div>
+<div class="md:col-span-1 space-y-8">
+<div class="bg-white p-6 rounded-xl border-t-4 border-brand-green shadow-md hover:shadow-xl hover:-translate-y-1 transition-all"><div class="w-full h-32 bg-gray-200 rounded-lg mb-4" data-alt="Produksi Film &amp; Media"><div class="w-full h-full bg-gray-200 flex items-center justify-center text-gray-500">Image Placeholder</div></div><h3 class="text-xl font-bold text-brand-purple">Produksi Film &amp; Media</h3><p class="text-sm text-brand-medium-gray mt-2">Buat dan produksi konten video orisinal.</p></div>
+<div class="bg-white p-6 rounded-xl border-t-4 border-brand-green shadow-md hover:shadow-xl hover:-translate-y-1 transition-all"><div class="w-full h-32 bg-gray-200 rounded-lg mb-4" data-alt="Lokakarya Penulisan Kreatif"><div class="w-full h-full bg-gray-200 flex items-center justify-center text-gray-500">Image Placeholder</div></div><h3 class="text-xl font-bold text-brand-purple">Penulisan Kreatif</h3><p class="text-sm text-brand-medium-gray mt-2">Puisi, fiksi, dan publikasi sekolah.</p></div>
+</div>
+</div>
+<div class="mt-16 grid grid-cols-1 lg:grid-cols-2 gap-12 text-left">
+<div>
+<h3 class="text-2xl font-bold text-brand-purple mb-6">Acara Tahunan</h3>
+<div class="space-y-4">
+<div class="flex items-start gap-4"><span class="material-symbols-outlined text-brand-green text-3xl mt-1">calendar_month</span><div><h4 class="font-bold text-brand-dark-gray">Festival Seni Musim Semi</h4><p class="text-sm text-brand-medium-gray">Perayaan kreativitas siswa selama seminggu di semua disiplin.</p></div></div>
+<div class="flex items-start gap-4"><span class="material-symbols-outlined text-brand-green text-3xl mt-1">calendar_month</span><div><h4 class="font-bold text-brand-dark-gray">Seri Konser Musim Dingin</h4><p class="text-sm text-brand-medium-gray">Menampilkan bakat ansambel orkestra, band, dan paduan suara kami.</p></div></div>
+<div class="flex items-start gap-4"><span class="material-symbols-outlined text-brand-green text-3xl mt-1">calendar_month</span><div><h4 class="font-bold text-brand-dark-gray">Pameran Seni Siswa</h4><p class="text-sm text-brand-medium-gray">Galeri karya seni siswa terbaik tahun ini yang dikurasi.</p></div></div>
+</div>
+</div>
+<div>
+<h3 class="text-2xl font-bold text-brand-purple mb-6">Pratinjau Galeri</h3>
+<div class="grid grid-cols-3 gap-2">
+<div class="bg-gray-200 h-28 rounded-lg" data-alt="Student artwork"><div class="w-full h-full bg-gray-200 flex items-center justify-center text-gray-500 text-xs text-center">Karya seni siswa</div></div>
+<div class="bg-gray-200 h-28 rounded-lg" data-alt="Theater performance"><div class="w-full h-full bg-gray-200 flex items-center justify-center text-gray-500 text-xs text-center">Pertunjukan teater</div></div>
+<div class="bg-gray-200 h-28 rounded-lg" data-alt="Band concert"><div class="w-full h-full bg-gray-200 flex items-center justify-center text-gray-500 text-xs text-center">Konser band</div></div>
+<div class="bg-gray-200 h-28 rounded-lg" data-alt="Dance recital"><div class="w-full h-full bg-gray-200 flex items-center justify-center text-gray-500 text-xs text-center">Resital tari</div></div>
+<div class="bg-gray-200 h-28 rounded-lg" data-alt="Film screening"><div class="w-full h-full bg-gray-200 flex items-center justify-center text-gray-500 text-xs text-center">Pemutaran film</div></div>
+<div class="bg-gray-200 h-28 rounded-lg" data-alt="Pottery class"><div class="w-full h-full bg-gray-200 flex items-center justify-center text-gray-500 text-xs text-center">Kelas tembikar</div></div>
+</div>
+<div class="mt-4 text-right">
+<a class="font-bold text-brand-green hover:text-brand-purple transition-colors" href="#">Lihat Galeri Lengkap →</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="bg-brand-light-gray-1 py-16 lg:py-20 px-6 lg:px-8">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-12">
+<h2 class="text-3xl font-bold text-brand-purple">Pengabdian Masyarakat &amp; Kewarganegaraan Global</h2>
+<p class="mt-4 max-w-2xl mx-auto text-lg text-brand-medium-gray">Menciptakan dampak positif secara lokal dan global.</p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-5 gap-12 items-center">
+<div class="lg:col-span-3">
+<h3 class="text-2xl font-bold text-brand-purple mb-6">Program Pengabdian</h3>
+<div class="space-y-5">
+<div class="flex items-start gap-4"><span class="material-symbols-outlined text-brand-green text-3xl">diversity_3</span><div><h4 class="font-bold text-brand-purple">Penjangkauan Komunitas Mingguan</h4><p class="text-sm text-brand-medium-gray">Bermitra dengan panti asuhan dan bank makanan lokal.</p></div></div>
+<div class="flex items-start gap-4"><span class="material-symbols-outlined text-brand-green text-3xl">forest</span><div><h4 class="font-bold text-brand-purple">Inisiatif Lingkungan</h4><p class="text-sm text-brand-medium-gray">Mengorganisir acara penanaman pohon dan pembersihan taman.</p></div></div>
+<div class="flex items-start gap-4"><span class="material-symbols-outlined text-brand-green text-3xl">payments</span><div><h4 class="font-bold text-brand-purple">Penggalangan Dana Amal</h4><p class="text-sm text-brand-medium-gray">Kampanye yang dipimpin siswa untuk tujuan penting.</p></div></div>
+<div class="flex items-start gap-4"><span class="material-symbols-outlined text-brand-green text-3xl">handshake</span><div><h4 class="font-bold text-brand-purple">Kemitraan LSM</h4><p class="text-sm text-brand-medium-gray">Berkolaborasi dengan organisasi nirlaba dalam proyek jangka panjang.</p></div></div>
+<div class="flex items-start gap-4"><span class="material-symbols-outlined text-brand-green text-3xl">public</span><div><h4 class="font-bold text-brand-purple">Program Pertukaran Global</h4><p class="text-sm text-brand-medium-gray">Pendalaman budaya dan proyek pengabdian di luar negeri.</p></div></div>
+</div>
+</div>
+<div class="lg:col-span-2 relative">
+<div class="absolute inset-y-0 right-0 w-1 bg-brand-green"></div>
+<div class="bg-white rounded-lg shadow-lg p-8 space-y-6">
+<div class="text-center"><p class="text-5xl font-bold text-brand-green">2.500+</p><p class="text-sm uppercase tracking-wider font-semibold text-brand-dark-gray">Jam Pengabdian per Tahun</p></div>
+<div class="text-center"><p class="text-5xl font-bold text-brand-green">12</p><p class="text-sm uppercase tracking-wider font-semibold text-brand-dark-gray">Mitra Komunitas</p></div>
+<div class="text-center"><p class="text-5xl font-bold text-brand-green">8</p><p class="text-sm uppercase tracking-wider font-semibold text-brand-dark-gray">Negara Tercapai</p></div>
+</div>
+<div class="mt-8 bg-white p-6 rounded-lg shadow-lg flex gap-4 items-center">
+<span class="material-symbols-outlined text-brand-green text-6xl">volunteer_activism</span>
+<p class="text-base italic text-brand-medium-gray">"Pengabdian mengajarkan kita bahwa kita semua adalah bagian dari sesuatu yang jauh lebih besar dari diri kita sendiri."</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="bg-white py-16 lg:py-20 px-6 lg:px-8">
+<div class="max-w-7xl mx-auto text-center">
+<h2 class="text-3xl font-bold text-brand-purple">Kepemimpinan Siswa</h2>
+<p class="mt-4 max-w-2xl mx-auto text-lg text-brand-medium-gray">Kembangkan keterampilan kepemimpinan dan wakili teman sebaya Anda.</p>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-12 text-left">
+<div class="bg-white p-8 rounded-xl border-t-4 border-brand-green shadow-md hover:shadow-xl hover:-translate-y-1 transition-all"><div class="w-16 h-16 bg-brand-green/20 rounded-full flex items-center justify-center mb-4"><span class="material-symbols-outlined text-brand-purple text-4xl">how_to_vote</span></div><h3 class="text-xl font-bold text-brand-purple">Dewan Siswa</h3><p class="text-sm text-brand-medium-gray mt-2">Menyuarakan pendapat siswa dan mengorganisir acara sekolah.</p></div>
+<div class="bg-white p-8 rounded-xl border-t-4 border-brand-green shadow-md hover:shadow-xl hover:-translate-y-1 transition-all"><div class="w-16 h-16 bg-brand-green/20 rounded-full flex items-center justify-center mb-4"><span class="material-symbols-outlined text-brand-purple text-4xl">roofing</span></div><h3 class="text-xl font-bold text-brand-purple">Sistem Rumah</h3><p class="text-sm text-brand-medium-gray mt-2">Pimpin salah satu dari empat rumah kami: Phoenix, Griffin, Dragon, atau Titan.</p></div>
+<div class="bg-white p-8 rounded-xl border-t-4 border-brand-green shadow-md hover:shadow-xl hover:-translate-y-1 transition-all"><div class="w-16 h-16 bg-brand-green/20 rounded-full flex items-center justify-center mb-4"><span class="material-symbols-outlined text-brand-purple text-4xl">school</span></div><h3 class="text-xl font-bold text-brand-purple">Pembimbing Sebaya</h3><p class="text-sm text-brand-medium-gray mt-2">Dukung dan bimbing siswa baru saat mereka bergabung dengan komunitas Crestwood.</p></div>
+<div class="bg-white p-8 rounded-xl border-t-4 border-brand-green shadow-md hover:shadow-xl hover:-translate-y-1 transition-all"><div class="w-16 h-16 bg-brand-green/20 rounded-full flex items-center justify-center mb-4"><span class="material-symbols-outlined text-brand-purple text-4xl">event_available</span></div><h3 class="text-xl font-bold text-brand-purple">Komite Acara</h3><p class="text-sm text-brand-medium-gray mt-2">Rencanakan dan laksanakan acara besar seperti prom dan pekan semangat.</p></div>
+</div>
+</div>
+</section>
+<section class="bg-brand-light-gray-1 py-16 lg:py-20 px-6 lg:px-8">
+<div class="max-w-7xl mx-auto text-center">
+<h2 class="text-3xl font-bold text-brand-purple">Kesejahteraan &amp; Dukungan Siswa</h2>
+<p class="mt-4 max-w-2xl mx-auto text-lg text-brand-medium-gray">Kesejahteraan Anda adalah prioritas kami.</p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12 text-left">
+<div class="bg-white p-8 rounded-xl flex items-start gap-6"><span class="material-symbols-outlined text-brand-green text-4xl mt-1">health_and_safety</span><div><h3 class="text-xl font-bold text-brand-purple">Pusat Kesehatan &amp; Kesejahteraan</h3><p class="text-sm text-brand-medium-gray mt-2">Perawat dan tenaga kesehatan di tempat untuk merawat kesejahteraan fisik siswa.</p></div></div>
+<div class="bg-white p-8 rounded-xl flex items-start gap-6"><span class="material-symbols-outlined text-brand-green text-4xl mt-1">psychology</span><div><h3 class="text-xl font-bold text-brand-purple">Layanan Konseling</h3><p class="text-sm text-brand-medium-gray mt-2">Dukungan rahasia untuk perencanaan akademik dan tantangan pribadi.</p></div></div>
+<div class="bg-white p-8 rounded-xl flex items-start gap-6"><span class="material-symbols-outlined text-brand-green text-4xl mt-1">restaurant_menu</span><div><h3 class="text-xl font-bold text-brand-purple">Kafetaria &amp; Nutrisi</h3><p class="text-sm text-brand-medium-gray mt-2">Menyediakan pilihan makanan yang seimbang, bergizi, dan lezat setiap hari.</p></div></div>
+<div class="bg-white p-8 rounded-xl flex items-start gap-6"><span class="material-symbols-outlined text-brand-green text-4xl mt-1">security</span><div><h3 class="text-xl font-bold text-brand-purple">Keamanan &amp; Keselamatan</h3><p class="text-sm text-brand-medium-gray mt-2">Tim yang berdedikasi dan protokol yang kuat untuk memastikan lingkungan kampus yang aman.</p></div></div>
+</div>
+</div>
+</section>
+<section class="bg-white py-16 lg:py-20 px-6 lg:px-8">
+<div class="max-w-7xl mx-auto text-center">
+<h2 class="text-3xl font-bold text-brand-purple">Acara &amp; Tradisi Tahunan</h2>
+<p class="mt-4 max-w-2xl mx-auto text-lg text-brand-medium-gray">Rayakan bersama sepanjang tahun.</p>
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-12 text-left">
+<div class="bg-brand-light-gray-1 p-4 rounded-lg text-center"><div class="w-10 h-10 bg-brand-purple text-white rounded-full flex items-center justify-center mx-auto mb-2 text-sm font-bold">SEP</div><span class="material-symbols-outlined text-brand-green text-3xl">outdoor_grill</span><h4 class="font-bold text-brand-dark-gray mt-1">BBQ Selamat Datang</h4></div>
+<div class="bg-brand-light-gray-1 p-4 rounded-lg text-center"><div class="w-10 h-10 bg-brand-purple text-white rounded-full flex items-center justify-center mx-auto mb-2 text-sm font-bold">OKT</div><span class="material-symbols-outlined text-brand-green text-3xl">celebration</span><h4 class="font-bold text-brand-dark-gray mt-1">Hari Internasional</h4></div>
+<div class="bg-brand-light-gray-1 p-4 rounded-lg text-center"><div class="w-10 h-10 bg-brand-purple text-white rounded-full flex items-center justify-center mx-auto mb-2 text-sm font-bold">NOV</div><span class="material-symbols-outlined text-brand-green text-3xl">flag</span><h4 class="font-bold text-brand-dark-gray mt-1">Pekan Semangat</h4></div>
+<div class="bg-brand-light-gray-1 p-4 rounded-lg text-center"><div class="w-10 h-10 bg-brand-purple text-white rounded-full flex items-center justify-center mx-auto mb-2 text-sm font-bold">DES</div><span class="material-symbols-outlined text-brand-green text-3xl">music_note</span><h4 class="font-bold text-brand-dark-gray mt-1">Konser Musim Dingin</h4></div>
+<div class="bg-brand-light-gray-1 p-4 rounded-lg text-center"><div class="w-10 h-10 bg-brand-purple text-white rounded-full flex items-center justify-center mx-auto mb-2 text-sm font-bold">FEB</div><span class="material-symbols-outlined text-brand-green text-3xl">science</span><h4 class="font-bold text-brand-dark-gray mt-1">Pameran Sains</h4></div>
+<div class="bg-brand-light-gray-1 p-4 rounded-lg text-center"><div class="w-10 h-10 bg-brand-purple text-white rounded-full flex items-center justify-center mx-auto mb-2 text-sm font-bold">MAR</div><span class="material-symbols-outlined text-brand-green text-3xl">local_activity</span><h4 class="font-bold text-brand-dark-gray mt-1">Produksi Drama</h4></div>
+<div class="bg-brand-light-gray-1 p-4 rounded-lg text-center"><div class="w-10 h-10 bg-brand-purple text-white rounded-full flex items-center justify-center mx-auto mb-2 text-sm font-bold">APR</div><span class="material-symbols-outlined text-brand-green text-3xl">palette</span><h4 class="font-bold text-brand-dark-gray mt-1">Festival Seni</h4></div>
+<div class="bg-brand-light-gray-1 p-4 rounded-lg text-center"><div class="w-10 h-10 bg-brand-purple text-white rounded-full flex items-center justify-center mx-auto mb-2 text-sm font-bold">MEI</div><span class="material-symbols-outlined text-brand-green text-3xl">sports</span><h4 class="font-bold text-brand-dark-gray mt-1">Hari Olahraga</h4></div>
+<div class="bg-brand-light-gray-1 p-4 rounded-lg text-center"><div class="w-10 h-10 bg-brand-purple text-white rounded-full flex items-center justify-center mx-auto mb-2 text-sm font-bold">JUN</div><span class="material-symbols-outlined text-brand-green text-3xl">school</span><h4 class="font-bold text-brand-dark-gray mt-1">Wisuda</h4></div>
+<div class="bg-brand-light-gray-1 p-4 rounded-lg text-center"><div class="w-10 h-10 bg-brand-purple text-white rounded-full flex items-center justify-center mx-auto mb-2 text-sm font-bold">JUL</div><span class="material-symbols-outlined text-brand-green text-3xl">diversity_1</span><h4 class="font-bold text-brand-dark-gray mt-1">Pekan Komunitas</h4></div>
+<div class="bg-brand-light-gray-1 p-4 rounded-lg text-center"><div class="w-10 h-10 bg-brand-purple text-white rounded-full flex items-center justify-center mx-auto mb-2 text-sm font-bold">AGU</div><span class="material-symbols-outlined text-brand-green text-3xl">festival</span><h4 class="font-bold text-brand-dark-gray mt-1">Festival Budaya</h4></div>
+<div class="bg-brand-light-gray-1 p-4 rounded-lg text-center"><div class="w-10 h-10 bg-brand-purple text-white rounded-full flex items-center justify-center mx-auto mb-2 text-sm font-bold">TAHUN</div><span class="material-symbols-outlined text-brand-green text-3xl">shield</span><h4 class="font-bold text-brand-dark-gray mt-1">Kompetisi Rumah</h4></div>
+</div>
+</div>
+</section>
+<section class="bg-brand-light-gray-1 py-16 lg:py-20 px-6 lg:px-8">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-12">
+<h2 class="text-3xl font-bold text-brand-purple">Suara Siswa</h2>
+<p class="mt-4 max-w-2xl mx-auto text-lg text-brand-medium-gray">Dengarkan langsung dari siswa kami tentang pengalaman mereka di Crestwood.</p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+<div class="bg-white p-8 rounded-xl border-l-4 border-brand-green shadow-lg relative"><div class="w-20 h-20 rounded-full bg-gray-300 mb-4 bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCvK1Y_36yIE13FST9W1AzpfEsSb1fTjumYTAqFcAyuUhGM0nHgF7JF3kWqx2aNELqO6IwU08lPZQHcwfRwjP2y2tLQtYx1o5BSjbxTy-Dms6QzjLOdmn4Qv02VPmUDAsY4uzsjXdq-QJITtt-DINTR0LU7OJXXrLKiOZuqGsRcMVAmQYRjOoRi02R-qEHswleHcZdQ1QPlxQ5l77lXigf-BkEQLqBLR-bj7BOGPfuifg8s-LB1HALGRneXKa1UIokILDsqrxZcoR3d');"></div><span class="material-symbols-outlined text-brand-green/20 text-8xl absolute top-6 right-6 -z-0">format_quote</span><p class="relative text-lg italic text-brand-dark-gray mb-4">"Klub Robotika telah menjadi puncak waktu saya di sini. Sungguh menakjubkan melihat ide-ide kami menjadi hidup dan bersaing dengan sekolah lain. Saya telah belajar banyak tentang kerja tim dan pemecahan masalah."</p><div><p class="font-bold text-brand-purple">Alex L.</p><p class="text-sm font-semibold text-brand-green">Kelas 11 | Robotika &amp; Coding</p></div></div>
+<div class="bg-white p-8 rounded-xl border-l-4 border-brand-green shadow-lg relative"><div class="w-20 h-20 rounded-full bg-gray-300 mb-4 bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCvK1Y_36yIE13FST9W1AzpfEsSb1fTjumYTAqFcAyuUhGM0nHgF7JF3kWqx2aNELqO6IwU08lPZQHcwfRwjP2y2tLQtYx1o5BSjbxTy-Dms6QzjLOdmn4Qv02VPmUDAsY4uzsjXdq-QJITtt-DINTR0LU7OJXXrLKiOZuqGsRcMVAmQYRjOoRi02R-qEHswleHcZdQ1QPlxQ5l77lXigf-BkEQLqBLR-bj7BOGPfuifg8s-LB1HALGRneXKa1UIokILDsqrxZcoR3d');"></div><span class="material-symbols-outlined text-brand-green/20 text-8xl absolute top-6 right-6 -z-0">format_quote</span><p class="relative text-lg italic text-brand-dark-gray mb-4">"Berada di pementasan sekolah mengajarkan saya kepercayaan diri yang tidak pernah saya sadari. Program seni sangat mendukung, dan rasanya seperti keluarga kedua. Persahabatan yang saya jalin adalah untuk seumur hidup."</p><div><p class="font-bold text-brand-purple">Samantha M.</p><p class="text-sm font-semibold text-brand-green">Kelas 12 | Teater &amp; Tari</p></div></div>
+<div class="bg-white p-8 rounded-xl border-l-4 border-brand-green shadow-lg relative"><div class="w-20 h-20 rounded-full bg-gray-300 mb-4 bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCvK1Y_36yIE13FST9W1AzpfEsSb1fTjumYTAqFcAyuUhGM0nHgF7JF3kWqx2aNELqO6IwU08lPZQHcwfRwjP2y2tLQtYx1o5BSjbxTy-Dms6QzjLOdmn4Qv02VPmUDAsY4uzsjXdq-QJITtt-DINTR0LU7OJXXrLKiOZuqGsRcMVAmQYRjOoRi02R-qEHswleHcZdQ1QPlxQ5l77lXigf-BkEQLqBLR-bj7BOGPfuifg8s-LB1HALGRneXKa1UIokILDsqrxZcoR3d');"></div><span class="material-symbols-outlined text-brand-green/20 text-8xl absolute top-6 right-6 -z-0">format_quote</span><p class="relative text-lg italic text-brand-dark-gray mb-4">"Menjadi sukarelawan di pusat komunitas lokal sangat memuaskan. Crestwood benar-benar mendorong kami untuk memberi kembali, dan itu telah mengubah perspektif saya tentang banyak hal."</p><div><p class="font-bold text-brand-purple">Raj P.</p><p class="text-sm font-semibold text-brand-green">Kelas 10 | Pengabdian Masyarakat</p></div></div>
+</div>
+</div>
+</section>
+<section class="bg-white py-16 lg:py-20 px-6 lg:px-8">
+<div class="max-w-7xl mx-auto text-center">
+<h2 class="text-3xl font-bold text-brand-purple">Kehidupan di Crestwood</h2>
+<p class="mt-4 max-w-2xl mx-auto text-lg text-brand-medium-gray">Cuplikan kehidupan kampus kami yang dinamis dan bersemangat.</p>
+<div class="columns-2 md:columns-3 lg:columns-4 gap-4 mt-12 space-y-4">
+<div class="overflow-hidden rounded-lg group relative"><div class="w-full h-full bg-gray-200 flex items-center justify-center text-gray-500 text-sm text-center">Pemenang Pameran Sains</div><div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity"></div><h4 class="absolute bottom-2 left-3 text-white text-sm font-bold opacity-0 group-hover:opacity-100 transition-opacity">Pemenang Pameran Sains</h4></div>
+<div class="overflow-hidden rounded-lg group relative"><div class="w-full h-full bg-gray-200 aspect-[4/3] flex items-center justify-center text-gray-500 text-sm text-center">Kejuaraan Bola Basket</div><div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity"></div><h4 class="absolute bottom-2 left-3 text-white text-sm font-bold opacity-0 group-hover:opacity-100 transition-opacity">Kejuaraan Bola Basket</h4></div>
+<div class="overflow-hidden rounded-lg group relative border-2 border-transparent hover:border-brand-green"><div class="w-full h-full bg-gray-200 aspect-[3/4] flex items-center justify-center text-gray-500 text-sm text-center">Produksi Teater</div><div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity"></div><h4 class="absolute bottom-2 left-3 text-white text-sm font-bold opacity-0 group-hover:opacity-100 transition-opacity">Produksi Teater</h4></div>
+<div class="overflow-hidden rounded-lg group relative"><div class="w-full h-full bg-gray-200 aspect-[1/1] flex items-center justify-center text-gray-500 text-sm text-center">Kelas Seni</div><div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity"></div><h4 class="absolute bottom-2 left-3 text-white text-sm font-bold opacity-0 group-hover:opacity-100 transition-opacity">Kelas Seni</h4></div>
+<div class="overflow-hidden rounded-lg group relative"><div class="w-full h-full bg-gray-200 aspect-[4/3] flex items-center justify-center text-gray-500 text-sm text-center">Pengabdian Masyarakat</div><div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity"></div><h4 class="absolute bottom-2 left-3 text-white text-sm font-bold opacity-0 group-hover:opacity-100 transition-opacity">Pengabdian Masyarakat</h4></div>
+<div class="overflow-hidden rounded-lg group relative border-2 border-transparent hover:border-brand-green"><div class="w-full h-full bg-gray-200 aspect-[3/2] flex items-center justify-center text-gray-500 text-sm text-center">Hari Internasional</div><div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity"></div><h4 class="absolute bottom-2 left-3 text-white text-sm font-bold opacity-0 group-hover:opacity-100 transition-opacity">Hari Internasional</h4></div>
+<div class="overflow-hidden rounded-lg group relative"><div class="w-full h-full bg-gray-200 aspect-[1/1] flex items-center justify-center text-gray-500 text-sm text-center">Kompetisi Debat</div><div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity"></div><h4 class="absolute bottom-2 left-3 text-white text-sm font-bold opacity-0 group-hover:opacity-100 transition-opacity">Kompetisi Debat</h4></div>
+<div class="overflow-hidden rounded-lg group relative"><div class="w-full h-full bg-gray-200 aspect-[4/3] flex items-center justify-center text-gray-500 text-sm text-center">Konser Musik</div><div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity"></div><h4 class="absolute bottom-2 left-3 text-white text-sm font-bold opacity-0 group-hover:opacity-100 transition-opacity">Konser Musik</h4></div>
+<div class="overflow-hidden rounded-lg group relative"><div class="w-full h-full bg-gray-200 aspect-[3/4] flex items-center justify-center text-gray-500 text-sm text-center">Tim Sepak Bola</div><div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity"></div><h4 class="absolute bottom-2 left-3 text-white text-sm font-bold opacity-0 group-hover:opacity-100 transition-opacity">Tim Sepak Bola</h4></div>
+<div class="overflow-hidden rounded-lg group relative border-2 border-transparent hover:border-brand-green"><div class="w-full h-full bg-gray-200 aspect-[4/3] flex items-center justify-center text-gray-500 text-sm text-center">Klub Robotika</div><div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity"></div><h4 class="absolute bottom-2 left-3 text-white text-sm font-bold opacity-0 group-hover:opacity-100 transition-opacity">Klub Robotika</h4></div>
+<div class="overflow-hidden rounded-lg group relative"><div class="w-full h-full bg-gray-200 aspect-[3/2] flex items-center justify-center text-gray-500 text-sm text-center">Festival Budaya</div><div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity"></div><h4 class="absolute bottom-2 left-3 text-white text-sm font-bold opacity-0 group-hover:opacity-100 transition-opacity">Festival Budaya</h4></div>
+<div class="overflow-hidden rounded-lg group relative"><div class="w-full h-full bg-gray-200 aspect-[1/1] flex items-center justify-center text-gray-500 text-sm text-center">Dewan Siswa</div><div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity"></div><h4 class="absolute bottom-2 left-3 text-white text-sm font-bold opacity-0 group-hover:opacity-100 transition-opacity">Dewan Siswa</h4></div>
+</div>
+<div class="mt-12">
+<button class="px-8 py-3 border-2 border-brand-green text-brand-green font-bold rounded-full hover:bg-brand-green hover:text-white transition-colors">Lihat Galeri Lengkap</button>
+</div>
+</div>
+</section>
+<section class="bg-gradient-to-b from-white to-brand-light-gray-1 py-16 lg:py-20 px-6 lg:px-8">
+<div class="max-w-7xl mx-auto text-center">
+<h2 class="text-3xl font-bold text-brand-purple">Bergabunglah dengan Komunitas Kami yang Dinamis</h2>
+<p class="mt-4 max-w-2xl mx-auto text-lg text-brand-medium-gray">Rasakan perbedaan Crestwood. Temukan peluang untuk tumbuh, terhubung, dan berkembang.</p>
+<div class="mt-10 flex flex-col sm:flex-row justify-center items-center gap-4">
+<button class="w-full sm:w-auto flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-8 bg-brand-purple text-white text-base font-bold leading-normal tracking-[0.015em] hover:bg-brand-green transition-colors">
+<span class="truncate">Jadwalkan Kunjungan</span>
+</button>
+<button class="w-full sm:w-auto flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-8 border-2 border-brand-green text-brand-green font-bold leading-normal tracking-[0.015em] hover:bg-brand-green hover:text-white transition-colors">
+<span class="truncate">Jelajahi Klub Kami</span>
+</button>
+</div>
+<p class="mt-8 text-sm text-brand-medium-gray">Pertanyaan? Hubungi <a class="text-brand-green hover:text-brand-purple font-semibold" href="mailto:studentlife@crestwood.edu">studentlife@crestwood.edu</a></p>
+</div>
+</section>
+<footer class="bg-brand-purple text-white">
+<div class="max-w-7xl mx-auto py-16 px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+<div>
+<h3 class="font-bold text-lg mb-4">Crestwood Intl. School</h3>
+<p class="text-sm text-gray-300">123 Education Lane<br/>Knowledge City, 12345</p>
+</div>
+<div>
+<h3 class="font-bold text-lg mb-4">Tautan Cepat</h3>
+<ul class="space-y-2 text-sm text-gray-300">
+<li><a class="hover:text-white" href="#">Tentang Kami</a></li>
+<li><a class="hover:text-white" href="#">Penerimaan</a></li>
+<li><a class="hover:text-white" href="#">Akademik</a></li>
+<li><a class="hover:text-white" href="#">Kontak</a></li>
+</ul>
+</div>
+<div>
+<h3 class="font-bold text-lg mb-4">Sumber Daya</h3>
+<ul class="space-y-2 text-sm text-gray-300">
+<li><a class="hover:text-white" href="#">Portal Orang Tua</a></li>
+<li><a class="hover:text-white" href="#">Kalender</a></li>
+<li><a class="hover:text-white" href="#">Karier</a></li>
+<li><a class="hover:text-white" href="#">Berita</a></li>
+</ul>
+</div>
+<div>
+<h3 class="font-bold text-lg mb-4">Ikuti Kami</h3>
+<div class="flex space-x-4">
+<a class="text-gray-300 hover:text-white" href="#">
+<svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path clip-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" fill-rule="evenodd"></path></svg>
+</a>
+<a class="text-gray-300 hover:text-white" href="#">
+<svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.71v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path></svg>
+</a>
+</div>
+</div>
+</div>
+<div class="mt-12 border-t border-gray-700 pt-8 text-center text-sm text-gray-400">
+<p>© 2024 Crestwood International School. Hak Cipta Dilindungi.</p>
+</div>
+</div>
+</footer>
+</div>
+</main>
+</div>
+<button class="fixed bottom-8 right-8 bg-brand-green text-white font-bold py-3 px-6 rounded-full shadow-lg hover:bg-brand-purple transition-colors flex items-center gap-2">
+        Daftar Sekarang
+    </button>
+</body></html>

@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html class="light" lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Akademik - Crestwood International School</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style type="text/tailwindcss">
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
+        }
+        .group:hover .group-hover-zoom {
+            transform: scale(1.05);
+        }
+    </style>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "cs-purple": "#56357F",
+              "cs-green": "#A8CF45",
+              "cs-light-gray-1": "#f8fafc",
+              "cs-light-gray-2": "#f1f5f9",
+              "cs-dark-gray": "#334155",
+              "cs-medium-gray": "#64748b",
+            },
+            fontFamily: {
+              "display": ["Lexend", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+</head>
+<body class="bg-cs-light-gray-1 font-display text-cs-dark-gray">
+<div class="flex w-full">
+<button class="fixed bottom-8 right-8 z-50 rounded-full bg-cs-green px-6 py-3 text-sm font-bold text-white shadow-lg transition-colors hover:bg-cs-purple">
+            Daftar Sekarang
+        </button>
+<aside class="sticky top-0 hidden h-screen w-[280px] flex-shrink-0 flex-col justify-between border-r border-gray-200 bg-white p-4 lg:flex">
+<div class="flex flex-col gap-4">
+<div class="flex items-center gap-3 px-2">
+<div class="aspect-square size-10 rounded-full bg-cover bg-center" data-alt="Crestwood school logo" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAsqB1c_l5q8KAMlU6I1mdrj-MsL9rOEFWgrUFvUkH4sdY2Hcau44BOdbHPCDzU8x3CCOK0fJ6pX931a0pUOVLssNG1RX3nweMH_ld4MfpBBsXVgRUPHWTNgF3r4utsdFOC3ddgPeLnbTh0FtjyYo_2qOkTFuKQYShHojclhFmaoVa0r19zU-EWJHv459MGLuueDrc_qrcz7KDW3GPukk3oaj_noPs5MPfxtv8lMU3tHVFPQgDyzIzLNDVLwyXk_s3Cl2i3flRSnYAo");'></div>
+<div class="flex flex-col">
+<h1 class="font-bold text-cs-purple text-base">Crestwood</h1>
+<p class="text-sm text-cs-medium-gray">International School</p>
+</div>
+</div>
+<div class="relative mt-2">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-cs-green">search</span>
+<input class="w-full rounded-lg border-gray-200 bg-cs-light-gray-1 py-2 pl-10 pr-4 text-sm text-cs-dark-gray placeholder-cs-medium-gray focus:border-cs-purple focus:ring-cs-purple" placeholder="Cari..." type="text"/>
+</div>
+<div class="mt-2 flex items-center justify-center gap-1 rounded-full bg-cs-light-gray-1 p-1">
+<button class="w-full rounded-full px-4 py-1.5 text-xs font-medium text-cs-medium-gray hover:bg-white/50">EN</button>
+<button class="w-full rounded-full bg-white px-4 py-1.5 text-xs font-semibold text-cs-purple shadow-sm">ID</button>
+</div>
+<nav class="mt-4 flex flex-1 flex-col gap-1">
+<a class="flex items-center gap-3 rounded-lg px-3 py-2 text-cs-medium-gray hover:bg-cs-purple/10" href="#">
+<span class="material-symbols-outlined text-xl">home</span>
+<p class="text-sm font-medium">Beranda</p>
+</a>
+<a class="flex items-center gap-3 rounded-lg px-3 py-2 text-cs-medium-gray hover:bg-cs-purple/10" href="#">
+<span class="material-symbols-outlined text-xl">info</span>
+<p class="text-sm font-medium">Tentang Kami</p>
+</a>
+<div class="relative rounded-lg bg-cs-purple/10">
+<div class="absolute -left-4 top-0 h-full w-1 rounded-r-md bg-cs-green"></div>
+<a class="flex items-center gap-3 px-3 py-2 text-cs-purple" href="#">
+<span class="material-symbols-outlined text-xl">school</span>
+<p class="text-sm font-bold">Akademik</p>
+</a>
+<div class="flex flex-col border-t border-cs-purple/20 py-2 pl-8 pr-2">
+<a class="relative flex items-center gap-2 py-1.5 text-sm font-semibold text-cs-purple" href="#">
+<div class="absolute -left-4 top-1/2 h-1.5 w-1.5 -translate-y-1/2 rounded-full bg-cs-green"></div>
+                                Ikhtisar Kurikulum
+                            </a>
+<a class="py-1.5 text-sm font-medium text-cs-medium-gray hover:text-cs-purple" href="#">Tahun Dasar</a>
+<a class="py-1.5 text-sm font-medium text-cs-medium-gray hover:text-cs-purple" href="#">Tahun Menengah</a>
+<a class="py-1.5 text-sm font-medium text-cs-medium-gray hover:text-cs-purple" href="#">Program Diploma</a>
+<a class="py-1.5 text-sm font-medium text-cs-medium-gray hover:text-cs-purple" href="#">Dukungan Akademik</a>
+<a class="py-1.5 text-sm font-medium text-cs-medium-gray hover:text-cs-purple" href="#">Konseling Universitas</a>
+</div>
+</div>
+</nav>
+</div>
+<div class="flex flex-col gap-2 border-t border-gray-200 pt-4">
+<h3 class="px-3 text-xs font-semibold uppercase text-cs-medium-gray">Tautan Cepat</h3>
+<a class="flex items-center gap-3 rounded-lg px-3 py-2 text-sm text-cs-medium-gray hover:bg-cs-purple/10" href="#">
+<span class="material-symbols-outlined text-xl">group</span>
+<p class="font-medium">Portal Orang Tua</p>
+</a>
+<a class="flex items-center gap-3 rounded-lg px-3 py-2 text-sm text-cs-medium-gray hover:bg-cs-purple/10" href="#">
+<span class="material-symbols-outlined text-xl">calendar_month</span>
+<p class="font-medium">Kalender Sekolah</p>
+</a>
+<a class="flex items-center gap-3 rounded-lg px-3 py-2 text-sm text-cs-medium-gray hover:bg-cs-purple/10" href="#">
+<span class="material-symbols-outlined text-xl">mail</span>
+<p class="font-medium">Info Kontak</p>
+</a>
+</div>
+</aside>
+<main class="w-full flex-1 overflow-y-auto bg-cs-light-gray-1">
+<section class="relative mx-auto mt-6 min-h-[350px] max-w-7xl flex-col justify-end overflow-hidden rounded-xl bg-cover bg-center text-white lg:mx-8 flex" data-alt="Siswa di ruang kelas modern" style='background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.1) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuBgJGSFtwXwGyjew1vJa8uNtgyvJTEeQOv7D00uHJH2v1lJqgtEfbas9H-t7lVeYRqL4-aBbsBvaLCi6vxZ2SWUryuXYX5okdtP8BdnrJs_W0hpCUad3ECMzULE2j91dJvnDDXrQXcwi3_rDuuiKpVmWa0xo9vew3tWFfIkhsq-VE_4dprMHKMEjj3RQk5lv42HJJ_5jlO3jewHKN6NgH-P8nmdNkceIUgOtRBRx_7rMvtJYLJBm0ZjD3cI_867njpUSPmXubHdgz2H");'>
+<div class="z-10 p-8 md:p-12">
+<div class="flex flex-wrap items-center gap-2 text-sm">
+<a class="text-gray-300 hover:text-white" href="#">Beranda</a>
+<span class="text-cs-green">&gt;</span>
+<span class="font-bold text-white">Akademik</span>
+</div>
+<h1 class="mt-4 text-4xl font-bold md:text-5xl">Keunggulan Akademik</h1>
+<p class="mt-2 max-w-2xl text-lg text-gray-200 md:text-xl">Kurikulum kelas dunia yang dirancang untuk menginspirasi pembelajar seumur hidup</p>
+</div>
+</section>
+<section class="relative z-20 mx-auto -mt-10 max-w-4xl">
+<div class="rounded-xl bg-white p-8 shadow-lg md:p-12">
+<div class="text-center">
+<h2 class="text-3xl font-bold text-cs-purple">Filosofi Akademik Kami</h2>
+<p class="mx-auto mt-6 max-w-3xl leading-relaxed text-gray-700">Di Crestwood, kami percaya pada pendekatan akademik holistik yang tidak hanya menumbuhkan kecerdasan intelektual, tetapi juga kesejahteraan pribadi dan emosional. Kurikulum kami dibangun di atas prinsip pembelajaran yang berpusat pada siswa, di mana rasa ingin tahu dipicu, pemikiran kritis dikembangkan, dan semangat untuk penemuan seumur hidup dinyalakan.</p>
+<p class="mx-auto mt-4 max-w-3xl leading-relaxed text-gray-700">Kami mempertahankan standar akademik yang ketat sambil memastikan lingkungan yang mendukung yang memungkinkan setiap siswa untuk berkembang. Melalui program yang seimbang dan menarik, kami memberdayakan siswa untuk mengeksplorasi minat mereka, mengatasi tantangan, dan mencapai potensi penuh mereka sebagai warga global yang percaya diri dan penuh kasih.</p>
+</div>
+</div>
+</section>
+<section class="bg-cs-light-gray-1 py-16 lg:py-20">
+<div class="mx-auto max-w-7xl px-6 lg:px-8">
+<div class="text-center">
+<h2 class="text-3xl font-bold text-cs-purple">Kerangka Kurikulum Kami</h2>
+<p class="mx-auto mt-4 max-w-2xl text-cs-medium-gray">Jalur terstruktur membimbing siswa kami dari pembelajaran dasar hingga studi pra-universitas yang terspesialisasi.</p>
+</div>
+<div class="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+<div class="flex flex-col rounded-xl border-t-4 border-cs-green bg-white p-8 shadow-md transition-all hover:border-cs-purple hover:shadow-xl">
+<div class="mb-4 flex size-14 items-center justify-center rounded-full bg-cs-green/20 text-cs-purple">
+<span class="material-symbols-outlined text-3xl">child_care</span>
+</div>
+<h3 class="text-xl font-bold text-cs-purple">Program Tahun Dasar</h3>
+<p class="mb-4 text-sm font-medium text-cs-green">Usia 5-11</p>
+<p class="flex-grow text-cs-medium-gray">Menumbuhkan rasa ingin tahu dan kecintaan belajar melalui unit tematik berbasis inkuiri.</p>
+<ul class="mt-6 space-y-2 text-sm text-cs-dark-gray">
+<li class="flex items-start gap-3"><span class="material-symbols-outlined mt-0.5 text-cs-green">check_circle</span> Pembelajaran transdisipliner</li>
+<li class="flex items-start gap-3"><span class="material-symbols-outlined mt-0.5 text-cs-green">check_circle</span> Eksplorasi berbasis permainan</li>
+<li class="flex items-start gap-3"><span class="material-symbols-outlined mt-0.5 text-cs-green">check_circle</span> Pengembangan keterampilan sosial</li>
+</ul>
+<a class="mt-8 inline-flex items-center gap-2 font-semibold text-cs-purple transition-colors hover:text-cs-green" href="#">Pelajari Lebih Lanjut <span class="material-symbols-outlined">arrow_forward</span></a>
+</div>
+<div class="flex flex-col rounded-xl border-t-4 border-cs-green bg-white p-8 shadow-md transition-all hover:border-cs-purple hover:shadow-xl">
+<div class="mb-4 flex size-14 items-center justify-center rounded-full bg-cs-green/20 text-cs-purple">
+<span class="material-symbols-outlined text-3xl">group</span>
+</div>
+<h3 class="text-xl font-bold text-cs-purple">Program Tahun Menengah</h3>
+<p class="mb-4 text-sm font-medium text-cs-green">Usia 11-16</p>
+<p class="flex-grow text-cs-medium-gray">Menghubungkan pembelajaran di kelas dengan dunia nyata, mendorong pemikiran kritis dan reflektif.</p>
+<ul class="mt-6 space-y-2 text-sm text-cs-dark-gray">
+<li class="flex items-start gap-3"><span class="material-symbols-outlined mt-0.5 text-cs-green">check_circle</span> Proyek interdisipliner</li>
+<li class="flex items-start gap-3"><span class="material-symbols-outlined mt-0.5 text-cs-green">check_circle</span> Pengembangan proyek pribadi</li>
+<li class="flex items-start gap-3"><span class="material-symbols-outlined mt-0.5 text-cs-green">check_circle</span> Konteks global untuk belajar</li>
+</ul>
+<a class="mt-8 inline-flex items-center gap-2 font-semibold text-cs-purple transition-colors hover:text-cs-green" href="#">Pelajari Lebih Lanjut <span class="material-symbols-outlined">arrow_forward</span></a>
+</div>
+<div class="flex flex-col rounded-xl border-t-4 border-cs-green bg-white p-8 shadow-md transition-all hover:border-cs-purple hover:shadow-xl">
+<div class="mb-4 flex size-14 items-center justify-center rounded-full bg-cs-green/20 text-cs-purple">
+<span class="material-symbols-outlined text-3xl">school</span>
+</div>
+<h3 class="text-xl font-bold text-cs-purple">Program Diploma</h3>
+<p class="mb-4 text-sm font-medium text-cs-green">Usia 16-19</p>
+<p class="flex-grow text-cs-medium-gray">Program pra-universitas yang ketat dan diakui secara internasional untuk siswa yang sangat termotivasi.</p>
+<ul class="mt-6 space-y-2 text-sm text-cs-dark-gray">
+<li class="flex items-start gap-3"><span class="material-symbols-outlined mt-0.5 text-cs-green">check_circle</span> Pengetahuan mata pelajaran mendalam</li>
+<li class="flex items-start gap-3"><span class="material-symbols-outlined mt-0.5 text-cs-green">check_circle</span> Teori Pengetahuan (TOK)</li>
+<li class="flex items-start gap-3"><span class="material-symbols-outlined mt-0.5 text-cs-green">check_circle</span> Esai Tambahan &amp; CAS</li>
+</ul>
+<a class="mt-8 inline-flex items-center gap-2 font-semibold text-cs-purple transition-colors hover:text-cs-green" href="#">Pelajari Lebih Lanjut <span class="material-symbols-outlined">arrow_forward</span></a>
+</div>
+</div>
+</div>
+</section>
+<section class="bg-white py-16 lg:py-20">
+<div class="mx-auto max-w-7xl px-6 lg:px-8">
+<div class="text-center">
+<h2 class="text-3xl font-bold text-cs-purple">Departemen Akademik</h2>
+</div>
+<div class="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+<div class="group transform rounded-lg bg-white shadow-md transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+<div class="h-40 rounded-t-lg bg-gray-200" data-alt="Science lab with beakers and microscopes"></div>
+<div class="border-b-3 border-cs-green p-6">
+<div class="flex items-center gap-3"><span class="text-3xl text-cs-green material-symbols-outlined">science</span>
+<h3 class="text-lg font-bold text-cs-purple">Sains</h3>
+</div>
+<p class="mt-2 text-sm text-cs-medium-gray">Menjelajahi dunia alam melalui biologi, kimia, dan fisika. (12 mata pelajaran)</p>
+</div>
+</div>
+<div class="group transform rounded-lg bg-white shadow-md transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+<div class="h-40 rounded-t-lg bg-gray-200" data-alt="Stack of classic literature books"></div>
+<div class="border-b-3 border-cs-green p-6">
+<div class="flex items-center gap-3"><span class="text-3xl text-cs-green material-symbols-outlined">menu_book</span>
+<h3 class="text-lg font-bold text-cs-purple">Humaniora &amp; Ilmu Sosial</h3>
+</div>
+<p class="mt-2 text-sm text-cs-medium-gray">Memahami masyarakat, budaya, dan sejarah dari seluruh dunia. (10 mata pelajaran)</p>
+</div>
+</div>
+<div class="group transform rounded-lg bg-white shadow-md transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+<div class="h-40 rounded-t-lg bg-gray-200" data-alt="Geometric shapes and formulas on a chalkboard"></div>
+<div class="border-b-3 border-cs-green p-6">
+<div class="flex items-center gap-3"><span class="text-3xl text-cs-green material-symbols-outlined">calculate</span>
+<h3 class="text-lg font-bold text-cs-purple">Matematika</h3>
+</div>
+<p class="mt-2 text-sm text-cs-medium-gray">Mengembangkan penalaran logis dan keterampilan memecahkan masalah. (8 mata pelajaran)</p>
+</div>
+</div>
+<div class="group transform rounded-lg bg-white shadow-md transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+<div class="h-40 rounded-t-lg bg-gray-200" data-alt="Colorful abstract painting"></div>
+<div class="border-b-3 border-cs-green p-6">
+<div class="flex items-center gap-3"><span class="text-3xl text-cs-green material-symbols-outlined">palette</span>
+<h3 class="text-lg font-bold text-cs-purple">Seni &amp; Desain</h3>
+</div>
+<p class="mt-2 text-sm text-cs-medium-gray">Memupuk kreativitas melalui seni visual, musik, dan drama. (14 mata pelajaran)</p>
+</div>
+</div>
+<div class="group transform rounded-lg bg-white shadow-md transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+<div class="h-40 rounded-t-lg bg-gray-200" data-alt="Different language greetings written on a board"></div>
+<div class="border-b-3 border-cs-green p-6">
+<div class="flex items-center gap-3"><span class="text-3xl text-cs-green material-symbols-outlined">language</span>
+<h3 class="text-lg font-bold text-cs-purple">Bahasa &amp; Sastra</h3>
+</div>
+<p class="mt-2 text-sm text-cs-medium-gray">Membina komunikasi global dan pemahaman budaya. (16 mata pelajaran)</p>
+</div>
+</div>
+<div class="group transform rounded-lg bg-white shadow-md transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+<div class="h-40 rounded-t-lg bg-gray-200" data-alt="Student doing sports"></div>
+<div class="border-b-3 border-cs-green p-6">
+<div class="flex items-center gap-3"><span class="text-3xl text-cs-green material-symbols-outlined">fitness_center</span>
+<h3 class="text-lg font-bold text-cs-purple">Pendidikan Jasmani &amp; Kesehatan</h3>
+</div>
+<p class="mt-2 text-sm text-cs-medium-gray">Mempromosikan kesehatan fisik dan kesejahteraan seumur hidup. (7 mata pelajaran)</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="bg-cs-light-gray-1 py-16 lg:py-20">
+<div class="mx-auto max-w-7xl px-6 lg:px-8">
+<div class="text-center">
+<h2 class="text-3xl font-bold text-cs-purple">Pendekatan Pembelajaran Kami</h2>
+</div>
+<div class="mt-12 space-y-16">
+<div class="grid items-center gap-8 md:grid-cols-2 md:gap-12">
+<div class="order-2 md:order-1">
+<div class="flex items-center gap-4">
+<div class="flex size-12 items-center justify-center rounded-full bg-cs-green/20 text-cs-green"><span class="material-symbols-outlined text-3xl">search</span></div>
+<h3 class="text-2xl font-bold text-cs-purple">Pembelajaran Berbasis Inkuiri</h3>
+</div>
+<p class="mt-4 text-cs-medium-gray">Kami mendorong siswa untuk bertanya dan mengeksplorasi topik yang memicu rasa ingin tahu mereka. Pendekatan ini menumbuhkan pemikiran kritis dan pemahaman konsep yang lebih dalam.</p>
+</div>
+<div class="order-1 h-64 w-full rounded-lg border-4 border-cs-green bg-gray-200 md:order-2" data-alt="Student looking intently at a science experiment"></div>
+</div>
+<div class="grid items-center gap-8 md:grid-cols-2 md:gap-12">
+<div class="h-64 w-full rounded-lg border-4 border-cs-green bg-gray-200" data-alt="Group of students collaborating around a table"></div>
+<div>
+<div class="flex items-center gap-4">
+<div class="flex size-12 items-center justify-center rounded-full bg-cs-green/20 text-cs-green"><span class="material-symbols-outlined text-3xl">groups</span></div>
+<h3 class="text-2xl font-bold text-cs-purple">Proyek Kolaboratif</h3>
+</div>
+<p class="mt-4 text-cs-medium-gray">Kerja tim sangat penting. Siswa belajar berkomunikasi secara efektif, berbagi ide, dan bekerja sama untuk memecahkan masalah kompleks, mempersiapkan mereka untuk kesuksesan di masa depan.</p>
+</div>
+</div>
+<div class="grid items-center gap-8 md:grid-cols-2 md:gap-12">
+<div class="order-2 md:order-1">
+<div class="flex items-center gap-4">
+<div class="flex size-12 items-center justify-center rounded-full bg-cs-green/20 text-cs-green"><span class="material-symbols-outlined text-3xl">devices</span></div>
+<h3 class="text-2xl font-bold text-cs-purple">Integrasi Teknologi</h3>
+</div>
+<p class="mt-4 text-cs-medium-gray">Kami memanfaatkan teknologi untuk meningkatkan pembelajaran, menyediakan siswa dengan alat dan sumber daya digital untuk berinovasi, meneliti, dan berkreasi di dunia yang terhubung.</p>
+</div>
+<div class="order-1 h-64 w-full rounded-lg border-4 border-cs-green bg-gray-200 md:order-2" data-alt="Student using a tablet in the classroom"></div>
+</div>
+<div class="grid items-center gap-8 md:grid-cols-2 md:gap-12">
+<div class="h-64 w-full rounded-lg border-4 border-cs-green bg-gray-200" data-alt="Globe with flags of different countries"></div>
+<div>
+<div class="flex items-center gap-4">
+<div class="flex size-12 items-center justify-center rounded-full bg-cs-green/20 text-cs-green"><span class="material-symbols-outlined text-3xl">public</span></div>
+<h3 class="text-2xl font-bold text-cs-purple">Perspektif Global</h3>
+</div>
+<p class="mt-4 text-cs-medium-gray">Kurikulum kami menggabungkan berbagai sudut pandang, mengajar siswa untuk menghargai budaya yang berbeda dan memahami peran mereka sebagai warga dunia.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="bg-white py-16 lg:py-20">
+<div class="mx-auto max-w-7xl px-6 lg:px-8">
+<div class="text-center">
+<h2 class="text-3xl font-bold text-cs-purple">Temui Para Staf Pengajar Kami yang Berdedikasi</h2>
+</div>
+<div class="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+<div class="text-center">
+<div class="mx-auto h-32 w-32 rounded-full bg-gray-200" data-alt="Portrait of Dr. Evelyn Reed"></div>
+<h3 class="mt-4 text-lg font-bold text-cs-purple">Dr. Evelyn Reed</h3>
+<p class="text-cs-green">Kepala Departemen Sains</p>
+<p class="mt-2 text-sm text-cs-medium-gray">Ph.D. dalam Biologi Molekuler dengan lebih dari 15 tahun pengalaman mengajar.</p>
+</div>
+<div class="text-center">
+<div class="mx-auto h-32 w-32 rounded-full bg-gray-200" data-alt="Portrait of Mr. Ben Carter"></div>
+<h3 class="mt-4 text-lg font-bold text-cs-purple">Bapak Ben Carter</h3>
+<p class="text-cs-green">Koordinator Program Diploma</p>
+<p class="mt-2 text-sm text-cs-medium-gray">Ahli dalam kurikulum internasional dan konseling universitas.</p>
+</div>
+<div class="text-center">
+<div class="mx-auto h-32 w-32 rounded-full bg-gray-200" data-alt="Portrait of Ms. Anya Sharma"></div>
+<h3 class="mt-4 text-lg font-bold text-cs-purple">Ibu Anya Sharma</h3>
+<p class="text-cs-green">Instruktur Utama Seni</p>
+<p class="mt-2 text-sm text-cs-medium-gray">Bersemangat dalam menumbuhkan kreativitas dan ekspresi diri pada siswa.</p>
+</div>
+</div>
+<div class="mt-12 text-center">
+<button class="rounded-lg border-2 border-cs-green px-6 py-3 font-semibold text-cs-green transition-colors hover:bg-cs-green hover:text-white">Lihat Semua Staf Pengajar</button>
+</div>
+</div>
+</section>
+<section class="bg-cs-light-gray-1 py-16 lg:py-20">
+<div class="mx-auto max-w-7xl px-6 lg:px-8">
+<div class="text-center">
+<h2 class="text-3xl font-bold text-cs-purple">Fasilitas Kelas Dunia</h2>
+</div>
+<div class="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+<div class="group relative aspect-[4/5] overflow-hidden rounded-lg">
+<div class="absolute inset-0 h-full w-full bg-gray-200 bg-cover bg-center transition-transform duration-300 group-hover:scale-105" data-alt="Modern science lab" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDydn1-S2lDH_3IQsH0j_v7DgHK26cbqLyLN-Gm3c3nauIqTswXa-U5FFlqSjWMpN6gSEzmlPOc37OFVEF-4P41dVJwhk_DaKkeQJq-MljuFRwEFbt6p8f0jr0Zc05XPGCP-cGmaSNPQrHnxJmwSjV9V-9hvHXoJlo4_r7CCl6WvMy268MoAM4HKM6RqJqJGmV7qDd1S6wF0Im-jpXBhkwR52npzBhafnNYvtTklq_VVWGN-cUcV4GsdhlpEwHfplyeeMdZZZW44N-F");'></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-4 text-white"><span class="material-symbols-outlined text-cs-green">science</span>
+<h3 class="mt-1 font-bold">Laboratorium Sains</h3>
+</div>
+</div>
+<div class="group relative aspect-[4/5] overflow-hidden rounded-lg">
+<div class="absolute inset-0 h-full w-full bg-gray-200 bg-cover bg-center transition-transform duration-300 group-hover:scale-105" data-alt="Spacious library with many books" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC9wK7SIhwmfvccbbutbVueO23r5WksLL_mpl7ejceekr1vrqY-E5HxEiI58T0d8yJNYV2HttQl8HbqDXRy_CaO0aNnQSg0a_fhX5d-Tzh9JvkOnlnDm9fhWlEwU0WU-xNrz8-0zgMGT6ioy4IzaPnimdMUDnUvJKY_-UC8KkHjeG7ope4Fr_--nNrnHLm8k12K-8S6PJbNRAQzyMUcAskPpw5cjLFyAL38bkvqtq2GWEa1F-ey531OhHwuy6JGB9N7tgXb7vvXADyC");'></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-4 text-white"><span class="material-symbols-outlined text-cs-green">model_training</span>
+<h3 class="mt-1 font-bold">Pusat Inovasi &amp; Maker Space</h3>
+</div>
+</div>
+<div class="group relative aspect-[4/5] overflow-hidden rounded-lg">
+<div class="absolute inset-0 h-full w-full bg-gray-200 bg-cover bg-center transition-transform duration-300 group-hover:scale-105" data-alt="Black box theater with stage lighting" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCQSPuwFO2jT7FSb_oOSlOJhunWdtRGoO_EWWjgOsg6KG_FocyBykO1GXSHHvJoHlmh3biVfOQ2MZZC8uq46UjaEAejh4yk3gUPRJvdmp_UDR5ftcOMQ5ogdDWLKd_8cHcA3Gw19dGTf9gilVDlK-OYxrAlexnHtuFdGlUP4bO9-cLD3u_Z1AO_fRPzX1d981uzlYtUwJY28mDreVqJjEb3TyqzkNmLFbFK4hacTvH-QLgaFzy0jfC83DAAyAnDtNDnl8r1VtGt0TJl");'></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-4 text-white"><span class="material-symbols-outlined text-cs-green">local_library</span>
+<h3 class="mt-1 font-bold">Perpustakaan &amp; Pusat Media</h3>
+</div>
+</div>
+<div class="group relative aspect-[4/5] overflow-hidden rounded-lg">
+<div class="absolute inset-0 h-full w-full bg-gray-200 bg-cover bg-center transition-transform duration-300 group-hover:scale-105" data-alt="Outdoor sports field with running track" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBFk8HFrB8_NuosR6zGtneoB7gknebqt9fwBLv26MrQWL8iQMFk6XVxgMFJ_QlGYUhmql7CsZGtFYwl_CjlGehkSiVpQpivWTXw4F8wEggvk6oJIgqIjcx8zej1Sm1vMComkUxeYh_bk_VM1IhW76vN5-tRVQWmOvXDeC7vL4zGC0UKvdnS3fbVh9c63XyCV4TI7CRVSvhrnSjMH-l9zuDWhHZifTL7Uo3mzq--9N9OuB13w1e9NWn5D--6913U7V6vu7PR59c_bNVO");'></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-4 text-white"><span class="material-symbols-outlined text-cs-green">sports_soccer</span>
+<h3 class="mt-1 font-bold">Kompleks Olahraga</h3>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="bg-white py-16 lg:py-20">
+<div class="mx-auto grid max-w-7xl grid-cols-1 gap-12 px-6 md:grid-cols-2 lg:px-8">
+<div>
+<h3 class="text-3xl font-bold text-cs-purple">Sekilas Tahun Akademik</h3>
+<div class="mt-6 space-y-4">
+<div class="flex gap-4">
+<div class="flex flex-col items-center rounded-lg bg-cs-purple/10 px-4 py-2 text-center">
+<p class="text-sm font-bold text-cs-purple">OKT</p>
+<p class="text-xl font-bold text-cs-purple">28</p>
+</div>
+<div>
+<h4 class="font-semibold text-cs-dark-gray">Konferensi Orang Tua-Guru</h4>
+<p class="text-sm text-cs-medium-gray">Kesempatan untuk membahas kemajuan siswa.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="flex flex-col items-center rounded-lg bg-cs-purple/10 px-4 py-2 text-center">
+<p class="text-sm font-bold text-cs-purple">NOV</p>
+<p class="text-xl font-bold text-cs-purple">15</p>
+</div>
+<div>
+<h4 class="font-semibold text-cs-dark-gray">Ujian Tengah Semester</h4>
+<p class="text-sm text-cs-medium-gray">Ujian Program Tahun Menengah dan Diploma dimulai.</p>
+</div>
+</div>
+<a class="mt-6 inline-block font-semibold text-cs-purple hover:text-cs-green" href="#">Unduh Kalender Lengkap (PDF)</a>
+</div>
+</div>
+<div>
+<h3 class="text-2xl font-bold text-cs-purple">Dukungan Akademik</h3>
+<div class="mt-6 space-y-4">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined mt-1 text-2xl text-cs-green">psychology</span>
+<div>
+<h4 class="font-semibold text-cs-dark-gray">Layanan Konseling</h4>
+<p class="text-sm text-cs-medium-gray">Bimbingan pribadi dan akademik untuk semua siswa.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined mt-1 text-2xl text-cs-green">local_library</span>
+<div>
+<h4 class="font-semibold text-cs-dark-gray">Sumber Daya Perpustakaan</h4>
+<p class="text-sm text-cs-medium-gray">Sumber daya yang luas untuk penelitian dan belajar.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined mt-1 text-2xl text-cs-green">school</span>
+<div>
+<h4 class="font-semibold text-cs-dark-gray">Dukungan Pembelajaran</h4>
+<p class="text-sm text-cs-medium-gray">Bantuan yang disesuaikan untuk kebutuhan belajar yang beragam.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined mt-1 text-2xl text-cs-green">assured_workload</span>
+<div>
+<h4 class="font-semibold text-cs-dark-gray">Panduan Universitas</h4>
+<p class="text-sm text-cs-medium-gray">Membantu siswa dalam proses aplikasi universitas.</p>
+</div>
+</div>
+<a class="mt-6 inline-block font-semibold text-cs-purple hover:text-cs-green" href="#">Jelajahi Semua Sumber Daya</a>
+</div>
+</div>
+</div>
+</section>
+<section class="bg-cs-purple py-16 lg:py-20">
+<div class="mx-auto max-w-7xl px-6 text-center lg:px-8">
+<h2 class="text-3xl font-bold text-white">Penempatan Universitas</h2>
+<p class="mx-auto mt-4 max-w-2xl text-gray-200">Lulusan kami diterima di universitas-universitas terkemuka di seluruh dunia.</p>
+<div class="mt-12 grid grid-cols-2 gap-8 text-white md:grid-cols-4">
+<div>
+<p class="text-5xl font-bold text-cs-green">98%</p>
+<p class="mt-2 text-sm uppercase tracking-wider text-gray-300">Tingkat Penerimaan</p>
+</div>
+<div>
+<p class="text-5xl font-bold text-cs-green">Top 50</p>
+<p class="mt-2 text-sm uppercase tracking-wider text-gray-300">Universitas Dunia</p>
+</div>
+<div>
+<p class="text-5xl font-bold text-cs-green">15+</p>
+<p class="mt-2 text-sm uppercase tracking-wider text-gray-300">Negara</p>
+</div>
+<div>
+<p class="text-5xl font-bold text-cs-green">$5Jt+</p>
+<p class="mt-2 text-sm uppercase tracking-wider text-gray-300">Dalam Beasiswa</p>
+</div>
+</div>
+<div class="mt-16 flex flex-wrap items-center justify-center gap-x-12 gap-y-6">
+<img alt="UCLA Logo" class="h-8 grayscale transition hover:grayscale-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCATT3kPaS-CNLQvoZCKkXcvfjFHHgKJhlSEKYiwvA5tG3owFM3eUj6WVftV8YjVnhySd-KmjIkT1Oad5beCWkhkppxP4bvUoeRSng9qVyhqUBniBwiWVyotr6ImWemcXYEEM5Vb_n8B45VYB4HWCu56BeeYRGbD2dcHMjZl4MTK2xM6gpWKuRxt0Km7pnhEq4BJmj3YaJt0FqG08CiyytFIOOTPj-SzhHOr5FuV2_dmXvY_3FBD_4njMskwljc5mp0Ij8l3wrZKynK"/>
+<img alt="Oxford University Logo" class="h-8 grayscale transition hover:grayscale-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAg0l5cKAeVGLnekkYAVc3B-GHwo9DE-qglHNj8tmAx_Avg6AB72-RloURm0Y-T60xeWPcS9ezQk96hCnGqt41UttcSCho9tTNluUvTZv9UsToaaI1j2JnsoIx1o6O_og-XDZWA2T4AaASSZ_wNL553YxK6hTxKz_IUqYxqb9ofJNs8P-mZe6v_ujnqJ-5SgTaFKakQdnv_B_hSMMZ2bNIbjEQ662pqMXRO8fjKjCO0AFIgxvVEGZnU6iO2c8CIuWH5TduDRC1XUh3O"/>
+<img alt="MIT Logo" class="h-8 grayscale transition hover:grayscale-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGlb7ZNaLQnCnSIFxa0J023JhLOqHcY1ApHMjpTT1nPaI9WmxwXwY_BE8VONHi-CwoyaYL8q63ZbV3UAZvFyNw_Ug75BcbjdDXaNLXmK-J61UOOlIhYKiLonRKt56eP_YcdmCEJTLHYIlrUqWOkSSWpxMiRVUu9WpZm2S9fgGGkQAjqBmFE1uru-eLUEhSfK4-DCXzF0YYltgmutzEWzT_YeSLhZ_LHZhtdS1wdWggBztumphC7YFc39HpAErHyhta3pCVP-Giq7OJ"/>
+<img alt="NUS Logo" class="h-8 grayscale transition hover:grayscale-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMwBRNzr5cnFyom0JrtjZADxPrh7xjKvCwD2BQwyjiC18vpbBy6iafgJAncaZrteAN4nPj4qDXCoJ2b72DdyKvvxrjECrmZ_ait8rRTiLh2Scevvi4UIjXi-VkBqkp0uX1EqiRRT7vbGC9Pq0dNiYFcp40djxyBn8JQBIyggrSeORNzA92hNkJM528oQ5FglG2MLe2neJf3clozidgVYgRVnC0TNhxqdO04G2el8qpbMQSfyWfJc9pxYplJvZaivX5tCKLvLSLuHrA"/>
+<img alt="University of Toronto Logo" class="h-8 grayscale transition hover:grayscale-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7y9T7RMg1W31upzxlVZvUrUfvxfw72Wex3aclJ1LOwLlCyRO-AQa832whTZt9NVBlBQWZR6mUetG0rSWEViaX9VYTfXXgiRVZzd2PMXQrMt3_tAm-s7ZMS0Dv20rwa_7kb6mI334Po3FErbqxQQC_342d9vIr0HpHPmsjQij_3azqUjsNKTpVWTA3D5c_KrEOe6mEC7hMeglLMy6Cx_Bh_EfT8Z7Y2CuDzlaObkM1EYNcFa2foL85HLcqwIPodP36aLkaHWUOBE23"/>
+</div>
+</div>
+</section>
+<section class="bg-cs-light-gray-1 py-16 lg:py-20">
+<div class="mx-auto max-w-7xl px-6 lg:px-8">
+<div class="text-center">
+<h2 class="text-3xl font-bold text-cs-purple">Suara Siswa</h2>
+</div>
+<div class="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2">
+<div class="rounded-lg border-l-4 border-cs-green bg-white p-8 shadow-md">
+<span class="text-4xl text-cs-green/20 material-symbols-outlined">format_quote</span>
+<p class="mt-2 italic text-cs-medium-gray">"Program Diploma Crestwood menantang saya untuk berpikir kritis dan mempersiapkan saya dengan sangat baik untuk universitas. Para guru yang suportif adalah kunci kesuksesan saya."</p>
+<div class="mt-4 flex items-center gap-3">
+<div class="h-12 w-12 rounded-full bg-gray-200" data-alt="Photo of Olivia Chen"></div>
+<div>
+<p class="font-bold text-cs-purple">Olivia Chen</p>
+<p class="text-sm text-cs-green">Angkatan 2023</p>
+<p class="text-xs text-gray-500">Penerima Beasiswa Prestasi</p>
+</div>
+</div>
+</div>
+<div class="rounded-lg border-l-4 border-cs-green bg-white p-8 shadow-md">
+<span class="text-4xl text-cs-green/20 material-symbols-outlined">format_quote</span>
+<p class="mt-2 italic text-cs-medium-gray">"Proyek kolaboratif dan fokus pada masalah dunia nyata dalam Program Tahun Menengah membuat belajar menjadi menarik dan relevan. Saya menemukan minat saya pada teknik di sini."</p>
+<div class="mt-4 flex items-center gap-3">
+<div class="h-12 w-12 rounded-full bg-gray-200" data-alt="Photo of Samuel Jones"></div>
+<div>
+<p class="font-bold text-cs-purple">Samuel Jones</p>
+<p class="text-sm text-cs-green">Kelas 10</p>
+<p class="text-xs text-gray-500">Pemenang Olimpiade Sains</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="bg-white py-16 text-center lg:py-20">
+<div class="mx-auto max-w-2xl px-6 lg:px-8">
+<h2 class="text-3xl font-bold text-cs-purple">Rasakan Keunggulan Akademik</h2>
+<p class="mt-4 text-cs-medium-gray">Temukan perbedaan pendidikan di Crestwood. Jelajahi kampus kami, tinjau kurikulum kami secara detail, atau lihat apa yang terjadi tahun ini.</p>
+<div class="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
+<button class="w-full rounded-lg bg-cs-purple px-6 py-3 font-semibold text-white shadow-sm transition-colors hover:bg-cs-green sm:w-auto">Jadwalkan Tur Kampus</button>
+<button class="w-full rounded-lg border-2 border-cs-green px-6 py-3 font-semibold text-cs-green transition-colors hover:bg-cs-green hover:text-white sm:w-auto">Lihat Kalender Akademik</button>
+</div>
+<a class="mt-6 inline-block font-medium text-cs-medium-gray underline-offset-4 hover:text-cs-purple hover:underline" href="#">Unduh Panduan Kurikulum</a>
+</div>
+</section>
+<footer class="bg-cs-purple p-8 text-white md:p-12 lg:rounded-bl-xl">
+<div class="mx-auto max-w-7xl grid grid-cols-2 gap-8 md:grid-cols-4">
+<div class="col-span-2 md:col-span-1">
+<h4 class="font-bold">Crestwood Intl. School</h4>
+<p class="mt-2 text-sm text-gray-300">Jl. Pendidikan No. 1, Jakarta, Indonesia 12345</p>
+<p class="mt-2 text-sm text-gray-300">admissions@crestwood.edu</p>
+<p class="mt-1 text-sm text-gray-300">(021) 123-4567</p>
+</div>
+<div>
+<h5 class="font-semibold text-gray-200">Tautan Cepat</h5>
+<ul class="mt-2 space-y-1 text-sm text-gray-300">
+<li><a class="hover:text-white" href="#">Tentang Kami</a></li>
+<li><a class="hover:text-white" href="#">Penerimaan</a></li>
+<li><a class="hover:text-white" href="#">Berita &amp; Acara</a></li>
+<li><a class="hover:text-white" href="#">Karir</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-semibold text-gray-200">Akademik</h5>
+<ul class="mt-2 space-y-1 text-sm text-gray-300">
+<li><a class="hover:text-white" href="#">Sekolah Dasar</a></li>
+<li><a class="hover:text-white" href="#">Sekolah Menengah</a></li>
+<li><a class="hover:text-white" href="#">Sekolah Atas</a></li>
+<li><a class="hover:text-white" href="#">Layanan Dukungan</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-semibold text-gray-200">Terhubung</h5>
+<ul class="mt-2 space-y-1 text-sm text-gray-300">
+<li><a class="hover:text-white" href="#">Facebook</a></li>
+<li><a class="hover:text-white" href="#">Instagram</a></li>
+<li><a class="hover:text-white" href="#">LinkedIn</a></li>
+<li><a class="hover:text-white" href="#">YouTube</a></li>
+</ul>
+</div>
+</div>
+<div class="mt-8 border-t border-white/20 pt-6 text-center text-xs text-gray-400">
+<p>© 2024 Crestwood International School. Hak Cipta Dilindungi.</p>
+</div>
+</footer>
+</main>
+</div>
+</body></html>

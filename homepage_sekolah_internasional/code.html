@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html class="light" lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Schola Internationalis - Halaman Beranda</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "brand-purple": "#56357F",
+              "brand-green": "#A8CF45",
+              "light-gray-1": "#f8fafc",
+              "light-gray-2": "#f1f5f9",
+              "medium-gray": "#64748b",
+              "dark-gray": "#334155",
+            },
+            fontFamily: {
+              "display": ["Inter", "sans-serif"]
+            },
+            borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .group-open\:rotate-180 {
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body class="bg-light-gray-1 font-display">
+<div class="relative flex min-h-screen w-full">
+<aside class="fixed left-0 top-0 z-20 flex h-full w-[280px] flex-col border-r border-light-gray-2 bg-white">
+<div class="flex h-full flex-col p-4">
+<div class="mb-6 flex items-center gap-3 px-3">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10 bg-brand-purple" data-alt="School logo placeholder"></div>
+<div class="flex flex-col">
+<h1 class="text-dark-gray text-base font-bold leading-normal">Schola Internationalis</h1>
+<p class="text-medium-gray text-sm font-normal leading-normal">Keunggulan dalam Pendidikan</p>
+</div>
+</div>
+<div class="mb-4 flex flex-col gap-4 px-1">
+<label class="flex flex-col h-11 w-full">
+<div class="flex w-full flex-1 items-stretch rounded-lg h-full border border-slate-300 focus-within:border-brand-purple focus-within:ring-1 focus-within:ring-brand-purple">
+<div class="text-brand-green flex items-center justify-center pl-3.5">
+<span class="material-symbols-outlined text-xl">search</span>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden text-dark-gray focus:outline-0 focus:ring-0 border-none bg-transparent h-full placeholder:text-medium-gray pl-2 text-sm font-normal" placeholder="Cari..." value=""/>
+</div>
+</label>
+<div class="flex h-10 flex-1 items-center justify-center rounded-lg bg-light-gray-2 p-1">
+<label class="flex cursor-pointer h-full grow items-center justify-center overflow-hidden rounded-lg px-2 has-[:checked]:bg-white has-[:checked]:shadow-[0_1px_3px_rgba(0,0,0,0.1)] has-[:checked]:text-dark-gray text-medium-gray text-sm font-medium">
+<span class="truncate">EN</span>
+<input class="invisible w-0" name="language-selector" type="radio" value="EN"/>
+</label>
+<label class="flex cursor-pointer h-full grow items-center justify-center overflow-hidden rounded-lg px-2 has-[:checked]:bg-white has-[:checked]:shadow-[0_1px_3px_rgba(0,0,0,0.1)] has-[:checked]:text-dark-gray text-medium-gray text-sm font-medium">
+<span class="truncate">ID</span>
+<input checked="" class="invisible w-0" name="language-selector" type="radio" value="ID"/>
+</label>
+</div>
+</div>
+<nav class="flex flex-1 flex-col gap-1.5 overflow-y-auto">
+<a class="flex items-center gap-3 rounded-lg bg-brand-purple/10 px-3 py-2.5 text-brand-purple" href="#">
+<span class="material-symbols-outlined text-xl !font-bold" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="text-sm font-bold">Beranda</span>
+</a>
+<a class="flex items-center gap-3 rounded-lg px-3 py-2.5 text-dark-gray hover:bg-light-gray-2 hover:text-brand-purple" href="#">
+<span class="material-symbols-outlined text-xl">info</span>
+<span class="text-sm font-medium">Tentang Kami</span>
+</a>
+<details class="group">
+<summary class="flex cursor-pointer list-none items-center justify-between gap-3 rounded-lg px-3 py-2.5 text-dark-gray hover:bg-light-gray-2 hover:text-brand-purple">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-xl">school</span>
+<span class="text-sm font-medium">Akademik</span>
+</div>
+<span class="material-symbols-outlined text-xl transition-transform duration-200 group-open:rotate-180">expand_more</span>
+</summary>
+<div class="ml-4 flex flex-col pl-5">
+<a class="relative py-2 text-sm text-medium-gray before:absolute before:left-[-1.25rem] before:top-1/2 before:h-1.5 before:w-1.5 before:-translate-y-1/2 before:rounded-full before:bg-brand-green before:opacity-0 hover:text-dark-gray" href="#">Sekolah Dasar</a>
+<a class="relative py-2 pl-0 text-sm font-medium text-brand-purple before:absolute before:left-[-1.25rem] before:top-1/2 before:h-1.5 before:w-1.5 before:-translate-y-1/2 before:rounded-full before:bg-brand-green" href="#">Sekolah Menengah</a>
+<a class="relative py-2 text-sm text-medium-gray before:absolute before:left-[-1.25rem] before:top-1/2 before:h-1.5 before:w-1.5 before:-translate-y-1/2 before:rounded-full before:bg-brand-green before:opacity-0 hover:text-dark-gray" href="#">Diploma IB</a>
+</div>
+</details>
+<a class="flex items-center gap-3 rounded-lg px-3 py-2.5 text-dark-gray hover:bg-light-gray-2 hover:text-brand-purple" href="#">
+<span class="material-symbols-outlined text-xl">assignment_ind</span>
+<span class="text-sm font-medium">Penerimaan</span>
+</a>
+<a class="flex items-center gap-3 rounded-lg px-3 py-2.5 text-dark-gray hover:bg-light-gray-2 hover:text-brand-purple" href="#">
+<span class="material-symbols-outlined text-xl">sports_basketball</span>
+<span class="text-sm font-medium">Kehidupan Siswa</span>
+</a>
+<a class="flex items-center gap-3 rounded-lg px-3 py-2.5 text-dark-gray hover:bg-light-gray-2 hover:text-brand-purple" href="#">
+<span class="material-symbols-outlined text-xl">newspaper</span>
+<span class="text-sm font-medium">Berita &amp; Acara</span>
+</a>
+<a class="flex items-center gap-3 rounded-lg px-3 py-2.5 text-dark-gray hover:bg-light-gray-2 hover:text-brand-purple" href="#">
+<span class="material-symbols-outlined text-xl">call</span>
+<span class="text-sm font-medium">Kontak</span>
+</a>
+</nav>
+<div class="mt-auto flex flex-col gap-1 border-t border-light-gray-2 pt-4">
+<a class="flex items-center gap-3 rounded-lg px-3 py-2.5 text-dark-gray hover:bg-light-gray-2 hover:text-brand-purple" href="#">
+<span class="material-symbols-outlined text-xl">lock</span>
+<span class="text-sm font-medium">Portal Orang Tua</span>
+</a>
+<a class="flex items-center gap-3 rounded-lg px-3 py-2.5 text-dark-gray hover:bg-light-gray-2 hover:text-brand-purple" href="#">
+<span class="material-symbols-outlined text-xl">calendar_month</span>
+<span class="text-sm font-medium">Kalender Sekolah</span>
+</a>
+</div>
+</div>
+</aside>
+<main class="ml-[280px] w-[calc(100%-280px)]">
+<div class="mx-auto flex w-full max-w-[1200px] flex-col px-8 py-10">
+<section class="w-full">
+<div class="relative flex min-h-[480px] flex-col justify-end gap-8 rounded-xl bg-cover bg-center p-10 text-white" data-alt="A modern, well-lit library in an international school with students studying." style='background-image: linear-gradient(rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuDf9UeH1B0ACNTadZQy_s1z_Pro720F6V-JCpChfpPtlQmA0s5XUK56SpIPD1Hur4RCxKG2LPvFcKEJT-t5WazlIkyXV6ix15ghUK4cN07iQmd8xKMlWbG3_nfPhZ5cJSSvz8iVErJ8kSMpxUD5P2qk73Iz_Oo2Qtsrxu-UAkkBgsa8ZIX-cnamNpHKrs3AhluGZP0CmMm0jGNj17kBWYHoTjiv_bd-JyBSo3rbrDa50Oo67TgTePLq-BSViy15eFU5k4G-A4nC1daH");'>
+<div class="flex flex-col gap-2">
+<h1 class="text-5xl font-black leading-tight tracking-tight">Memberdayakan Pikiran, Membentuk Masa Depan</h1>
+<p class="text-base font-normal text-slate-200">Temukan pendidikan kelas dunia yang menginspirasi siswa untuk mencapai potensi penuh mereka.</p>
+</div>
+<div class="flex flex-wrap gap-3">
+<button class="flex h-12 cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-brand-purple px-5 text-base font-bold text-white shadow-lg transition-colors hover:bg-brand-green">
+<span>Tanya Sekarang</span>
+</button>
+<button class="flex h-12 cursor-pointer items-center justify-center overflow-hidden rounded-lg border-2 border-brand-green bg-transparent px-5 text-base font-bold text-brand-green shadow-lg transition-colors hover:bg-brand-green hover:text-white">
+<span>Jadwalkan Tur</span>
+</button>
+</div>
+</div>
+<div class="flex items-center gap-2 px-2 py-4">
+<span class="text-sm font-medium text-medium-gray">Beranda</span>
+<span class="text-sm font-medium text-brand-green">/</span>
+<span class="text-sm font-medium text-brand-purple">Akademik</span>
+</div>
+</section>
+<section class="my-10 w-full rounded-xl bg-light-gray-1 p-8">
+<div class="grid grid-cols-2 gap-8 md:grid-cols-4">
+<div class="text-center">
+<p class="text-5xl font-bold text-brand-green">2.000+</p>
+<p class="mt-1 text-base text-dark-gray">Siswa Terdaftar</p>
+</div>
+<div class="text-center">
+<p class="text-5xl font-bold text-brand-green">50+</p>
+<p class="mt-1 text-base text-dark-gray">Kebangsaan</p>
+</div>
+<div class="text-center">
+<p class="text-5xl font-bold text-brand-green">25</p>
+<p class="mt-1 text-base text-dark-gray">Tahun Keunggulan</p>
+</div>
+<div class="text-center">
+<p class="text-5xl font-bold text-brand-green">98%</p>
+<p class="mt-1 text-base text-dark-gray">Penempatan Universitas</p>
+</div>
+</div>
+</section>
+<section class="my-10 w-full">
+<h2 class="mb-6 text-3xl font-bold text-brand-purple">Temukan Program Kami</h2>
+<div class="grid grid-cols-1 gap-6 md:grid-cols-3">
+<div class="group flex flex-col overflow-hidden rounded-xl border border-slate-200 bg-white transition-all duration-300 hover:border-brand-green hover:shadow-xl">
+<div class="flex h-48 w-full items-center justify-center bg-slate-200 text-slate-500">
+<span class="material-symbols-outlined text-5xl text-brand-green">school</span>
+</div>
+<div class="flex flex-col gap-2 p-6">
+<h3 class="text-xl font-bold text-brand-purple">Program Diploma IB</h3>
+<p class="text-base text-slate-700">Kurikulum yang ketat dan diakui secara internasional untuk siswa berusia 16-19 tahun.</p>
+<a class="mt-2 font-medium text-slate-600 transition-colors hover:text-brand-purple" href="#">Pelajari Lebih Lanjut →</a>
+</div>
+</div>
+<div class="group flex flex-col overflow-hidden rounded-xl border border-slate-200 bg-white transition-all duration-300 hover:border-brand-green hover:shadow-xl">
+<div class="flex h-48 w-full items-center justify-center bg-slate-200 text-slate-500">
+<span class="material-symbols-outlined text-5xl text-brand-green">science</span>
+</div>
+<div class="flex flex-col gap-2 p-6">
+<h3 class="text-xl font-bold text-brand-purple">Keunggulan STEM</h3>
+<p class="text-base text-slate-700">Membina inovasi dalam sains, teknologi, teknik, dan matematika.</p>
+<a class="mt-2 font-medium text-slate-600 transition-colors hover:text-brand-purple" href="#">Pelajari Lebih Lanjut →</a>
+</div>
+</div>
+<div class="group flex flex-col overflow-hidden rounded-xl border border-slate-200 bg-white transition-all duration-300 hover:border-brand-green hover:shadow-xl">
+<div class="flex h-48 w-full items-center justify-center bg-slate-200 text-slate-500">
+<span class="material-symbols-outlined text-5xl text-brand-green">music_note</span>
+</div>
+<div class="flex flex-col gap-2 p-6">
+<h3 class="text-xl font-bold text-brand-purple">Seni &amp; Musik</h3>
+<p class="text-base text-slate-700">Memelihara kreativitas dan ekspresi melalui beragam disiplin artistik.</p>
+<a class="mt-2 font-medium text-slate-600 transition-colors hover:text-brand-purple" href="#">Pelajari Lebih Lanjut →</a>
+</div>
+</div>
+</div>
+</section>
+<section class="my-10 w-full">
+<h2 class="mb-6 text-3xl font-bold text-brand-purple">Kehidupan Kampus</h2>
+<div class="grid grid-cols-2 grid-rows-2 gap-4">
+<div class="col-span-1 row-span-2 flex h-full min-h-[400px] items-center justify-center rounded-xl border-b-2 border-brand-green bg-slate-200 text-dark-gray">Gambar Potret (4:3)</div>
+<div class="col-span-1 row-span-1 flex h-full items-center justify-center rounded-xl border-b-2 border-brand-green bg-slate-200 text-dark-gray">Gambar Lanskap (16:9)</div>
+<div class="col-span-1 row-span-1 flex h-full items-center justify-center rounded-xl border-b-2 border-brand-green bg-slate-200 text-dark-gray">Gambar Lanskap (16:9)</div>
+</div>
+</section>
+<section class="my-10 w-full">
+<h2 class="mb-6 text-3xl font-bold text-brand-purple">Berita &amp; Acara Terbaru</h2>
+<div class="flex flex-col gap-6">
+<div class="flex items-start gap-6 rounded-xl bg-white p-4">
+<div class="flex h-32 w-48 flex-shrink-0 items-center justify-center rounded-lg bg-slate-200 text-sm text-slate-500">Gambar Mini</div>
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center gap-2 text-sm">
+<span class="rounded-full bg-brand-green px-2 py-0.5 text-xs font-medium text-white">15 Okt 2023</span>
+<span class="font-medium text-brand-purple">Akademik</span>
+</div>
+<h3 class="text-lg font-bold text-dark-gray transition-colors hover:text-brand-purple">Pameran Sains Tahunan Menampilkan Inovasi Siswa</h3>
+<p class="text-base text-slate-700">Siswa kami mempresentasikan proyek-proyek luar biasa, menunjukkan kreativitas dan pemikiran kritis dalam berbagai bidang ilmiah...</p>
+<a class="group mt-1 flex items-center gap-1 font-bold text-brand-green" href="#">
+<span>Baca Selengkapnya</span>
+<span class="transition-transform group-hover:translate-x-1">→</span>
+</a>
+</div>
+</div>
+<div class="flex items-start gap-6 rounded-xl bg-white p-4">
+<div class="flex h-32 w-48 flex-shrink-0 items-center justify-center rounded-lg bg-slate-200 text-sm text-slate-500">Gambar Mini</div>
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center gap-2 text-sm">
+<span class="rounded-full bg-brand-green px-2 py-0.5 text-xs font-medium text-white">12 Okt 2023</span>
+<span class="font-medium text-brand-purple">Komunitas</span>
+</div>
+<h3 class="text-lg font-bold text-dark-gray transition-colors hover:text-brand-purple">Perayaan Hari Internasional Meraih Sukses Besar</h3>
+<p class="text-base text-slate-700">Keluarga dan staf berkumpul untuk merayakan komunitas kami yang beragam dengan makanan, musik, dan pertunjukan budaya dari seluruh dunia...</p>
+<a class="group mt-1 flex items-center gap-1 font-bold text-brand-green" href="#">
+<span>Baca Selengkapnya</span>
+<span class="transition-transform group-hover:translate-x-1">→</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<section class="my-10 w-full">
+<h2 class="mb-6 text-3xl font-bold text-brand-purple">Apa Kata Komunitas Kami</h2>
+<div class="relative rounded-xl border-l-4 border-brand-green bg-white p-8 shadow-sm">
+<span class="absolute left-4 top-4 text-6xl font-black text-brand-green opacity-20">“</span>
+<div class="flex items-start gap-6">
+<div class="h-16 w-16 flex-shrink-0 rounded-full bg-slate-200" data-alt="Photo of Jane Doe, a parent."></div>
+<div class="flex flex-col">
+<p class="text-lg italic text-dark-gray">"Schola Internationalis telah memberikan anak-anak kami lingkungan belajar yang tak tertandingi. Para guru berdedikasi, dan kurikulum global telah mempersiapkan mereka untuk masa depan yang cerah."</p>
+<p class="mt-4 font-bold text-brand-purple">Jane Doe</p>
+<p class="text-sm text-medium-gray">Orang Tua, Kelas 5 &amp; 8</p>
+</div>
+</div>
+</div>
+</section>
+</div>
+<footer class="mt-10 w-full bg-brand-purple px-8 py-12 text-white">
+<div class="mx-auto grid max-w-[1200px] grid-cols-1 gap-10 md:grid-cols-4">
+<div class="flex flex-col gap-4">
+<h4 class="font-bold text-white">Tentang Schola</h4>
+<p class="text-sm text-slate-200">Schola Internationalis adalah institusi terkemuka yang berdedikasi untuk membina keunggulan akademik dan pertumbuhan pribadi dalam komunitas yang beragam dan suportif.</p>
+<div class="flex items-center gap-4">
+<div class="h-12 w-12 rounded-lg bg-slate-500 grayscale transition-all hover:grayscale-0" data-alt="Logo Badan Akreditasi 1"></div>
+<div class="h-12 w-12 rounded-lg bg-slate-500 grayscale transition-all hover:grayscale-0" data-alt="Logo Badan Akreditasi 2"></div>
+</div>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-bold text-white">Tautan Cepat</h4>
+<ul class="flex flex-col gap-2 text-sm text-slate-200">
+<li><a class="hover:text-brand-green" href="#">Tentang Kami</a></li>
+<li><a class="hover:text-brand-green" href="#">Penerimaan</a></li>
+<li><a class="hover:text-brand-green" href="#">Akademik</a></li>
+<li><a class="hover:text-brand-green" href="#">Portal Orang Tua</a></li>
+<li><a class="hover:text-brand-green" href="#">Hubungi Kami</a></li>
+</ul>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-bold text-white">Hubungi Kami</h4>
+<address class="flex flex-col gap-2 text-sm not-italic text-slate-200">
+<p>123 Education Lane, Knowledge City, 12345</p>
+<p>Telepon: (123) 456-7890</p>
+<p>Email: admissions@schola.edu</p>
+</address>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-bold text-white">Ikuti Kami</h4>
+<div class="flex gap-4">
+<a class="text-white hover:text-brand-green" data-alt="Facebook icon" href="#">
+<svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v2.385z"></path></svg>
+</a>
+<a class="text-white hover:text-brand-green" data-alt="Twitter icon" href="#">
+<svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616v.064c0 2.298 1.634 4.212 3.793 4.649-.65.177-1.354.23-2.06.088.621 1.942 2.418 3.323 4.545 3.362-1.843 1.447-4.137 2.26-6.628 2.234-.43 0-.85-.02-1.27-.074 2.383 1.532 5.223 2.423 8.31 2.423 9.967 0 15.417-8.223 15.12-15.542.947-.684 1.772-1.53 2.423-2.502z"></path></svg>
+</a>
+<a class="text-white hover:text-brand-green" data-alt="Instagram icon" href="#">
+<svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.85s-.012 3.584-.07 4.85c-.148 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07s-3.584-.012-4.85-.07c-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.85s.012-3.584.07-4.85c.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.85-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948s.014 3.667.072 4.947c.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072s3.667-.014 4.947-.072c4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.947s-.014-3.667-.072-4.947c-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.689-.073-4.948-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.162 6.162 6.162 6.162-2.759 6.162-6.162-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4s1.791-4 4-4 4 1.79 4 4-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44 1.441-.645 1.441-1.44-.645-1.44-1.441-1.44z"></path></svg>
+</a>
+</div>
+</div>
+</div>
+</footer>
+</main>
+<button class="fixed bottom-8 right-8 z-10 flex h-14 cursor-pointer items-center justify-center overflow-hidden rounded-full bg-brand-green px-6 text-base font-bold text-white shadow-lg transition-colors hover:bg-brand-purple">
+<span>Daftar Sekarang</span>
+</button>
+</div>
+</body></html>

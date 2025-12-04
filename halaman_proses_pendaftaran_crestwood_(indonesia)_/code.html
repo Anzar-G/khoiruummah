@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+
+<html class="light" lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Halaman Proses Pendaftaran Crestwood (Indonesia)</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#56357e",
+              "background-light": "#f7f6f7",
+              "background-dark": "#19151d",
+               /* Custom colors from user request */
+              "brand-purple": "#56357F",
+              "brand-lime": "#A8CF45",
+              "brand-light-gray-1": "#f8fafc",
+              "brand-light-gray-2": "#f1f5f9",
+              "brand-dark-gray": "#334155",
+              "brand-medium-gray": "#64748b",
+            },
+            fontFamily: {
+              "display": ["Lexend", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "1.25rem", "xl": "1.5rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-brand-light-gray-1 dark:bg-background-dark font-display">
+<div class="relative flex min-h-screen">
+<!-- Sidebar -->
+<aside class="fixed top-0 left-0 z-40 h-screen w-[280px] bg-white dark:bg-background-dark shadow-lg flex-col justify-between p-4 hidden lg:flex">
+<div class="flex flex-col gap-6">
+<div class="flex items-center gap-3 px-2">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" data-alt="Crestwood International School Logo" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDtZoXRl_gy8hMxIeFzvF-kw9l4yrRKIK6M43Y0Z7Kz_5oXpDu_W_eDq3EmDmw-i_Dgc4bXUClQq55mVGMNqIFztfSNno6_Y6pwfIDerBmUD646U2vTkniOGms5WKXTBP_AmRTYAj7Spr10tPxQMsTvtbUTffcG5FHRNX-wykw2I4uk_zugZCfgTmZ3uZgGURq0r2cDitDPkX8fzNvxxy79oBAiRacudqWV6BRRFm_rmEJor1MxBJX4Nge9wmK25xcrR0pwz0NEFT9e");'></div>
+<div class="flex flex-col">
+<h1 class="text-brand-dark-gray text-base font-bold leading-normal">Crestwood</h1>
+<p class="text-brand-medium-gray text-sm font-normal leading-normal">International School</p>
+</div>
+</div>
+<div class="px-2">
+<label class="flex flex-col min-w-40 h-11 w-full">
+<div class="flex w-full flex-1 items-stretch rounded-full h-full">
+<div class="text-brand-lime flex border-none bg-brand-light-gray-2 items-center justify-center pl-4 rounded-l-full border-r-0">
+<span class="material-symbols-outlined">search</span>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-full text-brand-dark-gray focus:outline-0 focus:ring-0 border-none bg-brand-light-gray-2 focus:border-none h-full placeholder:text-brand-medium-gray px-4 rounded-l-none border-l-0 pl-2 text-sm font-normal leading-normal" placeholder="Cari..." value=""/>
+</div>
+</label>
+</div>
+<div class="px-2">
+<div class="flex h-10 flex-1 items-center justify-center rounded-full bg-brand-light-gray-2 p-1">
+<label class="flex cursor-pointer h-full grow items-center justify-center overflow-hidden rounded-full px-2 has-[:checked]:bg-white has-[:checked]:shadow-[0_0_4px_rgba(0,0,0,0.1)] has-[:checked]:text-brand-dark-gray text-brand-medium-gray text-sm font-medium leading-normal">
+<span class="truncate">EN</span>
+<input class="invisible w-0" name="language-toggle" type="radio" value="EN"/>
+</label>
+<label class="flex cursor-pointer h-full grow items-center justify-center overflow-hidden rounded-full px-2 has-[:checked]:bg-white has-[:checked]:shadow-[0_0_4px_rgba(0,0,0,0.1)] has-[:checked]:text-brand-dark-gray text-brand-medium-gray text-sm font-medium leading-normal">
+<span class="truncate">ID</span>
+<input checked="" class="invisible w-0" name="language-toggle" type="radio" value="ID"/>
+</label>
+</div>
+</div>
+<nav class="flex flex-col gap-1 text-sm font-medium">
+<a class="flex items-center gap-3 px-4 py-2.5 text-brand-dark-gray rounded-lg hover:bg-brand-light-gray-2" href="#">
+<span class="material-symbols-outlined">home</span> Beranda
+                    </a>
+<a class="flex items-center gap-3 px-4 py-2.5 text-brand-dark-gray rounded-lg hover:bg-brand-light-gray-2" href="#">
+<span class="material-symbols-outlined">info</span> Tentang Kami
+                    </a>
+<a class="flex items-center gap-3 px-4 py-2.5 text-brand-dark-gray rounded-lg hover:bg-brand-light-gray-2" href="#">
+<span class="material-symbols-outlined">school</span> Akademik
+                    </a>
+<div class="relative bg-brand-purple/10 rounded-lg">
+<div class="absolute left-0 top-0 h-full w-1 bg-brand-lime rounded-r-full"></div>
+<a class="flex items-center justify-between gap-3 px-4 py-2.5 text-brand-purple" href="#">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined">assignment</span> Penerimaan
+                            </div>
+<span class="material-symbols-outlined">expand_more</span>
+</a>
+<div class="py-1 pl-6">
+<a class="flex items-center gap-3 px-4 py-2 text-brand-dark-gray rounded-lg hover:bg-white/50" href="#">Overview</a>
+<a class="flex items-center gap-3 px-4 py-2 text-brand-dark-gray rounded-lg bg-white shadow-sm font-semibold" href="#">
+<span class="w-1.5 h-1.5 bg-brand-lime rounded-full"></span> Proses Pendaftaran
+                             </a>
+<a class="flex items-center gap-3 px-4 py-2 text-brand-dark-gray rounded-lg hover:bg-white/50" href="#">Uang Sekolah &amp; Biaya</a>
+<a class="flex items-center gap-3 px-4 py-2 text-brand-dark-gray rounded-lg hover:bg-white/50" href="#">Bantuan Keuangan</a>
+<a class="flex items-center gap-3 px-4 py-2 text-brand-dark-gray rounded-lg hover:bg-white/50" href="#">Kunjungan Kampus</a>
+<a class="flex items-center gap-3 px-4 py-2 text-brand-dark-gray rounded-lg hover:bg-white/50" href="#">FAQ</a>
+</div>
+</div>
+<a class="flex items-center gap-3 px-4 py-2.5 text-brand-dark-gray rounded-lg hover:bg-brand-light-gray-2" href="#">
+<span class="material-symbols-outlined">nightlife</span> Kehidupan Kampus
+                    </a>
+<a class="flex items-center gap-3 px-4 py-2.5 text-brand-dark-gray rounded-lg hover:bg-brand-light-gray-2" href="#">
+<span class="material-symbols-outlined">phone_in_talk</span> Hubungi Kami
+                    </a>
+</nav>
+</div>
+<div class="flex flex-col gap-1 border-t border-brand-light-gray-2 pt-4">
+<a class="flex items-center gap-3 px-4 py-2.5 text-brand-dark-gray rounded-lg hover:bg-brand-light-gray-2 text-sm font-medium" href="#">
+<span class="material-symbols-outlined">people</span> Portal Orang Tua
+                 </a>
+<a class="flex items-center gap-3 px-4 py-2.5 text-brand-dark-gray rounded-lg hover:bg-brand-light-gray-2 text-sm font-medium" href="#">
+<span class="material-symbols-outlined">calendar_month</span> Kalender Sekolah
+                 </a>
+</div>
+</aside>
+<!-- Main Content -->
+<main class="w-full lg:ml-[280px]">
+<!-- 1. PAGE HERO SECTION -->
+<section class="relative bg-cover bg-center flex flex-col justify-end min-h-[300px]" data-alt="Smiling student walking on campus" style='background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.1) 50%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuBaXoVgjEd4WdifhnEC1g1wrZ7GH3cvvJC1Cit1InjSyqvqEQ3fKY5090mFOmyvVY-CTw8epdhFSeW-S6C4V0Cnd4taYFCKLnS_NqKMVzHaU8uIj_6N0zYRBsw76aNEiswsDlrWomsAy2sM861ZX3N-qykP0V6jGx1AaxQU-lsHSL1_auNvjHVatT_gv--v_Ki4MEdyC6lMt2P7YzRuK7sgIX629JuVkJ7E3mUHimydbvFytS1Fw9c40wptjOK1-kF3eo-acVE6F_IN");'>
+<div class="absolute top-0 left-0 w-full p-6 lg:p-8">
+<div class="flex flex-wrap items-center gap-2 text-sm font-medium">
+<a class="text-gray-300 hover:text-white" href="#">Beranda</a>
+<span class="text-brand-lime">/</span>
+<a class="text-gray-300 hover:text-white" href="#">Penerimaan</a>
+<span class="text-brand-lime">/</span>
+<span class="text-white">Proses Pendaftaran</span>
+</div>
+</div>
+<div class="p-6 lg:p-8 text-white">
+<h1 class="text-4xl font-bold">Panduan Proses Pendaftaran</h1>
+<p class="mt-2 text-lg text-gray-200">Langkah demi langkah untuk bergabung dengan komunitas Crestwood</p>
+</div>
+</section>
+<!-- 2. INTRODUCTION & OVERVIEW SECTION -->
+<section class="relative z-20 -mt-10 px-4">
+<div class="max-w-4xl mx-auto bg-white rounded-xl shadow-lg py-12 lg:py-20 px-6 lg:px-12 text-center">
+<h2 class="text-3xl font-bold text-brand-purple">Proses Pendaftaran yang Jelas dan Mudah</h2>
+<div class="mt-6 space-y-4 text-base text-brand-dark-gray leading-relaxed max-w-3xl mx-auto">
+<p>Di Crestwood, kami memahami bahwa memilih sekolah yang tepat adalah keputusan besar. Oleh karena itu, kami merancang proses pendaftaran yang transparan, personal, dan mendukung. Tim penerimaan kami yang ramah siap memandu Anda dan keluarga Anda melalui setiap langkah, memastikan Anda memiliki semua informasi yang dibutuhkan.</p>
+<p>Tujuan kami bukan hanya untuk mengisi kursi, tetapi untuk membangun komunitas yang dinamis dengan menemukan siswa dan keluarga yang paling cocok dengan nilai-nilai dan lingkungan belajar kami. Kami menantikan untuk mengenal Anda lebih baik.</p>
+</div>
+</div>
+</section>
+<!-- 3. STEP-BY-STEP APPLICATION SECTION -->
+<section class="bg-brand-light-gray-1 py-16 lg:py-20">
+<div class="max-w-4xl mx-auto px-4">
+<div class="text-center mb-12">
+<h2 class="text-3xl font-bold text-brand-purple">Langkah-Langkah Pendaftaran</h2>
+<p class="mt-2 text-brand-medium-gray">Ikuti panduan komprehensif kami untuk memulai perjalanan Anda</p>
+</div>
+<div class="relative flex flex-col gap-12">
+<!-- Vertical line -->
+<div aria-hidden="true" class="absolute left-6 top-0 bottom-0 w-0.5 bg-gray-200"></div>
+<!-- Step 1 -->
+<div class="relative flex items-start gap-6">
+<div class="z-10 flex-shrink-0 size-12 bg-brand-purple rounded-full flex items-center justify-center text-white font-bold text-lg">1</div>
+<div class="flex-grow bg-white p-6 rounded-lg shadow-sm border-l-4 border-brand-lime">
+<span class="material-symbols-outlined text-4xl text-brand-lime mb-3">edit_document</span>
+<h3 class="text-xl font-bold text-brand-purple mb-2">Kirim Aplikasi Online</h3>
+<p class="text-brand-dark-gray leading-relaxed mb-4">Langkah pertama adalah mengisi formulir aplikasi online kami secara lengkap. Anda akan diminta untuk membuat akun di portal penerimaan kami, yang akan memungkinkan Anda untuk menyimpan progres dan mengunggah dokumen di kemudian hari.</p>
+<a class="inline-block bg-brand-purple text-white px-5 py-2.5 rounded-full text-sm font-medium hover:bg-brand-lime hover:text-brand-dark-gray transition-colors" href="#">Mulai Aplikasi Online</a>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="relative flex items-start gap-6">
+<div class="z-10 flex-shrink-0 size-12 bg-brand-purple rounded-full flex items-center justify-center text-white font-bold text-lg">2</div>
+<div class="flex-grow bg-white p-6 rounded-lg shadow-sm border-l-4 border-brand-lime">
+<span class="material-symbols-outlined text-4xl text-brand-lime mb-3">upload_file</span>
+<h3 class="text-xl font-bold text-brand-purple mb-2">Unggah Dokumen yang Diperlukan</h3>
+<p class="text-brand-dark-gray leading-relaxed mb-4">Setelah aplikasi awal dikirim, Anda perlu mengunggah dokumen pendukung melalui portal. Ini termasuk rapor terakhir, akta kelahiran, foto, dan surat rekomendasi. Pastikan semua dokumen dalam format yang benar.</p>
+<a class="inline-block border border-brand-lime text-brand-lime px-5 py-2.5 rounded-full text-sm font-medium hover:bg-brand-lime hover:text-white transition-colors" href="#">Unduh Daftar Dokumen</a>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="relative flex items-start gap-6">
+<div class="z-10 flex-shrink-0 size-12 bg-brand-purple rounded-full flex items-center justify-center text-white font-bold text-lg">3</div>
+<div class="flex-grow bg-white p-6 rounded-lg shadow-sm border-l-4 border-brand-lime">
+<span class="material-symbols-outlined text-4xl text-brand-lime mb-3">credit_card</span>
+<h3 class="text-xl font-bold text-brand-purple mb-2">Bayar Biaya Pendaftaran</h3>
+<p class="text-brand-dark-gray leading-relaxed mb-4">Biaya pendaftaran yang tidak dapat dikembalikan diperlukan untuk memproses aplikasi Anda. Pembayaran dapat dilakukan secara online melalui portal kami menggunakan kartu kredit atau transfer bank. </p>
+</div>
+</div>
+<!-- Step 4 -->
+<div class="relative flex items-start gap-6">
+<div class="z-10 flex-shrink-0 size-12 bg-brand-purple rounded-full flex items-center justify-center text-white font-bold text-lg">4</div>
+<div class="flex-grow bg-white p-6 rounded-lg shadow-sm border-l-4 border-brand-lime">
+<span class="material-symbols-outlined text-4xl text-brand-lime mb-3">psychology</span>
+<h3 class="text-xl font-bold text-brand-purple mb-2">Penilaian Siswa</h3>
+<p class="text-brand-dark-gray leading-relaxed mb-4">Calon siswa akan diundang untuk mengikuti penilaian yang sesuai dengan usia mereka. Ini bukan tes 'lulus' atau 'gagal', melainkan cara bagi kami untuk memahami profil belajar siswa dan memastikan kami dapat mendukung mereka dengan baik.</p>
+<a class="font-medium text-brand-lime hover:underline" href="#">Jadwalkan Penilaian Anda</a>
+</div>
+</div>
+<!-- Step 5 -->
+<div class="relative flex items-start gap-6">
+<div class="z-10 flex-shrink-0 size-12 bg-brand-purple rounded-full flex items-center justify-center text-white font-bold text-lg">5</div>
+<div class="flex-grow bg-white p-6 rounded-lg shadow-sm border-l-4 border-brand-lime">
+<span class="material-symbols-outlined text-4xl text-brand-lime mb-3">groups</span>
+<h3 class="text-xl font-bold text-brand-purple mb-2">Wawancara Keluarga</h3>
+<p class="text-brand-dark-gray leading-relaxed mb-4">Kami percaya pada kemitraan yang kuat antara sekolah dan rumah. Wawancara keluarga adalah kesempatan bagi kita untuk saling mengenal, mendiskusikan aspirasi Anda untuk anak Anda, dan menjawab pertanyaan yang mungkin Anda miliki.</p>
+</div>
+</div>
+<!-- Step 6 -->
+<div class="relative flex items-start gap-6">
+<div class="z-10 flex-shrink-0 size-12 bg-brand-purple rounded-full flex items-center justify-center text-white font-bold text-lg">6</div>
+<div class="flex-grow bg-white p-6 rounded-lg shadow-sm border-l-4 border-brand-lime">
+<span class="material-symbols-outlined text-4xl text-brand-lime mb-3">mark_email_read</span>
+<h3 class="text-xl font-bold text-brand-purple mb-2">Keputusan Penerimaan</h3>
+<p class="text-brand-dark-gray leading-relaxed mb-4">Setelah semua langkah selesai, komite penerimaan akan meninjau aplikasi secara menyeluruh. Keputusan akan dikomunikasikan secara resmi melalui email dan portal penerimaan pada tanggal yang telah diumumkan.</p>
+</div>
+</div>
+<!-- Step 7 -->
+<div class="relative flex items-start gap-6">
+<div class="z-10 flex-shrink-0 size-12 bg-brand-purple rounded-full flex items-center justify-center text-white font-bold text-lg">7</div>
+<div class="flex-grow bg-white p-6 rounded-lg shadow-sm border-l-4 border-brand-lime">
+<span class="material-symbols-outlined text-4xl text-brand-lime mb-3">verified</span>
+<h3 class="text-xl font-bold text-brand-purple mb-2">Konfirmasi Pendaftaran</h3>
+<p class="text-brand-dark-gray leading-relaxed mb-4">Keluarga yang menerima tawaran penerimaan harus menyelesaikan langkah-langkah pendaftaran akhir, termasuk pembayaran uang sekolah awal dan penyerahan dokumen pendaftaran akhir untuk mengamankan tempat anak mereka.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. REQUIRED DOCUMENTS SECTION -->
+<section class="bg-white py-16 lg:py-20">
+<div class="max-w-4xl mx-auto px-4">
+<div class="text-center mb-12">
+<h2 class="text-3xl font-bold text-brand-purple">Daftar Dokumen Lengkap</h2>
+<p class="mt-2 text-brand-medium-gray">Pastikan Anda memiliki semua yang diperlukan</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="space-y-4">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-brand-lime mt-1">check_circle</span>
+<div>
+<h4 class="font-bold text-brand-dark-gray">Formulir Aplikasi Lengkap</h4>
+<p class="text-sm text-brand-medium-gray">Diisi secara online melalui portal.</p>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-brand-lime mt-1">check_circle</span>
+<div>
+<h4 class="font-bold text-brand-dark-gray">Salinan Akta Kelahiran Siswa</h4>
+<p class="text-sm text-brand-medium-gray">Format yang diterima: PDF, JPG.</p>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-brand-lime mt-1">check_circle</span>
+<div>
+<h4 class="font-bold text-brand-dark-gray">Salinan Paspor/KTP Orang Tua &amp; Siswa</h4>
+<p class="text-sm text-brand-medium-gray">Sesuai dengan kewarganegaraan.</p>
+</div>
+</div>
+</div>
+<div class="space-y-4">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-brand-lime mt-1">check_circle</span>
+<div>
+<h4 class="font-bold text-brand-dark-gray">Rapor Akademik 2 Tahun Terakhir</h4>
+<p class="text-sm text-brand-medium-gray">Termasuk laporan naratif jika ada.</p>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-brand-lime mt-1">check_circle</span>
+<div>
+<h4 class="font-bold text-brand-dark-gray">Foto Ukuran Paspor Terbaru</h4>
+<p class="text-sm text-brand-medium-gray">Latar belakang putih, format JPG.</p>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-brand-lime mt-1">check_circle</span>
+<div>
+<h4 class="font-bold text-brand-dark-gray">Catatan Imunisasi</h4>
+<p class="text-sm text-brand-medium-gray">Harus lengkap dan terkini.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-12 bg-brand-purple/10 p-4 rounded-lg flex items-center gap-4">
+<span class="material-symbols-outlined text-brand-lime text-3xl">translate</span>
+<p class="text-sm text-brand-purple"><strong>Catatan Penting:</strong> Semua dokumen harus diserahkan dalam Bahasa Inggris atau disertai dengan terjemahan tersumpah.</p>
+</div>
+<div class="text-center mt-12">
+<a class="inline-block border-2 border-brand-lime text-brand-lime px-6 py-3 rounded-full font-bold hover:bg-brand-lime hover:text-white transition-colors" href="#">Unduh Checklist Dokumen (PDF)</a>
+</div>
+</div>
+</section>
+<!-- 5. APPLICATION DEADLINES & IMPORTANT DATES -->
+<section class="bg-brand-light-gray-1 py-16 lg:py-20">
+<div class="max-w-4xl mx-auto px-4">
+<div class="text-center mb-12">
+<h2 class="text-3xl font-bold text-brand-purple">Tenggat Waktu &amp; Tanggal Penting</h2>
+<p class="mt-2 text-brand-medium-gray">Jangan lewatkan tanggal-tanggal penting dalam proses pendaftaran</p>
+</div>
+<div class="space-y-6">
+<div class="flex flex-col md:flex-row items-center bg-white p-4 rounded-lg shadow-sm gap-4">
+<div class="flex-shrink-0 flex items-center gap-3 w-full md:w-48">
+<span class="material-symbols-outlined text-brand-lime">event</span>
+<p class="text-lg font-bold text-brand-lime">1 Okt - 15 Des</p>
+</div>
+<div class="flex-grow">
+<h4 class="font-bold text-brand-purple">Periode Pendaftaran Dini</h4>
+<p class="text-sm text-brand-medium-gray">Aplikasi yang diterima dalam periode ini akan mendapatkan prioritas.</p>
+</div>
+</div>
+<div class="flex flex-col md:flex-row items-center bg-white p-4 rounded-lg shadow-sm gap-4">
+<div class="flex-shrink-0 flex items-center gap-3 w-full md:w-48">
+<span class="material-symbols-outlined text-brand-lime">event</span>
+<p class="text-lg font-bold text-brand-lime">15 Januari</p>
+</div>
+<div class="flex-grow">
+<h4 class="font-bold text-brand-purple">Tenggat Waktu Prioritas</h4>
+<p class="text-sm text-brand-medium-gray">Batas akhir untuk pertimbangan prioritas dan bantuan keuangan.</p>
+</div>
+</div>
+<div class="flex flex-col md:flex-row items-center bg-white p-4 rounded-lg shadow-sm gap-4">
+<div class="flex-shrink-0 flex items-center gap-3 w-full md:w-48">
+<span class="material-symbols-outlined text-brand-lime">event</span>
+<p class="text-lg font-bold text-brand-lime">1 Maret</p>
+</div>
+<div class="flex-grow">
+<h4 class="font-bold text-brand-purple">Pengumuman Keputusan</h4>
+<p class="text-sm text-brand-medium-gray">Keputusan penerimaan untuk aplikasi prioritas diumumkan.</p>
+</div>
+</div>
+<div class="flex flex-col md:flex-row items-center bg-white p-4 rounded-lg shadow-sm gap-4">
+<div class="flex-shrink-0 flex items-center gap-3 w-full md:w-48">
+<span class="material-symbols-outlined text-brand-lime">event</span>
+<p class="text-lg font-bold text-brand-lime">15 Maret</p>
+</div>
+<div class="flex-grow">
+<h4 class="font-bold text-brand-purple">Tenggat Waktu Konfirmasi</h4>
+<p class="text-sm text-brand-medium-gray">Batas akhir untuk menerima tawaran dan melakukan pembayaran awal.</p>
+</div>
+</div>
+</div>
+<div class="text-center mt-12">
+<a class="inline-flex items-center gap-2 font-medium text-brand-lime hover:underline" href="#">
+                             Lihat Kalender Akademik Lengkap <span class="material-symbols-outlined">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+<!-- 7. CONTACT ADMISSIONS TEAM SECTION -->
+<section class="bg-brand-light-gray-1 py-16 lg:py-20">
+<div class="max-w-4xl mx-auto px-4 text-center">
+<h2 class="text-3xl font-bold text-brand-purple">Hubungi Tim Penerimaan Kami</h2>
+<p class="mt-2 mb-10 text-brand-medium-gray max-w-2xl mx-auto">Tim penerimaan kami siap membantu Anda di setiap langkah proses. Jangan ragu untuk menghubungi kami jika ada pertanyaan.</p>
+<div class="bg-white rounded-lg shadow-sm p-8 text-left max-w-lg mx-auto flex flex-col sm:flex-row items-center gap-8">
+<div class="flex-shrink-0">
+<img class="size-24 rounded-full object-cover" data-alt="Portrait of an admissions officer" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2Kc9l5A6X0dXR3bsyngS2J8FbEzB93jN32AG_GdCVQFIIwgW5BhCZeTwCz2D6c649TA7TYfxDWcX7s39B7rKOP3TP669gJY2_3BlsxtMz71xMqua1Esf0voXIetSg7BBnhdHxn5pvAhsRvA8XVUtrUvrbxc6fLKd17KJiAtvvKBDz9LeFttg2dXYS4iXSG00urLOVLPep7YGSkfSC02lWqaCb0f-w-kuM1QSqm3KGEkiCxyusjsKCgDcAU0ePWyNrGfZSHVC9tfeT"/>
+</div>
+<div class="space-y-2">
+<h4 class="text-lg font-bold text-brand-purple">Admissions Office</h4>
+<p><a class="text-brand-lime hover:underline flex items-center gap-2" href="mailto:admissions@crestwood.sch.id"><span class="material-symbols-outlined text-base">email</span> admissions@crestwood.sch.id</a></p>
+<p><a class="text-brand-lime hover:underline flex items-center gap-2" href="tel:+622112345678"><span class="material-symbols-outlined text-base">call</span> +62 21 1234 5678</a></p>
+<p class="text-sm text-brand-medium-gray flex items-center gap-2"><span class="material-symbols-outlined text-base">schedule</span> Senin-Jumat, 08.00 - 16.00</p>
+</div>
+</div>
+<div class="mt-8">
+<a class="inline-block bg-brand-purple text-white px-6 py-3 rounded-full font-bold hover:bg-brand-lime hover:text-brand-dark-gray transition-colors" href="#">Jadwalkan Panggilan</a>
+</div>
+</div>
+</section>
+<!-- 8. CALL-TO-ACTION SECTION -->
+<section class="bg-white py-16 lg:py-20">
+<div class="text-center px-4">
+<h2 class="text-3xl font-bold text-brand-purple">Siap Memulai Aplikasi Anda?</h2>
+<p class="mt-4 mb-8 text-lg text-brand-medium-gray max-w-2xl mx-auto">Kami menantikan untuk menyambut keluarga Anda di Crestwood International School.</p>
+<a class="inline-block bg-brand-purple text-white text-lg px-8 py-4 rounded-full font-bold hover:bg-brand-lime hover:text-brand-dark-gray transition-colors shadow-lg hover:shadow-xl" href="#">Mulai Aplikasi Sekarang</a>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-brand-purple text-white">
+<div class="max-w-7xl mx-auto px-6 py-12 lg:py-16">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+<div class="col-span-2 md:col-span-1">
+<div class="flex items-center gap-3">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" data-alt="Crestwood International School Logo" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDQZu_ccr41ItNt8SjmAXrnJbEyMGH1Lz-eUpusUqtWNJG3sZmRB4mTegw2DW_CDPiDRTBf_g4gvTI2Sp-MopUQHdrEHG12eGx17kHQV1NVqjkGjaV7jG9YPoeQx00JTxPmbqKo46nsny53TBLy35F7SDKBTZ_8tOL6ERhhhSghVQKYj4ZfkfPaih2sc9plDkfVw-OY_E8FbiE5Z5G15u3U-_ysD0q0jjYIOy8KoGCyqepwRHD1jdP2yd8aKDHsmSvEIdaVoPBhpCeb");'></div>
+<div class="flex flex-col">
+<h1 class="font-bold leading-normal">Crestwood</h1>
+<p class="text-sm font-normal leading-normal opacity-80">International School</p>
+</div>
+</div>
+<p class="mt-4 text-sm opacity-80">Membentuk pemimpin masa depan dengan keunggulan akademik dan karakter yang kuat.</p>
+</div>
+<div>
+<h5 class="font-bold mb-4">Tautan Cepat</h5>
+<ul class="space-y-2 text-sm opacity-80">
+<li><a class="hover:underline" href="#">Tentang Kami</a></li>
+<li><a class="hover:underline" href="#">Akademik</a></li>
+<li><a class="hover:underline" href="#">Penerimaan</a></li>
+<li><a class="hover:underline" href="#">Hubungi Kami</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-bold mb-4">Sumber Daya</h5>
+<ul class="space-y-2 text-sm opacity-80">
+<li><a class="hover:underline" href="#">Kalender Sekolah</a></li>
+<li><a class="hover:underline" href="#">Portal Orang Tua</a></li>
+<li><a class="hover:underline" href="#">Karir</a></li>
+<li><a class="hover:underline" href="#">FAQ</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-bold mb-4">Hubungi Kami</h5>
+<address class="not-italic space-y-2 text-sm opacity-80">
+<p>123 Education Lane, Jakarta, Indonesia</p>
+<p>info@crestwood.sch.id</p>
+<p>+62 21 1234 5678</p>
+</address>
+</div>
+</div>
+<div class="mt-12 border-t border-white/20 pt-8 text-center text-sm opacity-80">
+                        © 2024 Crestwood International School. All Rights Reserved.
+                    </div>
+</div>
+</footer>
+</main>
+</div>
+<!-- Floating Button -->
+<button class="fixed bottom-6 right-6 bg-brand-lime text-brand-dark-gray px-6 py-3 rounded-full shadow-lg font-bold hover:bg-brand-purple hover:text-white transition-all transform hover:-translate-y-1 z-50">
+        Daftar Sekarang
+    </button>
+</body></html>
