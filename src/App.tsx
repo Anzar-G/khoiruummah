@@ -15,8 +15,11 @@ import AdmissionsProcess from './pages/AdmissionsProcess';
 import ScrollToTop from './components/ScrollToTop';
 
 function App() {
+    // Use /khoiruummah/ for GitHub Pages, / for localhost
+    const basename = window.location.hostname.includes('github.io') ? '/khoiruummah' : '/';
+
     return (
-        <BrowserRouter>
+        <BrowserRouter basename={basename}>
             <ScrollToTop />
             <Routes>
                 <Route path="/" element={<Layout />}>
