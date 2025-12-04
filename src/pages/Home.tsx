@@ -10,7 +10,7 @@ export default function Home() {
                     className="relative flex min-h-[480px] flex-col justify-end gap-8 rounded-xl bg-cover bg-center p-6 text-white md:p-10"
                     style={{
                         backgroundImage:
-                            'linear-gradient(rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("/header-homepages.jpg")',
+                            'linear-gradient(rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("/khoiruummah/header-homepages.jpg")',
                     }}
                 >
                     <div className="flex flex-col gap-2">
@@ -236,15 +236,15 @@ export default function Home() {
                 <div className="grid grid-cols-2 grid-rows-2 gap-4">
                     <div
                         className="col-span-2 row-span-2 h-full min-h-[300px] overflow-hidden rounded-xl border-b-2 border-brand-green bg-cover bg-center md:col-span-1 md:min-h-[400px]"
-                        style={{ backgroundImage: 'url("/kegiatan-1.jpg")' }}
+                        style={{ backgroundImage: 'url("/khoiruummah/kegiatan-1.jpg")' }}
                     />
                     <div
                         className="col-span-2 row-span-1 h-full min-h-[145px] overflow-hidden rounded-xl border-b-2 border-brand-green bg-cover bg-center md:col-span-1"
-                        style={{ backgroundImage: 'url("/kegiatan-2.jpg")', backgroundPosition: 'center 16%' }}
+                        style={{ backgroundImage: 'url("/khoiruummah/kegiatan-2.jpg")', backgroundPosition: 'center 16%' }}
                     />
                     <div
                         className="col-span-2 row-span-1 h-full min-h-[150px] overflow-hidden rounded-xl border-b-2 border-brand-green bg-cover md:col-span-1"
-                        style={{ backgroundImage: 'url("/kegiatan-3.jpg")', backgroundPosition: 'center 16%' }}
+                        style={{ backgroundImage: 'url("/khoiruummah/kegiatan-3.jpg")', backgroundPosition: 'center 16%' }}
                     />
                 </div>
             </section>
