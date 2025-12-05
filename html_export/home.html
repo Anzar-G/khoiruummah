@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beranda - SD Khoiru Ummah</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        "brand-purple": "#56357F",
+                        "brand-green": "#A8CF45",
+                        "light-gray-1": "#f8fafc",
+                        "light-gray-2": "#f1f5f9",
+                        "medium-gray": "#64748b",
+                        "dark-gray": "#334155",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 text-slate-800">
+
+    <!-- Navigation (Simplified for HTML Export) -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center gap-2">
+                    <div class="h-8 w-8 rounded-full bg-brand-purple"></div>
+                    <span class="font-bold text-xl text-brand-purple">SD Khoiru Ummah</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="home.html" class="text-brand-purple font-medium">Beranda</a>
+                    <a href="about_us.html" class="text-gray-600 hover:text-brand-purple transition-colors">Tentang
+                        Kami</a>
+                    <a href="student_life.html"
+                        class="text-gray-600 hover:text-brand-purple transition-colors">Kehidupan Santri</a>
+                    <a href="news_events.html" class="text-gray-600 hover:text-brand-purple transition-colors">Berita &
+                        Acara</a>
+                </div>
+                <div class="flex items-center md:hidden">
+                    <button class="text-gray-600 hover:text-brand-purple">
+                        <span class="material-symbols-outlined">menu</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+        <!-- Hero Section -->
+        <section class="w-full mb-10">
+            <div class="relative flex min-h-[480px] flex-col justify-end gap-8 rounded-xl bg-cover bg-center p-6 text-white md:p-10"
+                style="background-image: linear-gradient(rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url('https://lh3.googleusercontent.com/aida-public/AB6AXuCUVItFycre05007okGK5rZDMO9Txgohq9qQKrWJhHkHWAQB4Z9i42ot6AP5X-q3jVRanmF4yOWvt1EXUfo98LlprHZWvgJ6Mz4E7x4fuDJlF4_iUTo_yP2CThic5xq_dNlIow3K_eAq8BPhV28q5jytnavoPEUnQ5E8Lnyy73vh2pZYqaps1LFvrR1Tp6yuf6APFx0L3kTDzj_udmBXlQYNiYlfxJnvmpLNodn4hzVPPcBvLe2KuayEngNMIdEJ5FsCWBHV7-i7m0y');">
+                <div class="flex flex-col gap-2">
+                    <h1 class="text-3xl font-black leading-tight tracking-tight md:text-5xl">
+                        Melahirkan Generasi Penghafal Al-Qur'an dan Pemimpin Masa Depan
+                    </h1>
+                    <p class="text-sm font-normal text-slate-200 md:text-base">
+                        Sekolah Dasar Islam Terpadu dengan Program Tahfizh Al-Qur'an 30 Juz
+                    </p>
+                </div>
+                <div class="flex flex-wrap gap-3">
+                    <button
+                        class="flex h-12 cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-brand-purple px-5 text-base font-bold text-white shadow-lg transition-colors hover:bg-brand-green">
+                        <span>Daftar Sekarang</span>
+                    </button>
+                    <button
+                        class="flex h-12 cursor-pointer items-center justify-center overflow-hidden rounded-lg border-2 border-brand-green bg-transparent px-5 text-base font-bold text-brand-green shadow-lg transition-colors hover:bg-brand-green hover:text-white">
+                        <span>Jadwalkan Kunjungan</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Statistics Section -->
+        <section class="my-10 w-full rounded-xl bg-light-gray-1 p-6 md:p-8">
+            <div class="grid grid-cols-2 gap-6 md:grid-cols-4 md:gap-8">
+                <div class="text-center">
+                    <p class="text-4xl font-bold text-brand-green md:text-5xl">15+</p>
+                    <p class="mt-1 text-sm text-dark-gray md:text-base">Tahun Berpengalaman</p>
+                </div>
+                <div class="text-center">
+                    <p class="text-4xl font-bold text-brand-green md:text-5xl">500+</p>
+                    <p class="mt-1 text-sm text-dark-gray md:text-base">Santri Aktif</p>
+                </div>
+                <div class="text-center">
+                    <p class="text-4xl font-bold text-brand-green md:text-5xl">30 Juz</p>
+                    <p class="mt-1 text-sm text-dark-gray md:text-base">Target Hafalan</p>
+                </div>
+                <div class="text-center">
+                    <p class="text-4xl font-bold text-brand-green md:text-5xl">100%</p>
+                    <p class="mt-1 text-sm text-dark-gray md:text-base">Lulusan Hafizh</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Introduction / Tentang Section -->
+        <section class="my-10 w-full rounded-xl bg-white p-6 shadow-sm md:p-8">
+            <h2 class="mb-6 text-2xl font-bold text-brand-purple md:text-3xl">
+                Tentang SD Khoiru Ummah
+            </h2>
+            <div class="space-y-4 text-base leading-relaxed text-slate-700">
+                <p>
+                    Sekolah Dasar Tahfizh Plus Khoiru Ummah merupakan institusi pendidikan Islam yang bercita-cita
+                    melahirkan kembali generasi terbaik umat, generasi Hafizh Al-Qur'an berkarakter pemimpin yang
+                    tercermin dalam kecerdasan berpikirnya, kefaqihannya dalam agama, dan keberaniannya menyuarakan
+                    kebenaran Islam.
+                </p>
+                <p>
+                    Kami memadukan program tahfizh Al-Qur'an 30 juz dengan kurikulum nasional yang diperkaya dengan
+                    pembelajaran berbasis akidah Islam. Setiap santri dibimbing untuk tidak hanya menghafal Al-Qur'an,
+                    tetapi juga memahami dan mengamalkannya dalam kehidupan sehari-hari.
+                </p>
+                <p>
+                    Dengan metode 'Talqiyan Fikriyan' (membangun kemampuan siswa berpikir solutif secara Islami dan
+                    mandiri), kami membentuk generasi Islam yang siap menjadi pemimpin masa depan dengan fondasi iman
+                    dan ilmu yang kuat.
+                </p>
+            </div>
+        </section>
+
+        <!-- Pilar Utama Section -->
+        <section class="my-10 w-full">
+            <h2 class="mb-6 text-2xl font-bold text-brand-purple md:text-3xl">
+                Pilar Pendidikan Khoiru Ummah
+            </h2>
+            <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
+                <!-- Pilar 1 -->
+                <div
+                    class="group flex flex-col overflow-hidden rounded-xl border border-slate-200 bg-white transition-all duration-300 hover:border-brand-green hover:shadow-xl">
+                    <div
+                        class="flex h-48 w-full items-center justify-center bg-gradient-to-br from-brand-purple/10 to-brand-green/10">
+                        <span class="material-symbols-outlined text-6xl text-brand-green">menu_book</span>
+                    </div>
+                    <div class="flex flex-col gap-2 p-6">
+                        <h3 class="text-xl font-bold text-brand-purple">Akidah Islam</h3>
+                        <p class="text-base text-slate-700">Pendidikan berbasis Akidah Islam yang menjadikan Al-Qur'an
+                            dan As-Sunnah sebagai sumber utama ilmu bagi para santri</p>
+                        <a class="mt-2 font-medium text-slate-600 transition-colors hover:text-brand-purple"
+                            href="#">Pelajari Lebih Lanjut →</a>
+                    </div>
+                </div>
+                <!-- Pilar 2 -->
+                <div
+                    class="group flex flex-col overflow-hidden rounded-xl border border-slate-200 bg-white transition-all duration-300 hover:border-brand-green hover:shadow-xl">
+                    <div
+                        class="flex h-48 w-full items-center justify-center bg-gradient-to-br from-brand-purple/10 to-brand-green/10">
+                        <span class="material-symbols-outlined text-6xl text-brand-green">school</span>
+                    </div>
+                    <div class="flex flex-col gap-2 p-6">
+                        <h3 class="text-xl font-bold text-brand-purple">Generasi Terbaik</h3>
+                        <p class="text-base text-slate-700">Melahirkan kembali Khoiru Ummah, generasi pemimpin yang
+                            Hafizh Al-Qur'an, yang akan membangun peradaban mulia</p>
+                        <a class="mt-2 font-medium text-slate-600 transition-colors hover:text-brand-purple"
+                            href="#">Pelajari Lebih Lanjut →</a>
+                    </div>
+                </div>
+                <!-- Pilar 3 -->
+                <div
+                    class="group flex flex-col overflow-hidden rounded-xl border border-slate-200 bg-white transition-all duration-300 hover:border-brand-green hover:shadow-xl">
+                    <div
+                        class="flex h-48 w-full items-center justify-center bg-gradient-to-br from-brand-purple/10 to-brand-green/10">
+                        <span class="material-symbols-outlined text-6xl text-brand-green">person</span>
+                    </div>
+                    <div class="flex flex-col gap-2 p-6">
+                        <h3 class="text-xl font-bold text-brand-purple">Guru Teladan</h3>
+                        <p class="text-base text-slate-700">Para Ustadz dan Ustadzah bukan hanya menyampaikan pelajaran,
+                            tetapi juga menjadi teladan dan pendidik terbaik bagi santri</p>
+                        <a class="mt-2 font-medium text-slate-600 transition-colors hover:text-brand-purple"
+                            href="#">Pelajari Lebih Lanjut →</a>
+                    </div>
+                </div>
+                <!-- Pilar 4 -->
+                <div
+                    class="group flex flex-col overflow-hidden rounded-xl border border-slate-200 bg-white transition-all duration-300 hover:border-brand-green hover:shadow-xl">
+                    <div
+                        class="flex h-48 w-full items-center justify-center bg-gradient-to-br from-brand-purple/10 to-brand-green/10">
+                        <span class="material-symbols-outlined text-6xl text-brand-green">diversity_3</span>
+                    </div>
+                    <div class="flex flex-col gap-2 p-6">
+                        <h3 class="text-xl font-bold text-brand-purple">Sinergi Orang Tua</h3>
+                        <p class="text-base text-slate-700">Bekerja sama dengan orang tua dalam mendidik anak-anaknya
+                            serta mensinergikannya dengan peran sekolah</p>
+                        <a class="mt-2 font-medium text-slate-600 transition-colors hover:text-brand-purple"
+                            href="#">Pelajari Lebih Lanjut →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Program Tahfizh Section -->
+        <section
+            class="my-10 w-full rounded-xl bg-gradient-to-br from-brand-purple to-purple-700 p-6 text-white md:p-8">
+            <h2 class="mb-2 text-center text-2xl font-bold md:text-3xl">
+                Program Tahfizh Al-Qur'an
+            </h2>
+            <p class="mb-8 text-center text-sm text-purple-100 md:text-base">
+                Target Hafalan Terstruktur dari Kelas 1 hingga Kelas 6
+            </p>
+            <div class="grid grid-cols-2 gap-3 md:grid-cols-2 lg:grid-cols-3">
+                <div
+                    class="rounded-lg border-2 border-brand-green bg-white/10 p-4 backdrop-blur-sm transition-all hover:bg-white/20">
+                    <h3 class="text-lg font-bold text-brand-green">Kelas 1</h3>
+                    <p class="mt-1 text-2xl font-black text-white">3 Juz</p>
+                    <p class="mt-2 text-sm text-purple-100">Juz 30, 29, 28</p>
+                </div>
+                <div
+                    class="rounded-lg border-2 border-brand-green bg-white/10 p-4 backdrop-blur-sm transition-all hover:bg-white/20">
+                    <h3 class="text-lg font-bold text-brand-green">Kelas 2</h3>
+                    <p class="mt-1 text-2xl font-black text-white">6 Juz</p>
+                    <p class="mt-2 text-sm text-purple-100">Juz 1, 2, 3 + Juz Amma</p>
+                </div>
+                <div
+                    class="rounded-lg border-2 border-brand-green bg-white/10 p-4 backdrop-blur-sm transition-all hover:bg-white/20">
+                    <h3 class="text-lg font-bold text-brand-green">Kelas 3</h3>
+                    <p class="mt-1 text-2xl font-black text-white">10 Juz</p>
+                    <p class="mt-2 text-sm text-purple-100">Juz 1-10</p>
+                </div>
+                <div
+                    class="rounded-lg border-2 border-brand-green bg-white/10 p-4 backdrop-blur-sm transition-all hover:bg-white/20">
+                    <h3 class="text-lg font-bold text-brand-green">Kelas 4</h3>
+                    <p class="mt-1 text-2xl font-black text-white">15 Juz</p>
+                    <p class="mt-2 text-sm text-purple-100">Juz 1-15</p>
+                </div>
+                <div
+                    class="rounded-lg border-2 border-brand-green bg-white/10 p-4 backdrop-blur-sm transition-all hover:bg-white/20">
+                    <h3 class="text-lg font-bold text-brand-green">Kelas 5</h3>
+                    <p class="mt-1 text-2xl font-black text-white">25 Juz</p>
+                    <p class="mt-2 text-sm text-purple-100">Juz 1-25</p>
+                </div>
+                <div
+                    class="rounded-lg border-2 border-brand-green bg-white/10 p-4 backdrop-blur-sm transition-all hover:bg-white/20">
+                    <h3 class="text-lg font-bold text-brand-green">Kelas 6</h3>
+                    <p class="mt-1 text-2xl font-black text-white">30 Juz (Khatam)</p>
+                    <p class="mt-2 text-sm text-purple-100">Lulus sebagai Hafizh Al-Qur'an</p>
+                </div>
+            </div>
+            <p class="mt-6 text-center text-xs italic text-purple-200 md:text-sm">
+                *Dengan metode tahfizh yang terbukti efektif dan bimbingan intensif dari ustadz/ustadzah berpengalaman
+            </p>
+        </section>
+
+        <!-- Kurikulum Terpadu Section -->
+        <section class="my-10 w-full">
+            <h2 class="mb-6 text-2xl font-bold text-brand-purple md:text-3xl">
+                Kurikulum Terpadu
+            </h2>
+            <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
+                <div class="rounded-xl border-2 border-brand-green bg-white p-6 shadow-sm">
+                    <h3 class="mb-4 text-xl font-bold text-brand-purple">Kurikulum Diniyyah</h3>
+                    <ul class="space-y-2 text-base text-slate-700">
+                        <li class="flex items-center gap-2"><span
+                                class="material-symbols-outlined text-brand-green">check_circle</span>Al-Qur'an (Tahfizh
+                            & Tahsin)</li>
+                        <li class="flex items-center gap-2"><span
+                                class="material-symbols-outlined text-brand-green">check_circle</span>Aqidah Islam</li>
+                        <li class="flex items-center gap-2"><span
+                                class="material-symbols-outlined text-brand-green">check_circle</span>Fiqih Ibadah</li>
+                        <li class="flex items-center gap-2"><span
+                                class="material-symbols-outlined text-brand-green">check_circle</span>Sirah Nabawiyah
+                        </li>
+                        <li class="flex items-center gap-2"><span
+                                class="material-symbols-outlined text-brand-green">check_circle</span>Bahasa Arab</li>
+                        <li class="flex items-center gap-2"><span
+                                class="material-symbols-outlined text-brand-green">check_circle</span>Adab & Akhlaq</li>
+                    </ul>
+                </div>
+                <div class="rounded-xl border-2 border-brand-purple bg-white p-6 shadow-sm">
+                    <h3 class="mb-4 text-xl font-bold text-brand-purple">Kurikulum Nasional</h3>
+                    <ul class="space-y-2 text-base text-slate-700">
+                        <li class="flex items-center gap-2"><span
+                                class="material-symbols-outlined text-brand-green">check_circle</span>Matematika</li>
+                        <li class="flex items-center gap-2"><span
+                                class="material-symbols-outlined text-brand-green">check_circle</span>IPA (Sains)</li>
+                        <li class="flex items-center gap-2"><span
+                                class="material-symbols-outlined text-brand-green">check_circle</span>IPS (Sosial)</li>
+                        <li class="flex items-center gap-2"><span
+                                class="material-symbols-outlined text-brand-green">check_circle</span>Bahasa Indonesia
+                        </li>
+                        <li class="flex items-center gap-2"><span
+                                class="material-symbols-outlined text-brand-green">check_circle</span>Bahasa Inggris
+                        </li>
+                        <li class="flex items-center gap-2"><span
+                                class="material-symbols-outlined text-brand-green">check_circle</span>Pendidikan Jasmani
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <p class="mt-6 text-center text-base italic text-slate-600">
+                Perpaduan sempurna antara ilmu agama dan ilmu umum untuk membentuk generasi yang seimbang (tawazun)
+            </p>
+        </section>
+
+        <!-- Kehidupan Sekolah Section -->
+        <section class="my-10 w-full">
+            <h2 class="mb-6 text-2xl font-bold text-brand-purple md:text-3xl">Kehidupan Sekolah</h2>
+            <div class="grid grid-cols-2 grid-rows-2 gap-4">
+                <div class="col-span-2 row-span-2 h-full min-h-[300px] overflow-hidden rounded-xl border-b-2 border-brand-green bg-cover bg-center md:col-span-1 md:min-h-[400px]"
+                    style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCUVItFycre05007okGK5rZDMO9Txgohq9qQKrWJhHkHWAQB4Z9i42ot6AP5X-q3jVRanmF4yOWvt1EXUfo98LlprHZWvgJ6Mz4E7x4fuDJlF4_iUTo_yP2CThic5xq_dNlIow3K_eAq8BPhV28q5jytnavoPEUnQ5E8Lnyy73vh2pZYqaps1LFvrR1Tp6yuf6APFx0L3kTDzj_udmBXlQYNiYlfxJnvmpLNodn4hzVPPcBvLe2KuayEngNMIdEJ5FsCWBHV7-i7m0y');">
+                </div>
+                <div class="col-span-2 row-span-1 h-full min-h-[145px] overflow-hidden rounded-xl border-b-2 border-brand-green bg-cover bg-center md:col-span-1"
+                    style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCgVpfT0QrCN6Aw_OVFNgxD2YwET2pig6b1UehEQwDQfa1oI8Mbp500CtUXXtP5m5LymZHuxOcoxlAVWkbCY0VtyiAmRNtgP_sgDKBUX4H-96OEPySw9aRefL3s6jhHm-VCTQuGcvqT4gTAc2NtzhnKHdEF35VNVG4GNoHHIiNgV3ENLcnmDuhguZzoEN1mxrsSWEufAqihJ7qgN_QRAt92gwr_-iAZacDYGwaoS4-H4jZLU5nETDbXoBMz2apdKfpPpeuTinFkC5Vx'); background-position: center 16%;">
+                </div>
+                <div class="col-span-2 row-span-1 h-full min-h-[150px] overflow-hidden rounded-xl border-b-2 border-brand-green bg-cover md:col-span-1"
+                    style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDCoWHd3WxcdwWFA7vVRoGNgaEClUHtoFae45wwGHXdtAqrAVGYKOFCaEFBbHz5Ez1_XqVewmLZVvmDLBNlNB0GV44nQT0LfyQE6E6DeAzsrVpkRmuUPwhvyVtR0vuU7qsArUiLY0xZgGr1J1FNdCtaGs_jrYpBh-zAML7j73oTSgIjCatR5iAlJl2QgBJrA_-MIG0MsDNXTkovDvDFoCdlaOXrkDK1qxFYxFrcpY7tmq9YPH5QWdA3YR-RwKY7zn0EOP18luaBW6oc'); background-position: center 16%;">
+                </div>
+            </div>
+        </section>
+
+        <!-- Fasilitas Section -->
+        <section class="my-10 w-full">
+            <h2 class="mb-6 text-2xl font-bold text-brand-purple md:text-3xl">Fasilitas Pendukung</h2>
+            <div class="grid grid-cols-2 gap-4 md:grid-cols-4">
+                <div
+                    class="group overflow-hidden rounded-xl border-b-4 border-brand-green bg-white shadow-md transition-all hover:shadow-xl">
+                    <div class="flex h-32 items-center justify-center bg-gradient-to-br from-slate-100 to-slate-200">
+                        <span class="material-symbols-outlined text-5xl text-brand-green">menu_book</span>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-center text-base font-bold text-brand-purple">Ruang Tahfizh Nyaman</h3>
+                    </div>
+                </div>
+                <div
+                    class="group overflow-hidden rounded-xl border-b-4 border-brand-green bg-white shadow-md transition-all hover:shadow-xl">
+                    <div class="flex h-32 items-center justify-center bg-gradient-to-br from-slate-100 to-slate-200">
+                        <span class="material-symbols-outlined text-5xl text-brand-green">mosque</span>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-center text-base font-bold text-brand-purple">Masjid Luas</h3>
+                    </div>
+                </div>
+                <div
+                    class="group overflow-hidden rounded-xl border-b-4 border-brand-green bg-white shadow-md transition-all hover:shadow-xl">
+                    <div class="flex h-32 items-center justify-center bg-gradient-to-br from-slate-100 to-slate-200">
+                        <span class="material-symbols-outlined text-5xl text-brand-green">school</span>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-center text-base font-bold text-brand-purple">Kelas Modern</h3>
+                    </div>
+                </div>
+                <div
+                    class="group overflow-hidden rounded-xl border-b-4 border-brand-green bg-white shadow-md transition-all hover:shadow-xl">
+                    <div class="flex h-32 items-center justify-center bg-gradient-to-br from-slate-100 to-slate-200">
+                        <span class="material-symbols-outlined text-5xl text-brand-green">local_library</span>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-center text-base font-bold text-brand-purple">Perpustakaan Islami</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimoni Section (Simplified for HTML) -->
+        <section class="my-10 w-full">
+            <h2 class="mb-6 text-2xl font-bold text-brand-purple md:text-3xl">Testimoni</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100">
+                    <p class="italic text-slate-600 mb-4">"Alhamdulillah anak saya tidak hanya hafal Al-Qur'an 30 juz,
+                        tetapi juga berprestasi di bidang akademik. Guru-gurunya sangat perhatian dan sabar dalam
+                        membimbing."</p>
+                    <div class="flex items-center gap-3">
+                        <img src="https://ui-avatars.com/api/?name=Siti+Aisyah&background=random" alt="Ibu Siti Aisyah"
+                            class="w-10 h-10 rounded-full">
+                        <div>
+                            <p class="font-bold text-brand-purple text-sm">Ibu Siti Aisyah</p>
+                            <p class="text-xs text-slate-500">Wali Santri Kelas 6</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100">
+                    <p class="italic text-slate-600 mb-4">"SD Khoiru Ummah mengajarkan anak saya untuk mandiri,
+                        disiplin, dan mencintai Al-Qur'an. Akhlaknya juga semakin baik setelah bersekolah di sini."</p>
+                    <div class="flex items-center gap-3">
+                        <img src="https://ui-avatars.com/api/?name=Ahmad+Dahlan&background=random"
+                            alt="Bapak Ahmad Dahlan" class="w-10 h-10 rounded-full">
+                        <div>
+                            <p class="font-bold text-brand-purple text-sm">Bapak Ahmad Dahlan</p>
+                            <p class="text-xs text-slate-500">Wali Santri Kelas 4</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100">
+                    <p class="italic text-slate-600 mb-4">"Lingkungan sekolah yang sangat kondusif untuk menghafal
+                        Al-Qur'an. Anak saya jadi lebih rajin beribadah dan sangat hormat kepada orang tua."</p>
+                    <div class="flex items-center gap-3">
+                        <img src="https://ui-avatars.com/api/?name=Fatimah&background=random" alt="Ibu Fatimah"
+                            class="w-10 h-10 rounded-full">
+                        <div>
+                            <p class="font-bold text-brand-purple text-sm">Ibu Fatimah</p>
+                            <p class="text-xs text-slate-500">Wali Santri Kelas 2</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call-to-Action Section -->
+        <section
+            class="my-10 w-full rounded-xl bg-gradient-to-r from-brand-purple to-purple-700 p-8 text-center text-white md:p-12">
+            <h2 class="mb-4 text-2xl font-bold md:text-3xl">
+                Bergabunglah dengan Keluarga Besar SD Khoiru Ummah
+            </h2>
+            <p class="mx-auto mb-8 max-w-2xl text-base text-purple-100 md:text-lg">
+                Daftarkan putra-putri Anda untuk menjadi bagian dari generasi Hafizh Al-Qur'an yang berakhlak mulia dan
+                cerdas secara akademik.
+            </p>
+            <div class="flex flex-col items-center justify-center gap-4 sm:flex-row">
+                <button
+                    class="w-full rounded-lg bg-brand-green px-6 py-3 font-semibold text-white shadow-lg transition-colors hover:bg-green-600 sm:w-auto">
+                    Daftar Santri Baru
+                </button>
+                <button
+                    class="w-full rounded-lg border-2 border-white bg-transparent px-6 py-3 font-semibold text-white transition-colors hover:bg-white hover:text-brand-purple sm:w-auto">
+                    Jadwalkan Kunjungan
+                </button>
+            </div>
+            <a href="#"
+                class="mt-6 inline-block text-sm font-medium text-purple-200 underline-offset-4 hover:text-white hover:underline">
+                Download Brosur Pendaftaran
+            </a>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="mt-10 w-full bg-brand-purple px-6 py-12 text-white md:px-8">
+        <div class="mx-auto grid max-w-[1200px] grid-cols-1 gap-10 md:grid-cols-4">
+            <div class="flex flex-col gap-4">
+                <h4 class="font-bold text-white">Tentang SD Khoiru Ummah</h4>
+                <p class="text-sm text-slate-200">
+                    SD Tahfizh Plus Khoiru Ummah adalah institusi pendidikan Islam yang melahirkan generasi Hafizh
+                    Al-Qur'an berkarakter pemimpin masa depan.
+                </p>
+            </div>
+            <div class="flex flex-col gap-4">
+                <h4 class="font-bold text-white">Tautan Cepat</h4>
+                <ul class="flex flex-col gap-2 text-sm text-slate-200">
+                    <li><a class="hover:text-brand-green" href="about_us.html">Tentang Kami</a></li>
+                    <li><a class="hover:text-brand-green" href="#">Program Tahfizh</a></li>
+                    <li><a class="hover:text-brand-green" href="#">Pendaftaran</a></li>
+                    <li><a class="hover:text-brand-green" href="#">Biaya Pendidikan</a></li>
+                    <li><a class="hover:text-brand-green" href="#">Kontak</a></li>
+                </ul>
+            </div>
+            <div class="flex flex-col gap-4">
+                <h4 class="font-bold text-white">Hubungi Kami</h4>
+                <address class="flex flex-col gap-2 text-sm not-italic text-slate-200">
+                    <p>Jl. Pendidikan Islam No. 123</p>
+                    <p>Kota, Provinsi 12345</p>
+                    <p>Telp: (021) 1234-5678</p>
+                    <p>WA: 0812-3456-7890</p>
+                    <p>Email: info@sdkhoiruummah.sch.id</p>
+                </address>
+            </div>
+            <div class="flex flex-col gap-4">
+                <h4 class="font-bold text-white">Ikuti Kami</h4>
+                <div class="flex gap-4">
+                    <a class="text-white hover:text-brand-green" href="#"><span
+                            class="material-symbols-outlined">public</span></a>
+                    <a class="text-white hover:text-brand-green" href="#"><span
+                            class="material-symbols-outlined">thumb_up</span></a>
+                    <a class="text-white hover:text-brand-green" href="#"><span
+                            class="material-symbols-outlined">smart_display</span></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

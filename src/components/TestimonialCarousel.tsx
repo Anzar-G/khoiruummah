@@ -13,6 +13,7 @@ interface Testimonial {
     name: string
     avatar: string
     description: string
+    role?: string
 }
 
 interface TestimonialCarouselProps
@@ -137,7 +138,7 @@ const TestimonialCarousel = React.forwardRef<
                                             {testimonial.name}
                                         </h3>
                                         <p className="text-xs font-medium text-brand-green">
-                                            Wali Santri
+                                            {testimonial.role || "Wali Santri"}
                                         </p>
                                     </div>
                                     <p className="text-sm italic text-slate-600 dark:text-muted-foreground line-clamp-4">

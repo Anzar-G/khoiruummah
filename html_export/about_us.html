@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang Kami - SD Khoiru Ummah</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        "brand-purple": "#56357F",
+                        "brand-green": "#A8CF45",
+                        "light-gray-1": "#f8fafc",
+                        "light-gray-2": "#f1f5f9",
+                        "medium-gray": "#64748b",
+                        "dark-gray": "#334155",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .accordion-content {
+            transition: max-height 0.3s ease-out;
+            max-height: 0;
+            overflow: hidden;
+        }
+
+        .accordion-header.active .material-symbols-outlined {
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 text-slate-800">
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center gap-2">
+                    <div class="h-8 w-8 rounded-full bg-brand-purple"></div>
+                    <span class="font-bold text-xl text-brand-purple">SD Khoiru Ummah</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="home.html" class="text-gray-600 hover:text-brand-purple transition-colors">Beranda</a>
+                    <a href="about_us.html" class="text-brand-purple font-medium">Tentang Kami</a>
+                    <a href="student_life.html"
+                        class="text-gray-600 hover:text-brand-purple transition-colors">Kehidupan Santri</a>
+                    <a href="news_events.html" class="text-gray-600 hover:text-brand-purple transition-colors">Berita &
+                        Acara</a>
+                </div>
+                <div class="flex items-center md:hidden">
+                    <button class="text-gray-600 hover:text-brand-purple">
+                        <span class="material-symbols-outlined">menu</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+
+        <!-- Hero Section -->
+        <section
+            class="relative overflow-hidden rounded-xl bg-gray-800 p-6 md:p-12 min-h-[300px] flex flex-col justify-center mb-10">
+            <div class="absolute inset-0 bg-cover bg-center opacity-30"
+                style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBMuRsBaYKf5N4vvpQE7BhFUiuDjWBxXbnobykhYifp4DqhwfcKnzWHLTFhxPcrT0B0K9xa59RXLYBdbeFqksbw21REDAuop43YyqfFCdgo8Tbpk-AY9JCsEm8Du3jzagXM3DExqyXPGDOWhHERq8PYqalYWpzafMXLoLEw7sveLWiAqZKcnILmfQl6je18hteTJW8uSubjKmOuU2y9hma_07-ih2nxmcIgvMH6OYMbcftrtZuHaTagOSttZg2TPFcLyspK4AjadElj');">
+            </div>
+            <div class="relative z-10">
+                <div class="flex flex-wrap items-center gap-2 text-sm">
+                    <a class="font-medium leading-normal text-gray-300 hover:text-brand-purple"
+                        href="home.html">Beranda</a>
+                    <span class="font-medium leading-normal text-brand-green">/</span>
+                    <span class="font-medium leading-normal text-brand-purple">Tentang Kami</span>
+                </div>
+                <h1
+                    class="mt-4 text-3xl font-bold leading-tight tracking-tight text-brand-purple md:text-4xl lg:text-5xl">
+                    Tentang SD Khoiru Ummah
+                </h1>
+                <p class="mt-2 text-base font-normal leading-normal text-gray-200 md:text-lg lg:text-xl">
+                    Lebih dari 15 tahun melahirkan generasi Hafizh Al-Qur'an berkarakter pemimpin masa depan
+                </p>
+            </div>
+        </section>
+
+        <!-- Introduction Section -->
+        <section class="relative z-20 -mt-20 rounded-xl bg-white py-12 shadow-lg lg:py-20 mb-10 mx-4 md:mx-0">
+            <div class="container mx-auto px-4 md:px-6 lg:px-8">
+                <div class="grid grid-cols-1 items-center gap-8 lg:grid-cols-5 lg:gap-12">
+                    <div class="lg:col-span-3">
+                        <h2 class="text-2xl font-bold text-brand-purple md:text-3xl">Profil Sekolah</h2>
+                        <p class="mt-4 text-base leading-relaxed text-gray-700">
+                            Sekolah Dasar Tahfizh Plus Khoiru Ummah merupakan institusi pendidikan Islam yang
+                            bercita-cita melahirkan kembali generasi terbaik umat, generasi Hafizh Al-Qur'an berkarakter
+                            pemimpin yang tercermin dalam kecerdasan berpikirnya, kefaqihannya dalam agama,
+                            keberaniannya menyuarakan kebenaran Islam, dan memberi pengaruh baik di keluarganya,
+                            komunitas, dan masyarakat.
+                        </p>
+                        <p class="mt-4 text-base leading-relaxed text-gray-700">
+                            Berdiri sejak tahun 2009, SD Khoiru Ummah telah meluluskan lebih dari 500 santri yang khatam
+                            hafalan Al-Qur'an 30 juz. Kami memadukan program tahfizh intensif dengan kurikulum nasional
+                            yang diperkaya dengan pembelajaran berbasis akidah Islam, menciptakan keseimbangan antara
+                            hafalan Al-Qur'an, pemahaman agama yang mendalam, dan prestasi akademik yang unggul.
+                        </p>
+                        <p class="mt-4 text-base leading-relaxed text-gray-700">
+                            Setiap tingkat pendidikan di SD Khoiru Ummah memiliki fokus perhatian yang berbeda sesuai
+                            dengan tingkat umur, perkembangan akal dan naluri santri. Dipadu dengan metode 'Talqiyan
+                            Fikriyan' (membangun kemampuan santri berpikir solutif secara Islami dan mandiri),
+                            diharapkan akan muncul generasi-generasi Islam yang siap menjadi pemimpin di masa depan.
+                        </p>
+                    </div>
+                    <div class="lg:col-span-2">
+                        <div class="h-64 w-full rounded-lg border-l-4 border-brand-green bg-cover bg-center md:h-80"
+                            style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBShDdYQQOyDLqentl65TJzXrEuWBakrGH7I2ELri9YGh6EvttNcwclJ1QrRcarHhtZ5ptFjMwCbCPLQ-y0bVXOYVp7j3-PBFmZMTmjNijFiVDaBjtnIsEsq7ag1UCW_KVyxHjmZFssE3k01HyFeJjM3lbnDGOpG_jhSbA0d33a858_ErvW3FbBIsqWRz6fu6Z6_-CVPmLGJvqqiRE9C8zgi_h9TR0JNR27wnsLjbAIwMwvhz7p-IvfLywO9JiQboIt8mLUCVLPLhFs');">
+                            <div class="flex h-full w-full items-end justify-start p-4">
+                                <span class="rounded bg-black/50 px-2 py-1 text-xs text-white backdrop-blur-sm">
+                                    Gedung Utama SD Khoiru Ummah
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Vision & Mission -->
+        <section class="bg-light-gray-1 py-12 lg:py-20 rounded-xl mb-10">
+            <div class="container mx-auto px-4 md:px-6 lg:px-8">
+                <h2 class="mb-10 text-center text-2xl font-bold text-brand-purple md:text-3xl">Visi & Misi</h2>
+                <div class="grid grid-cols-1 gap-8 md:grid-cols-2">
+                    <div class="rounded-xl border-t-4 border-brand-green bg-white p-6 shadow-md md:p-8">
+                        <div class="flex items-center gap-4">
+                            <span class="material-symbols-outlined text-4xl text-brand-green">visibility</span>
+                            <h3 class="text-xl font-bold text-brand-purple md:text-2xl">Visi Kami</h3>
+                        </div>
+                        <p class="mt-4 text-gray-700 leading-relaxed">
+                            Menjadi lembaga pendidikan Islam terdepan yang melahirkan generasi Khoiru Ummah (generasi
+                            terbaik umat) yang Hafizh Al-Qur'an, beriman kuat, berilmu luas, berakhlak mulia, dan siap
+                            memimpin peradaban Islam.
+                        </p>
+                    </div>
+                    <div class="rounded-xl border-t-4 border-brand-green bg-white p-6 shadow-md md:p-8">
+                        <div class="flex items-center gap-4">
+                            <span
+                                class="material-symbols-outlined text-4xl text-brand-green">assistant_navigation</span>
+                            <h3 class="text-xl font-bold text-brand-purple md:text-2xl">Misi Kami</h3>
+                        </div>
+                        <ul class="mt-4 space-y-2 text-gray-700">
+                            <li class="flex items-start gap-2"><span
+                                    class="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-brand-green"></span><span>Menyelenggarakan
+                                    program tahfizh Al-Qur'an 30 juz dengan metode yang terbukti efektif</span></li>
+                            <li class="flex items-start gap-2"><span
+                                    class="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-brand-green"></span><span>Menanamkan
+                                    aqidah Islam yang shahih berdasarkan Al-Qur'an dan As-Sunnah</span></li>
+                            <li class="flex items-start gap-2"><span
+                                    class="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-brand-green"></span><span>Membentuk
+                                    akhlaq mulia sesuai tuntunan Rasulullah ﷺ</span></li>
+                            <li class="flex items-start gap-2"><span
+                                    class="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-brand-green"></span><span>Mengembangkan
+                                    potensi akademik santri secara optimal</span></li>
+                            <li class="flex items-start gap-2"><span
+                                    class="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-brand-green"></span><span>Membangun
+                                    karakter kepemimpinan yang kuat dan bertanggung jawab</span></li>
+                            <li class="flex items-start gap-2"><span
+                                    class="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-brand-green"></span><span>Menjalin
+                                    sinergi yang erat dengan orang tua dalam pendidikan anak</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Metode Pembelajaran Section (with Accordion) -->
+        <section class="bg-light-gray-1 py-12 lg:py-20 rounded-xl mb-10">
+            <div class="container mx-auto px-4 md:px-6 lg:px-8">
+                <div class="text-center mb-10">
+                    <h2 class="text-2xl font-bold text-brand-purple md:text-3xl">Metode Pembelajaran Kami</h2>
+                    <p class="mt-2 text-lg text-brand-green font-medium">Talqiyan Fikriyan - Membangun Kemampuan
+                        Berpikir Islami</p>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <!-- Left Column: Metode Tahfizh -->
+                    <div class="bg-white rounded-xl p-6 shadow-md">
+                        <h3 class="text-xl font-bold text-brand-purple mb-4 border-b pb-2 border-gray-100">Metode
+                            Tahfizh</h3>
+                        <p class="text-gray-700 mb-4">
+                            Kami menggunakan metode talqiyan (one-on-one) antara santri dan ustadz/ustadzah untuk
+                            memastikan kualitas hafalan yang sempurna. Setiap santri mendapat bimbingan personal sesuai
+                            dengan kemampuan dan kecepatannya masing-masing.
+                        </p>
+
+                        <!-- Accordion Item 1 -->
+                        <div class="border-t border-gray-100">
+                            <button
+                                class="accordion-header flex justify-between items-center w-full py-4 text-left font-bold text-brand-purple focus:outline-none">
+                                <span>Tahapan Tahfizh</span>
+                                <span
+                                    class="material-symbols-outlined transition-transform duration-300">expand_more</span>
+                            </button>
+                            <div class="accordion-content">
+                                <div class="pb-4">
+                                    <ul class="space-y-2 mt-2">
+                                        <li class="flex items-center gap-2"><span
+                                                class="material-symbols-outlined text-brand-green text-sm">check_circle</span><span
+                                                class="font-medium">Talaqqi</span>: Menyetorkan hafalan baru</li>
+                                        <li class="flex items-center gap-2"><span
+                                                class="material-symbols-outlined text-brand-green text-sm">check_circle</span><span
+                                                class="font-medium">Takrir</span>: Mengulang hafalan lama</li>
+                                        <li class="flex items-center gap-2"><span
+                                                class="material-symbols-outlined text-brand-green text-sm">check_circle</span><span
+                                                class="font-medium">Tasmi'</span>: Simak hafalan menyeluruh</li>
+                                        <li class="flex items-center gap-2"><span
+                                                class="material-symbols-outlined text-brand-green text-sm">check_circle</span><span
+                                                class="font-medium">Tahsin</span>: Perbaikan bacaan</li>
+                                    </ul>
+                                    <p class="mt-4 text-sm text-gray-600 italic">
+                                        Setiap santri wajib menyelesaikan target hafalan sesuai dengan tingkat kelasnya,
+                                        dengan tetap memperhatikan kualitas makharijul huruf dan tajwid.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Talqiyan Fikriyan -->
+                    <div class="bg-white rounded-xl p-6 shadow-md">
+                        <h3 class="text-xl font-bold text-brand-purple mb-4 border-b pb-2 border-gray-100">Talqiyan
+                            Fikriyan</h3>
+                        <p class="text-gray-700 mb-4">
+                            Metode khas Khoiru Ummah yang membangun kemampuan santri berpikir solutif secara Islami dan
+                            mandiri. Santri tidak hanya diajarkan "apa" yang harus dipelajari, tetapi juga "bagaimana"
+                            berpikir dengan benar berdasarkan Al-Qur'an dan As-Sunnah.
+                        </p>
+
+                        <!-- Accordion Item 2 -->
+                        <div class="border-t border-gray-100">
+                            <button
+                                class="accordion-header flex justify-between items-center w-full py-4 text-left font-bold text-brand-purple focus:outline-none">
+                                <span>Prinsip Talqiyan Fikriyan</span>
+                                <span
+                                    class="material-symbols-outlined transition-transform duration-300">expand_more</span>
+                            </button>
+                            <div class="accordion-content">
+                                <div class="pb-4">
+                                    <ul class="space-y-2 mt-2">
+                                        <li class="flex items-start gap-2"><span
+                                                class="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-brand-green"></span><span>Membangun
+                                                pondasi aqidah yang kuat</span></li>
+                                        <li class="flex items-start gap-2"><span
+                                                class="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-brand-green"></span><span>Melatih
+                                                berpikir kritis dan analitis</span></li>
+                                        <li class="flex items-start gap-2"><span
+                                                class="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-brand-green"></span><span>Mengajarkan
+                                                problem solving berbasis Islam</span></li>
+                                        <li class="flex items-start gap-2"><span
+                                                class="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-brand-green"></span><span>Membentuk
+                                                karakter kepemimpinan</span></li>
+                                        <li class="flex items-start gap-2"><span
+                                                class="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-brand-green"></span><span>Mendorong
+                                                kemandirian dalam belajar</span></li>
+                                    </ul>
+                                    <p class="mt-4 text-sm text-gray-600 italic">
+                                        Dengan metode ini, santri tidak hanya hafal Al-Qur'an tetapi juga memahami dan
+                                        mampu menerapkannya dalam kehidupan nyata.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Leadership Team -->
+        <section class="bg-white py-12 lg:py-20 rounded-xl mb-10">
+            <div class="container mx-auto px-4 md:px-6 lg:px-8">
+                <h2 class="text-center text-2xl font-bold text-brand-purple md:text-3xl">
+                    Tim Kepemimpinan Kami
+                </h2>
+                <div class="mt-8 grid grid-cols-1 gap-8 sm:grid-cols-2 md:mt-10 lg:grid-cols-3">
+                    <!-- Leader 1 -->
+                    <div class="group text-center">
+                        <div class="relative inline-block">
+                            <div class="mx-auto size-40 rounded-full border-4 border-brand-green/50 bg-cover bg-center bg-no-repeat transition-colors group-hover:border-brand-green"
+                                style="background-image: url('https://ui-avatars.com/api/?name=Muhammad+Yusuf&background=random')">
+                            </div>
+                        </div>
+                        <h4 class="mt-4 text-lg font-bold text-brand-purple">Ustadz Dr. H. Muhammad Yusuf, M.Pd.I</h4>
+                        <p class="text-sm font-medium text-brand-green">Kepala Sekolah</p>
+                        <p class="mt-2 px-4 text-sm text-gray-500">Hafizh 30 juz dengan pengalaman 20 tahun di bidang
+                            pendidikan Islam. Alumni Universitas Al-Azhar Cairo dan pembina tahfizh bersertifikat
+                            internasional.</p>
+                    </div>
+                    <!-- Leader 2 -->
+                    <div class="group text-center">
+                        <div class="relative inline-block">
+                            <div class="mx-auto size-40 rounded-full border-4 border-brand-green/50 bg-cover bg-center bg-no-repeat transition-colors group-hover:border-brand-green"
+                                style="background-image: url('https://ui-avatars.com/api/?name=Fatimah+Az-Zahra&background=random')">
+                            </div>
+                        </div>
+                        <h4 class="mt-4 text-lg font-bold text-brand-purple">Ustadzah Hj. Fatimah Az-Zahra, S.Pd.I</h4>
+                        <p class="text-sm font-medium text-brand-green">Wakil Kepala Sekolah</p>
+                        <p class="mt-2 px-4 text-sm text-gray-500">Hafizhah dengan spesialisasi metode pembelajaran
+                            tahfizh untuk anak usia SD. Pengalaman 15 tahun dalam pendidikan tahfizh.</p>
+                    </div>
+                    <!-- Leader 3 -->
+                    <div class="group text-center">
+                        <div class="relative inline-block">
+                            <div class="mx-auto size-40 rounded-full border-4 border-brand-green/50 bg-cover bg-center bg-no-repeat transition-colors group-hover:border-brand-green"
+                                style="background-image: url('https://ui-avatars.com/api/?name=Ahmad+Dahlan&background=random')">
+                            </div>
+                        </div>
+                        <h4 class="mt-4 text-lg font-bold text-brand-purple">Ustadz Ahmad Dahlan, S.Pd</h4>
+                        <p class="text-sm font-medium text-brand-green">Koordinator Program Tahfizh</p>
+                        <p class="mt-2 px-4 text-sm text-gray-500">Hafizh 30 juz dan juara MTQ Nasional. Mengembangkan
+                            metode tahfizh yang efektif dan menyenangkan untuk santri SD.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-12 lg:py-20 bg-light-gray-1 rounded-xl">
+            <div class="container mx-auto px-4 text-center md:px-6 lg:px-8">
+                <h2 class="text-2xl font-bold text-brand-purple md:text-3xl">
+                    Bergabunglah dengan Keluarga Besar SD Khoiru Ummah
+                </h2>
+                <p class="mx-auto mt-4 max-w-2xl text-medium-gray text-lg">
+                    Mari bersama kami wujudkan generasi Hafizh Al-Qur'an yang berakhlak mulia, cerdas, dan siap memimpin
+                    masa depan.
+                </p>
+                <div class="mt-8 flex flex-wrap justify-center gap-4">
+                    <button
+                        class="flex h-12 min-w-[160px] cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-brand-purple px-6 text-base font-bold leading-normal tracking-wide text-white transition-colors hover:bg-brand-green hover:text-white shadow-lg">
+                        <span class="truncate">Jadwalkan Kunjungan Sekolah</span>
+                    </button>
+                    <button
+                        class="flex h-12 min-w-[160px] cursor-pointer items-center justify-center overflow-hidden rounded-lg border-2 border-brand-green bg-transparent px-6 text-brand-purple font-bold transition-colors hover:bg-brand-green hover:text-white">
+                        <span class="truncate">Download Profil Sekolah (PDF)</span>
+                    </button>
+                </div>
+                <div class="mt-8 text-sm text-gray-500">
+                    <p>Butuh informasi lebih lanjut?</p>
+                    <p class="font-medium">Hubungi kami: (021) 1234-5678 | WA: 0812-3456-7890</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="mt-10 w-full bg-brand-purple px-6 py-12 text-white md:px-8">
+        <div class="mx-auto grid max-w-[1200px] grid-cols-1 gap-10 md:grid-cols-4">
+            <div class="flex flex-col gap-4">
+                <h4 class="font-bold text-white">Tentang SD Khoiru Ummah</h4>
+                <p class="text-sm text-slate-200">
+                    SD Tahfizh Plus Khoiru Ummah adalah institusi pendidikan Islam yang melahirkan generasi Hafizh
+                    Al-Qur'an berkarakter pemimpin masa depan.
+                </p>
+            </div>
+            <div class="flex flex-col gap-4">
+                <h4 class="font-bold text-white">Tautan Cepat</h4>
+                <ul class="flex flex-col gap-2 text-sm text-slate-200">
+                    <li><a class="hover:text-brand-green" href="about_us.html">Tentang Kami</a></li>
+                    <li><a class="hover:text-brand-green" href="#">Program Tahfizh</a></li>
+                    <li><a class="hover:text-brand-green" href="#">Pendaftaran</a></li>
+                    <li><a class="hover:text-brand-green" href="#">Biaya Pendidikan</a></li>
+                    <li><a class="hover:text-brand-green" href="#">Kontak</a></li>
+                </ul>
+            </div>
+            <div class="flex flex-col gap-4">
+                <h4 class="font-bold text-white">Hubungi Kami</h4>
+                <address class="flex flex-col gap-2 text-sm not-italic text-slate-200">
+                    <p>Jl. Pendidikan Islam No. 123</p>
+                    <p>Kota, Provinsi 12345</p>
+                    <p>Telp: (021) 1234-5678</p>
+                    <p>WA: 0812-3456-7890</p>
+                    <p>Email: info@sdkhoiruummah.sch.id</p>
+                </address>
+            </div>
+            <div class="flex flex-col gap-4">
+                <h4 class="font-bold text-white">Ikuti Kami</h4>
+                <div class="flex gap-4">
+                    <a class="text-white hover:text-brand-green" href="#"><span
+                            class="material-symbols-outlined">public</span></a>
+                    <a class="text-white hover:text-brand-green" href="#"><span
+                            class="material-symbols-outlined">thumb_up</span></a>
+                    <a class="text-white hover:text-brand-green" href="#"><span
+                            class="material-symbols-outlined">smart_display</span></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Accordion Functionality
+        document.querySelectorAll('.accordion-header').forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+                button.classList.toggle('active');
+
+                if (button.classList.contains('active')) {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                } else {
+                    content.style.maxHeight = 0;
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
